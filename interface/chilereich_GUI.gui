@@ -1,0 +1,97 @@
+guiTypes = {
+	containerWindowType = {
+		name = "Chile_collapse_scripted_gui"
+		position = { x = 50 y = 50 }
+		size = { width = 100% height= 150 }
+		
+		instantTextBoxType = {
+			name = "CHL_COLLAPPSE_TITLE"
+			position = { x = 110 y = 40 }
+			font = "hoi_24header"
+			text = "CHL_SOCIAL_ANGER"
+			maxHeight = 24
+			fixedsize = yes
+			maxWidth = 280
+			format = center
+		}		
+		instantTextBoxType = {
+			name = "CHL_RUM_RUM_TITLE"
+			position = { x = 0 y = 20  }
+			font = "hoi_24header"
+			text = "CHL_CAMIONEROS_ANGER"
+			maxHeight = 24
+			fixedsize = yes
+			maxWidth = 500
+			format = center
+		}		
+		instantTextBoxType = {
+			name = "CHL_CARABINEROS_TITLE"
+			position = { x = 0 y = 60  }
+			font = "hoi_24header"
+			text = "CHL_CARABINEROS_LOYALTY"
+			maxHeight = 24
+			fixedsize = yes
+			maxWidth = 500
+			format = center
+		}			
+		instantTextBoxType = {
+			name = "CHL_ARMY_TITLE"
+			position = { x = 0 y = 80  }
+			font = "hoi_24header"
+			text = "CHL_ARMY_LOYALTY"
+			maxHeight = 24
+			fixedsize = yes
+			maxWidth = 500
+			format = center
+		}		
+		instantTextBoxType = {
+			name = "CHL_NAVY_TITLE"
+			position = { x = 0 y = 100  }
+			font = "hoi_24header"
+			text = "CHL_NAVY_VALUE_LOYALTY"
+			maxHeight = 24
+			fixedsize = yes
+			maxWidth = 500
+			format = center
+		}									
+	}	
+	
+	#CHILOE
+	
+	containerWindowType = {
+		name = "Chile_Chiloe_scripted_gui"
+		position = { x = 0 y = 0 }
+		size = { width = 275 height = 380 }
+		
+		iconType = {
+		   name = "CHILOE_ISLAND_TITLE"
+			orientation = left
+			position = { x = -130 y = 1 }
+			spriteType = "GFX_CHL_FREE_CHILOE"
+			#pdx_tooltip_delayed = "MAF_CONGO_DESC"
+			scale = 0.7
+			
+		}
+		instantTextBoxType = {
+			name = "CHL_CHILOE_STATUS_INFLUENCE_TITLE"
+			position = { x = 300 y = 340 }
+			font = "hoi_14header"
+			text = "CHL_CHILOE_STATUS_INFLUENCE"
+			maxHeight = 24
+			fixedsize = yes
+			maxWidth = 280
+			format = left
+		}		
+		instantTextBoxType = {
+			name = "CHL_CHILOE_PORTS"
+			position = { x = 300 y = 320 }
+			font = "hoi_14header"
+			text = "CHL_CHILOE_PORTS"
+			maxHeight = 24
+			fixedsize = yes
+			maxWidth = 280
+			format = left
+		}
+
+}
+}
