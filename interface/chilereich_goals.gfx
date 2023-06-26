@@ -1,0 +1,187 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_goal_CHL_DEMOCRATIC_CHRISTIAN_WIN"
+		texturefile = "gfx/interface/goals/CHL_DEMOCRATIC_CHRISTIAN_WIN.png"
+	}	
+	SpriteType = {
+		name = "GFX_goal_CHL_FUERZA_POPULAR"
+		texturefile = "gfx/interface/goals/CHL_FUERZA_POPULAR.png"
+	} 
+	SpriteType = { 
+		name = "GFX_goal_CHL_DINA" 
+		texturefile = "gfx/interface/goals/CHL_DINA.png" 
+	}  
+	SpriteType = {   
+		name = "GFX_goal_CHL_corporativismo"  
+		texturefile = "gfx/interface/goals/CHL_corporativismo.png"
+	} 
+	SpriteType = {    
+		name = "GFX_goal_CHL_worker" 
+		texturefile = "gfx/interface/goals/CHL_worker.png"
+	} 
+	SpriteType = {  
+		name = "GFX_goal_CHL_moderate"
+		texturefile = "gfx/interface/goals/CHL_moderate.png"
+	} 
+	SpriteType = {  
+		name = "GFX_goal_CHL_JUDEN" 
+		texturefile = "gfx/interface/goals/CHL_JUDEN.png"
+	} 
+	SpriteType = {  
+		name = "GFX_goal_CHL_jewish_question"
+		texturefile = "gfx/interface/goals/CHL_jewish_question.png"
+	} 
+	SpriteType = {  
+		name = "GFX_goal_CHL_higiene"
+		texturefile = "gfx/interface/goals/CHL_higiene.png"
+	} 
+	SpriteType = {  
+		name = "GFX_goal_CHL_ALLENDE"
+		texturefile = "gfx/interface/goals/CHL_ALLENDE.png"
+	} 
+	SpriteType = {   
+		name = "GFX_goal_CHL_big_hermano"
+		texturefile = "gfx/interface/goals/CHL_big_hermano.png"
+	}   
+	SpriteType = {  
+		name = "GFX_goal_CHL_INNAPRO"
+		texturefile = "gfx/interface/goals/CHL_INNAPRO.png"
+	} 
+	SpriteType = {  
+		name = "GFX_goal_CHL_ALLENDEYOUNGHOOD"
+		texturefile = "gfx/interface/goals/CHL_ALLENDEYOUNGHOOD.png"
+	} 
+	SpriteType = {  
+		name = "GFX_goal_CHL_ETA" 
+		texturefile = "gfx/interface/goals/CHL_ETA.png" 
+	} 
+	SpriteType = {   
+		name = "GFX_goal_CHL_patria" 
+		texturefile = "gfx/interface/goals/CHL_patria.png"
+	}  
+	SpriteType = {   
+		name = "GFX_CHL_GREAT_CHILE"
+		texturefile = "gfx/interface/goals/CHL_GREAT_CHILE.png"
+	} 
+	SpriteType = {   
+		name = "GFX_CHL_REBORN"
+		texturefile = "gfx/interface/goals/CHL_REBORN.png"
+	}	
+	SpriteType = {  
+		name = "GFX_CHL_MINER"
+		texturefile = "gfx/interface/goals/CHL_MINER.png" 
+	} 		
+	SpriteType = {  
+		name = "GFX_chl_ALLENDE_CONT" 
+		texturefile = "gfx/interface/goals/chl_ALLENDE_CONT.png"  
+	} 		
+	SpriteType = {  
+		name = "GFX_CHL_congreso" 
+		texturefile = "gfx/interface/goals/CHL_congreso.png"
+	} 		
+	SpriteType = {   
+		name = "GFX_CHL_christian_red"  
+		texturefile = "gfx/interface/goals/CHL_christian_red.png" 
+	} 	
+	SpriteType = {  
+		name = "GFX_CHL_worker_front"
+		texturefile = "gfx/interface/goals/CHL_worker_front.png"
+	} 	  
+	SpriteType = {  
+		name = "GFX_CHL_book"
+		texturefile = "gfx/interface/goals/CHL_book.png"
+	} 	 
+	SpriteType = {   
+		name = "GFX_CHL_chupalla"
+		texturefile = "gfx/interface/goals/CHL_chupalla.png"
+	} 	
+	SpriteType = {  
+		name = "GFX_CHL_carabinero_commie"
+		texturefile = "gfx/interface/goals/CHL_carabinero_commie.png"
+	} 	
+	SpriteType = {  
+		name = "GFX_CHL_NOTRE"
+		texturefile = "gfx/interface/goals/CHL_NOTRE.png"
+	} 	
+	SpriteType = {  
+		name = "GFX_CHL_ALLENDA"
+		texturefile = "gfx/interface/goals/CHL_ALLENDA.png"
+	} 	
+	SpriteType = {  
+		name = "GFX_CHL_vulturen"
+		texturefile = "gfx/interface/goals/CHL_vulturen.png" 
+	} 	
+	SpriteType = {   
+		name = "GFX_CHL_hidding_commies"
+		texturefile = "gfx/interface/goals/CHL_hidding_commies.png"
+	} 	
+	SpriteType = {    
+		name = "GFX_CHL_CHILE_ARYAN"
+		texturefile = "gfx/interface/goals/CHL_CHILE_ARYAN.png"
+	} 	
+	SpriteType = {    
+		name = "GFX_CHL_sa"
+		texturefile = "gfx/interface/goals/CHL_sa.png"
+	} 	 
+	SpriteType = {   
+		name = "GFX_CHL_CHILE_FATHER" 
+		texturefile = "gfx/interface/goals/CHL_CHILE_FATHER.png" 
+	}	
+	SpriteType = {    
+		name = "GFX_CHL_WHO_WE_ARE" 
+		texturefile = "gfx/interface/goals/CHL_WHO_WE_ARE.png" 
+	} 	
+	SpriteType = {   
+		name = "GFX_CHL_TACNA_VISIT" 
+		texturefile = "gfx/interface/goals/CHL_TACNA_VISIT.png"
+	} 	
+	SpriteType = {   
+		name = "GFX_CHL_BOL_WEAR" 
+		texturefile = "gfx/interface/goals/CHL_BOL_WEAR.png"
+	} 	
+	SpriteType = {    
+		name = "GFX_CHL_TIC_TAC"  
+		texturefile = "gfx/interface/goals/CHL_TIC_TAC.png"
+	} 	
+	SpriteType = {   
+		name = "GFX_CHL_KILL_COMMIES"   
+		texturefile = "gfx/interface/goals/CHL_KILL_COMMIES.png"
+	} 	
+	SpriteType = {   
+		name = "GFX_CHL_SNAPPPP_SNAAAPPP"  
+		texturefile = "gfx/interface/goals/CHL_SNAPPPP_SNAAAPPP.png"
+	} 	
+	SpriteType = {   
+		name = "GFX_CHL_JAP"  
+		texturefile = "gfx/interface/goals/CHL_JAP.png"
+	} 	
+	SpriteType = {    
+		name = "GFX_CHL_CAMIONE"  
+		texturefile = "gfx/interface/goals/CHL_CAMIONE.png"
+	} 	
+	SpriteType = {    
+		name = "GFX_CHL_ENEMY_STATE"  
+		texturefile = "gfx/interface/goals/CHL_ENEMY_STATE.png"
+	} 	
+	SpriteType = {    
+		name = "GFX_CHL_protestas_crushear"   
+		texturefile = "gfx/interface/goals/CHL_protestas_crushear.png"
+	} 	
+	SpriteType = {    
+		name = "GFX_CHL_fight_inflation"   
+		texturefile = "gfx/interface/goals/CHL_fight_inflation.png"
+	} 	
+	
+	
+	
+	
+	
+	
+	
+	SpriteType = {  
+		name = "GFX_goal_CHL_i_need_a_pinochet"
+		texturefile = "gfx/interface/goals/CHL_i_need_a_pinochet.png"
+	} 
+
+}
+  
