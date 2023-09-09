@@ -1,0 +1,81 @@
+﻿l_english:
+ #IDEAS
+ 
+ 
+ CHL_holy_shit_inflation:0 "Massive Inflation" 
+ CHL_pol_infight:0 "Syndicalist infighting"
+ CHL_pol_infight_desc:0 "Our country is suffering again of a period of anarchism, brought by? Ourselves...\nSyndicalists, Totalist, Radical Socialists, Social Democrats, Anarchist and others groups, are killing each others in the streets... Each millitia call each other traitors to the revoltion and call them Argentinian Spies......"
+ CHL_rebelion_sur:0 "Mass Protests"
+ CHL_rebelion_sur_desc:0 "Our regime is vastly hated by our people, people are marching daily demanding a chaneg of regime, the fall of socialism and the return of democracy or maybe the establishment of a military dictactorship..."
+ CHL_useless_industry:0 "Horrible Workers Administration"
+ CHL_useless_industry_desc:0 "In theory the collectivisation of economy, that would mean that the workers of our nation would start administrating the our own industry without landlords, what is more, we gave them guides and we even taught them how properly manage a factory.\nWhen the colectivization began, they took all the money and wasted it in alcohol...THEY HAVENT PRODUCED ANYTHING SINCE 1931"
+ CHL_chilean_revanchism_basedism:0 "Memories of the Past"
+ CHL_jap:0 "JAP"
+ CHL_jap_desc:0 "The Juntas de Abastecimiento y Control de Precios or JAP, are administrative units created in hope to fight the famine through Rationing Comitees"
+ CHL_snappiing_timeee:0 "Snapped Elections"
+ CHL_illiteracy:0 "Mass Illiteracy"
+ CHL_illiteracy_desc:0 "The biggest gift of socialism and her government! absolute ignorance! horrible administration lead to the promises of widespread education to not only not fullfill but also created a generation adoctrined and useless!"
+ kz_to_all_population:0 "State Controlled Work"
+ chl_dissapear_people:0 "Political Dissidents Disappearances"
+ CHL_nat_directory:0 "National Directory"
+ CHL_patriotic_values:0 "Promote Patriotic Values"
+ CHL_red_cristianismus:0 "Red Christianism"
+ CHL_hispaniste_totalen:0 "Red Hispanism"
+ CHL_resurrection_fatherland:0 "Fatherland Ressurection"
+ CHL_IINAPRO:0 "INNAPRO"
+ CHL_railways_nodes:0 "Santiago-Magallanes Railway Project"
+ CHL_autarquia_chilena:0 "Chilean Autarky"
+ CHL_falange_guard:0 "Tropas de Asalto"
+ CHL_DINA_IDEA:0 "DINA"
+ CHL_Caribineros_al_servicio:0 "Carabineros"
+ CHL_notre_honeur:0 "Honour and Glory"
+ CHL_ALCHOLIC_ALLENDE_HE_IS:0 "Never Ending Parties"
+ CHL_Eugenesics:0 "Allendist Medicine"
+ CHL_ss_buth_with_empanadas:0 "Vanguardist Falange"
+ CHL_guerra_cultural:0 "Total Cultural War"
+ CHL_frente_laboral:0 "FFNT"
+ CHL_resurrecion_nacional:0 "National Refoundation"
+ CHL_CORPORATIONISM:0 "Coporacionismo"
+ CHL_allende_youth:0 "Allendist Youth"
+ chl_camioneros_protesta:0 "Trucker Protests"
+ unpayed_salaries_mil_chl:0 "Unpayed Military Salaries"
+ payed_salaries_mil_chl:0 "Payed Military Salaries"
+ chile_no_payed_salairen:0 "Capitulated"
+ CHL_kulturkampfen_alende:0 "El Gran Conflicto"
+ #CUSTOM FLAG
+ chl_allende_victory:0 "Allende Victory"
+ CHL_couped_now:0 "Had been Couped"
+
+ #PARTIES LOC
+ CHL_FALANGE:0 "Falange Nacional"
+ CHL_FALANGEE:0 "FN"
+ CHL_TOT:0 "PRP-PSC"
+ CHL_FLF:0 "Partido Revolucionario Permanente"
+ CHL_DAVILA:0 "PSC"
+ CHL_DAVILA_long:0 "Partido Sindicalista Chileno"
+ 
+ #HIDDEN
+ chile_chiloe_independent:0 "FRNAPA Propaganda"
+ chile_chiloe_independent_strngL:0 "FRNAPA Propaganda"
+ chile_political_collapse:0 "Political Collapse"
+ chile_ongoing_operation:0 "Ongoing Operation"
+ chile_collapsed_economy:0 "Collapsed Economy"
+ chile_minigame:0 "FRNAPA menace"
+ chile_civil_war_over:0 "the Civil War is over"
+ chile_armistice:0 "Repartition of Patagonia"
+ 
+ #TOOLTIP
+ fuck_social_anger:0 "§RThis will enrage people§!"
+ CHL_camioneros_loyalty_angered:0 "§RThe truckers unionswill enrage§!"
+ happy_camioneros:0 "§GThe truckers unions will rejoice§!"
+ happy_people:0 "§GThe The people will rejoice§!"
+ decisions_tooltipen_activaten_liberte:0 "§YUnlock decisions to spark uprisings against syndicalism§!"
+ decisions_tooltipen_activaten_jap:0 "§YUnlock decisions to crush political dissidents§!"
+ 
+ 
+ #MINISTERS
+ 
+ CHL_Eduardo_Nicanor_Frei_Montalva_falange:0 "Eduardo Frei Montalva"
+ CHL_Manuel_Antonio_Garreton_Walker:0 "Manuel Antonio Walker"
+ CHL_Jose_ignacio_palma:0 "José Ignacio Palma"
+ CHL_Eduardo_Nicanor_Frei_Montalva_falange:0 "Eduardo Frei Montalva" 
