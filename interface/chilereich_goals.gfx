@@ -150,14 +150,14 @@ spriteTypes = {
 	SpriteType = {   
 		name = "GFX_CHL_SNAPPPP_SNAAAPPP"  
 		texturefile = "gfx/interface/goals/CHL_SNAPPPP_SNAAAPPP.png"
-	} 	
+	} 	 
 	SpriteType = {   
 		name = "GFX_CHL_JAP"  
 		texturefile = "gfx/interface/goals/CHL_JAP.png"
 	} 	
 	SpriteType = {    
 		name = "GFX_CHL_CAMIONE"  
-		texturefile = "gfx/interface/goals/CHL_CAMIONE.png"
+		texturefile = "gfx/interface/goals/CHL_CAMIONE.png" 
 	} 	
 	SpriteType = {    
 		name = "GFX_CHL_ENEMY_STATE"  
@@ -170,11 +170,188 @@ spriteTypes = {
 	SpriteType = {    
 		name = "GFX_CHL_fight_inflation"   
 		texturefile = "gfx/interface/goals/CHL_fight_inflation.png"
+	}	
+ 
+ 
+
+	SpriteType = {     
+		name = "GFX_CHP_CALLIN"    
+		texturefile = "gfx/interface/goals/CHP_CALLIN.png"
+	}	
+	SpriteType = {    
+		name = "GFX_CHP_COCEAT_INTER"   
+		texturefile = "gfx/interface/goals/CHP_COCEAT_INTER.png"
+	} 	 
+	SpriteType = {    
+		name = "GFX_CHP_patagonia"      
+		texturefile = "gfx/interface/goals/CHP_patagonia.png"
+	} 		
+	SpriteType = {    
+		name = "GFX_CHP_COCEAT_AIR"    
+		texturefile = "gfx/interface/goals/CHP_COCEAT_AIR.png"
+	} 	  
+	SpriteType = {    
+		name = "GFX_CHP_RADIO_LIBERTAD"    
+		texturefile = "gfx/interface/goals/CHP_RADIO_LIBERTAD.png"
+	} 		
+	SpriteType = {    
+		name = "GFX_CHP_They_are_commies"    
+		texturefile = "gfx/interface/goals/CHP_They_are_commies.png" 
+	} 	
+	SpriteType = {    
+		name = "GFX_CHP_panzer"    
+		texturefile = "gfx/interface/goals/CHP_panzer.png"
+	}
+	SpriteType = {    
+		name = "GFX_CHP_patria"    
+		texturefile = "gfx/interface/goals/CHP_patria.png"
+	} 	
+		
+	SpriteType = {     
+		name = "GFX_CHP_TOTALWAR"     
+		texturefile = "gfx/interface/goals/CHP_TOTALWAR.png"
+	} 	
+	SpriteType = {     
+		name = "GFX_CHP_WAR_ECONOMY"    
+		texturefile = "gfx/interface/goals/CHP_WAR_ECONOMY.png"
+	} 	 
+	SpriteType = {     
+		name = "GFX_CHP_MININGER"    
+		texturefile = "gfx/interface/goals/CHP_MININGER.png"
+	} 	
+	SpriteType = {      
+		name = "GFX_CHP_SHIP"    
+		texturefile = "gfx/interface/goals/CHP_SHIP.png"
+	} 	
+	SpriteType = {      
+		name = "GFX_CHP_MARINE"     
+		texturefile = "gfx/interface/goals/CHP_MARINE.png"
+	}	
+	SpriteType = {      
+		name = "GFX_CHP_ENDSIEG"      
+		texturefile = "gfx/interface/goals/CHP_ENDSIEG.png"
+	} 	
+	SpriteType = {      
+		name = "GFX_CHP_BLOW"      
+		texturefile = "gfx/interface/goals/CHP_BLOW.png"
+	}	
+	SpriteType = {      
+		name = "GFX_CHP_ADIOS_ARGENTINOS_TRAIDORES"      
+		texturefile = "gfx/interface/goals/CHP_ADIOS_ARGENTINOS_TRAIDORES.png"
+	} 	
+	
+	SpriteType = {      
+		name = "GFX_CHP_COCEATS"      
+		texturefile = "gfx/interface/goals/CHP_COCEATS.png"
+	}	 	
+	SpriteType = {      
+		name = "GFX_CHP_INNAAR"       
+		texturefile = "gfx/interface/goals/CHP_INNAAR.png"
+	}	
+	SpriteType = {      
+		name = "GFX_CHP_WERFER"       
+		texturefile = "gfx/interface/goals/CHP_WERFER.png"
+	}	
+	SpriteType = {      
+		name = "GFX_CHP_STURM"       
+		texturefile = "gfx/interface/goals/CHP_STURM.png"
+	} 	
+	SpriteType = {      
+		name = "GFX_CHP_PETROLITO_TOTALEN"       
+		texturefile = "gfx/interface/goals/CHP_PETROLITO_TOTALEN.png"
+	} 		
+	SpriteType = {      
+		name = "GFX_CHP_mine"       
+		texturefile = "gfx/interface/goals/CHP_mine.png"
+	} 		
+	SpriteType = {      
+		name = "GFX_CHP_VERDUM_FIRE"       
+		texturefile = "gfx/interface/goals/CHP_VERDUM_FIRE.png"
+	} 	
+	SpriteType = {      
+		name = "GFX_CHP_NUCLEAR"       
+		texturefile = "gfx/interface/goals/CHP_NUCLEAR.png"
+	}	
+	SpriteType = {      
+		name = "GFX_CHP_WAR_TRAIN"       
+		texturefile = "gfx/interface/goals/CHP_WAR_TRAIN.png"
+	}
+	SpriteType = {      
+		name = "GFX_CHP_GRANADE_LAUNCHER"       
+		texturefile = "gfx/interface/goals/CHP_GRANADE_LAUNCHER.png"
+	} 	
+	SpriteType = {      
+		name = "GFX_CHP_butterfly"       
+		texturefile = "gfx/interface/goals/CHP_butterfly.png"
+	} 	
+	SpriteType = {      
+		name = "GFX_CHP_GAS"       
+		texturefile = "gfx/interface/goals/CHP_GAS.png"
+	}
+	SpriteType = {      
+		name = "GFX_CHP_PATRIA_LIBERTAS"       
+		texturefile = "gfx/interface/goals/CHP_PATRIA_LIBERTAS.png"
+	}	
+	SpriteType = {      
+		name = "GFX_CHP_SPANISH"       
+		texturefile = "gfx/interface/goals/CHP_SPANISH.png"
+	} 
+	SpriteType = {      
+		name = "GFX_CHP_Carabineros"       
+		texturefile = "gfx/interface/goals/CHP_Carabineros.png"
+	}	
+	SpriteType = {      
+		name = "GFX_CHP_PEIRO_DE_VALDIVIA"       
+		texturefile = "gfx/interface/goals/CHP_PEIRO_DE_VALDIVIA.png"
+	} 		
+	SpriteType = {      
+		name = "GFX_CHP_THROUGH_THE_PHOENIX_REBORN"       
+		texturefile = "gfx/interface/goals/CHP_THROUGH_THE_PHOENIX_REBORN.png"
+	}
+	SpriteType = {      
+		name = "GFX_CHP_MILITARY"       
+		texturefile = "gfx/interface/goals/CHP_MILITARY.png"
+	} 	
+	SpriteType = {      
+		name = "GFX_CHP_SONS_OF_SANTIAGO"       
+		texturefile = "gfx/interface/goals/CHP_SONS_OF_SANTIAGO.png"
+	} 		
+	SpriteType = {      
+		name = "GFX_CHP_DINA"       
+		texturefile = "gfx/interface/goals/CHP_DINA.png"
+	} 	
+	SpriteType = {      
+		name = "GFX_CHP_JUGEND"       
+		texturefile = "gfx/interface/goals/CHP_JUGEND.png"
+	} 	
+	SpriteType = {      
+		name = "GFX_CHP_CORPORAT"       
+		texturefile = "gfx/interface/goals/CHP_CORPORAT.png"
+	}
+	SpriteType = {      
+		name = "GFX_CHP_NAVY"       
+		texturefile = "gfx/interface/goals/CHP_NAVY.png"
+	} 	
+	SpriteType = {       
+		name = "GFX_CHP_NAVY2"       
+		texturefile = "gfx/interface/goals/CHP_NAVY2.png"
+	} 	
+	SpriteType = {      
+		name = "GFX_CHP_STRAIT_BUNKER"       
+		texturefile = "gfx/interface/goals/CHP_STRAIT_BUNKER.png"
+	}	
+	SpriteType = {      
+		name = "GFX_CHP_PASCUA"       
+		texturefile = "gfx/interface/goals/CHP_PASCUA.png"
+	} 	
+	
+	SpriteType = {    
+		name = "GFX_CHL_ALLENDE_ALCOHOLISM_PROMOTED"   
+		texturefile = "gfx/interface/goals/CHL_ALLENDE_ALCOHOLISM_PROMOTED.png"
 	} 	
 	
 	
-	
-	
+	 
 	
 	
 	
