@@ -2903,3 +2903,11 @@ SCA_KALMAR = {
 	color = rgb { 36 100 247 }
 	color_ui = rgb { 47 172 255 }
 }
+CHL_ALLENDE = {
+	color = rgb { 42 39 39 }
+	color_ui = rgb { 42 39 39 }
+}
+CHL_CARLITOS = {
+	color = rgb { 42 39 39 }
+	color_ui = rgb { 42 39 39 }
+}
