@@ -386,6 +386,85 @@ defined_text = {
 		}
 		localization_key =  socialist_security_state_subtype
 	}
+	text = {
+		trigger = {
+			has_country_leader_ideology =  william_foster_thought_subtype
+		}
+		localization_key =  william_foster_thought_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology =  anarcho_bolshevism_subtype
+		}
+		localization_key =  anarcho_bolshevism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology =  pan_somalism_subtype
+		}
+		localization_key =  pan_somalism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology =  lovestoneism_subtype
+		}
+		localization_key =  lovestoneism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology =  volkisch_communitarianism_subtype
+		}
+		localization_key =  volkisch_communitarianism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology =  internationalism_subtype
+		}
+		localization_key =  internationalism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology =  corn_communism_subtype
+		}
+		localization_key =  corn_communism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology =  tot_right_panafricanism_subtype
+		}
+		localization_key =  tot_right_panafricanism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology =  machiavellian_socialism_subtype
+		}
+		localization_key =  machiavellian_socialism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology =  burnhamite_thought_subtype
+		}
+		localization_key =  burnhamite_thought_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology =  tot_anarcho_communism_subtype
+		}
+		localization_key =  tot_anarcho_communism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology =  comrades_coast_subtype
+		}
+		localization_key =  comrades_coast_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology =  tot_illegalism_subtype
+		}
+		localization_key =  tot_illegalism_subtype
+	}
+
 	
 	text = {
 		trigger = {
@@ -495,6 +574,62 @@ defined_text = {
 		}
 		localization_key = syndie_mexicayotlism_subtype
 	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = syn_islamic_socialism_subtype
+		}
+		localization_key = syn_islamic_socialism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = syn_buddhist_socialism_subtype
+		}
+		localization_key = syn_buddhist_socialism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = syn_internationalism_subtype
+		}
+		localization_key = syn_internationalism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = syn_esoteric_leninism_subtype
+		}
+		localization_key = syn_esoteric_leninism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = syn_cowboy_communalism_subtype
+		}
+		localization_key = syn_cowboy_communalism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = syn_comrades_coast_subtype
+		}
+		localization_key = syn_comrades_coast_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = syn_kleptocracy_subtype
+		}
+		localization_key = syn_kleptocracy_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = syn_illegalism_subtype
+		}
+		localization_key = syn_illegalism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = syn_caponism_subtype
+		}
+		localization_key = syn_caponism_subtype
+	}
+
+
 
 	text = {
 		trigger = {
@@ -1878,6 +2013,12 @@ defined_text = {
 			has_country_leader_ideology = right_taleisinism_subtype
 		}
 		localization_key = right_taleisinism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = alaskan_nationalism_subtype
+		}
+		localization_key = alaskan_nationalism_subtype
 	}
 	text = {
 		trigger = {

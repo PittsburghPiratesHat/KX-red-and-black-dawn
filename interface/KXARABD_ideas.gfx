@@ -13,12 +13,48 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ARZ/ARZ_collective_spirit.png"
 	}
 	spriteType = {
+		name = "GFX_idea_NEE_respect_the_leaders_or_else"
+		texturefile = "gfx/interface/ideas/NEE/TES4.png"
+	}
+	spriteType = {
+		name = "GFX_idea_NEE_the_hermit_kingdom"
+		texturefile = "gfx/interface/ideas/NEE/test1.png"
+	}
+	spriteType = {
+		name = "GFX_idea_NEE_nothing_ever_gets_in_or_out"
+		texturefile = "gfx/interface/ideas/NEE/test3.png"
+	}
+	spriteType = {
 		name = "GFX_idea_ARZ_de-urbanization"
 		texturefile = "gfx/interface/ideas/ARZ/ARZ_deurban_spirit.png"
 	}
 	spriteType = {
 		name = "GFX_idea_ARZ_frank_cult"
 		texturefile = "gfx/interface/ideas/ARZ/ARZ_frank_spirit.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ALA_work_with_natives"
+		texturefile = "gfx/interface/ideas/ALA/townerism.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ALA_the_alaskan_national_identity"
+		texturefile = "gfx/interface/ideas/ALA/alaska1.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ALA_agenda"
+		texturefile = "gfx/interface/ideas/ALA/AGENDA2.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ALA_jewish_immigration_ended"
+		texturefile = "gfx/interface/ideas/ALA/JEW_2.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ALA_jewish_immigration"
+		texturefile = "gfx/interface/ideas/ALA/JEW_1.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ALA_end_americanism"
+		texturefile = "gfx/interface/ideas/ALA/end_americanism_idea.png"
 	}
 	spriteType = {
 		name = "GFX_idea_ARZ_identity"

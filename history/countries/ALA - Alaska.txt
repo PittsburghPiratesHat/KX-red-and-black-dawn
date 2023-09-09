@@ -216,8 +216,8 @@ add_ideas = {
 }
 
 country_event = { id = Alaska.125 days = 120 }
-country_event = { id = Alaska.132 days = 77 }
 country_event = { id = Alaska.25 days = 66 }
+country_event = { id = Alaska.115 days = 50 }
 
 create_country_leader = {
 	name = "Joseph F. Jurich"
@@ -405,6 +405,20 @@ create_corps_commander = {#
 		adaptable
 		trickster
 		scavenger
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 3
+}
+create_corps_commander = {#
+	name = "Joe Vogler"
+	desc = ""
+	portrait_path = "gfx/leaders/ALA/Vogler.png"
+	traits = {
+		winter_expert
+		trait_engineer
 	}
 	skill = 1
 	attack_skill = 1

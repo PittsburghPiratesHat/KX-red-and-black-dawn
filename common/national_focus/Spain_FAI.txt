@@ -487,6 +487,56 @@ focus_tree = {
         }
     }
 
+	focus = {
+        id = CNT_reconile_the_basque_people_and_catalans
+        icon = GFX_BRY_Every_Hand_A_Rifle
+        x = 23
+        y = 15
+        cost = 1
+
+
+        prerequisite = {
+			focus = CNT_the_revolutionary_spanish_legion
+        }
+
+
+        available = {
+
+        }
+
+        completion_reward = {
+        }
+    }
+
+	focus = {
+        id = CNT_spain_lives_and_marches_on
+        icon = GFX_BRY_Every_Hand_A_Rifle
+        x = 21
+        y = 16
+        cost = 1
+
+
+        prerequisite = {
+			focus = CNT_reconile_the_basque_people_and_catalans
+        }
+
+		prerequisite = {
+			focus = CNT_and_dalists
+        }
+
+		prerequisite = {
+			focus = CNT_incorporate_techocracy
+        }
+
+
+        available = {
+
+        }
+
+        completion_reward = {
+        }
+    }
+
 
 
 	### Rise to Power

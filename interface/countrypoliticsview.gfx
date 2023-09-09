@@ -571,6 +571,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/subideologies/right_taleisinism_group.png"
 	}
 	spriteType = {
+		name = "GFX_ideology_alaskan_nationalism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/alaskan_nationalism_group.png"
+	}
+	spriteType = {
 		name = "GFX_ideology_hoxhaism_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/hoxhaism_group.png"
 	}
@@ -690,6 +694,14 @@ spriteTypes = {
 		name = "GFX_ideology_tot_anarcho_communism_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/tot_anarcho_communism_group.png"
 	}
+	spriteType = {
+		name = "GFX_ideology_comrades_coast_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/comrades_coast_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_tot_illegalism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/tot_illegalism_group.png"
+	}
 	
 	spriteType = {
 		name = "GFX_ideology_anarcho_syndicalist_subtype"
@@ -774,6 +786,22 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_syn_cowboy_communalism_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/syn_cowboy_communalism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_syn_comrades_coast_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/syn_comrades_coast_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_syn_kleptocracy_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/syn_kleptocracy_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_syn_illegalism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/syn_illegalism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_syn_caponism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/syn_caponism_group.png"
 	}
 
 	spriteType = {
@@ -967,6 +995,22 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_anarcho_communism_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/anarcho_communism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_radsoc_comrades_coast_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/radsoc_comrades_coast_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_radsoc_popcom_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/radsoc_popcom_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_radsoc_kleptocracy_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/radsoc_kleptocracy_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_radsoc_caponism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/radsoc_caponism_group.png"
 	}
 	
 	spriteType = {

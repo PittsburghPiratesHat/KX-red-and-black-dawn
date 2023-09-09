@@ -20,8 +20,64 @@ SpriteTypes = {
 		texturefile = "gfx/interface/goals/TXS_coonskin.png"
 	}
 	SpriteType = {
+		name = "GFX_goal_ALA_Alaska2"
+		texturefile = "gfx/interface/goals/ALA_Alaska2.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_ALA_Alaska1"
+		texturefile = "gfx/interface/goals/ALA_Alaska1.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_NEE_Lovecraft3"
+		texturefile = "gfx/interface/goals/NEE_Lovecraft3.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_NEE_Lovecraft1"
+		texturefile = "gfx/interface/goals/NEE_Lovecraft1.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_NEE_Lovecraft2"
+		texturefile = "gfx/interface/goals/NEE_Lovecraft2.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_NEE_Lovecraft4"
+		texturefile = "gfx/interface/goals/NEE_Lovecraft4.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_NEE_Lovecraft5"
+		texturefile = "gfx/interface/goals/NEE_Lovecraft5.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_NEE_Lovecraft6"
+		texturefile = "gfx/interface/goals/NEE_Lovecraft6.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_ALA_Alaska3"
+		texturefile = "gfx/interface/goals/ALA_Alaska3.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_ALA_Alaska4"
+		texturefile = "gfx/interface/goals/ALA_Alaska4.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_ALA_Alaska5"
+		texturefile = "gfx/interface/goals/ALA_Alaska5.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_ALA_Alaska6"
+		texturefile = "gfx/interface/goals/ALA_Alaska6.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_ALA_end_americanism"
+		texturefile = "gfx/interface/goals/ALA_end_americanism.png"
+	}
+	SpriteType = {
 		name = "GFX_goal_TXS_lbj"
 		texturefile = "gfx/interface/goals/TXS_lbj.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_ALA_black_spot"
+		texturefile = "gfx/interface/goals/ALA_black_spot.png"
 	}
 	SpriteType = {
 		name = "GFX_goal_TXS_arrest"

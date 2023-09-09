@@ -213,6 +213,26 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = Alaska.130
+	title = Alaska.130.t
+	desc = Alaska.130.d
+	picture = GFX_ALA_Barons_2
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { # bella 
+		name = Alaska.130.a
+		remove_ideas = ALA_resource_barons
+		add_ideas = ALA_agenda
+		add_manpower = 5000
+		add_equipment_to_stockpile = {
+				type = infantry_equipment_1 amount = 5000 producer = ALA
+			}
+	}
+}
+
 
 country_event = {
 	id = Alaska.3
@@ -416,6 +436,40 @@ country_event = { # Wickersham's march
 				id = Alaska.7
 				days = 3
 		}
+	}
+}
+
+country_event = { # circle
+	id = Alaska.129
+	title = Alaska.129.t
+	desc = Alaska.129.d
+	picture = GFX_ALA_strike_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { # david
+		name = Alaska.129.a
+	}
+
+	option = { # erlich
+		name = Alaska.129.b
+		add_ideas = ALA_jewish_immigration_ended
+		remove_ideas = ALA_jewish_immigration
+	}
+}
+
+country_event = { # circle
+	id = Alaska.131
+	title = Alaska.131.t
+	desc = Alaska.131.d
+	picture = GFX_ALA_strike_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { # david
+		name = Alaska.131.a
 	}
 }
 
@@ -1028,46 +1082,46 @@ country_event = { # The Election
 			ALA_Hazel_Health_sec_mli
 		}
 	}
-}
 
-country_event = { # flag
-	id = Alaska.200
-	immediate = {log = "[GetDateText]: [Root.GetName]: event Alaska.15"}
-	title = Alaska.200.t
-	desc = Alaska.200.d
+	option = { 
+		name = Alaska.13.e
+		ai_chance = {
+			factor = 34
+			modifier = {
+				factor = 0
 
-	is_triggered_only = yes
-	
-	fire_only_once = yes
-			
-	option = { 
-		name = Alaska.200.a
-		ai_chance = {
-			factor = 34
+			}
 		}
-		add_political_power = 15
-	}
-	option = { 
-		name = Alaska.200.b
-		ai_chance = {
-			factor = 34
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
 		}
-		add_political_power = 15
-		hidden_effect = {
-		set_cosmetic_tag = ALA_polar_bear
+		set_party_name = {
+			ideology = national_populist
+			name = ALA_alaskan_independence_party_national_populist
+			long_name = ALA_alaskan_independence_party_national_populist_long
 		}
-	}
-	option = { 
-		name = Alaska.200.c
-		ai_chance = {
-			factor = 34
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.15
 		}
-		trigger = {
-		has_government = market_liberal
+		create_country_leader = {
+			name = "Joseph Vogler"
+			desc = ""
+			picture = "gfx/leaders/ALA/Vogler.png"
+			expire = "1965.1.1"
+			ideology = 	alaskan_nationalism_subtype
+			traits = { }
 		}
-		add_political_power = 15
-		hidden_effect = {
-		set_cosmetic_tag = ALA_polar_bear_liberatarian
+		drop_cosmetic_tag = yes
+			set_cosmetic_tag = ALA_AIP_cosmetic
+            set_country_flag = ALA_AIP
+		remove_all_ministers = yes
+		add_ideas = {
+			ALA_Joe_Vogler_hog_npo
+			ALA_Bob_Logan_for_npo
+			ALA_Paul_Boyko_sec_npo
+			ALA_Wally_Hickel_eco_npo
 		}
 	}
 }
@@ -2845,10 +2899,6 @@ country_event = { #Ayn Rand Invite?
 		}
 		add_political_power = 10
 		hidden_effect = {
-			country_event = {
-				id = Alaska.129
-				days = 43
-			}
 		}
 	}
 }
@@ -3528,6 +3578,8 @@ country_event = { # flavour event about jewish settlement
 
 	option = { # epic
 		name = Alaska.115.a
+		add_manpower = 25000
+		add_ideas = ALA_jewish_immigration
 		hidden_effect = {
 			country_event = {
 				id = Alaska.116
@@ -3901,87 +3953,6 @@ country_event = { # Tuberculosis Association
 				}
 			}
 		}
-	}
-}
-
-country_event = { # Lathrop Dead?
-	id = Alaska.129
-	immediate = {log = "[GetDateText]: [Root.GetName]: event Alaska.129"}
-	title = Alaska.129.t
-	desc = Alaska.129.d
-	picture = GFX_report_event_ALA_lathrop_dead
-
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-
-	option = { # He Dies
-		name = Alaska.129.a
-		hidden_effect = {
-			country_event = {
-				id = Alaska.131
-				days = 1
-			}
-		}
-	}
-	
-	option = { # He Survives
-		name = Alaska.129.b
-		hidden_effect = {
-			country_event = {
-				id = Alaska.130
-				days = 1
-			}
-		}
-	}
-}
-
-country_event = { # Lathrop Lives
-	id = Alaska.130
-	immediate = {log = "[GetDateText]: [Root.GetName]: event Alaska.130"}
-	title = Alaska.130.t
-	desc = Alaska.130.d
-	picture = GFX_report_event_ALA_lathrop_dead
-
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-
-	option = { # He Dies
-		name = Alaska.130.a
-		add_stability = 0.02
-	}
-}
-
-country_event = { # Lathrop Dead
-	id = Alaska.131
-	immediate = {log = "[GetDateText]: [Root.GetName]: event Alaska.131"}
-	title = Alaska.131.t
-	desc = Alaska.131.d
-	picture = GFX_report_event_ALA_volger
-
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-
-	option = { # He Dies
-		name = Alaska.131.a
-		add_stability = 0.02
-		create_country_leader = {
-			name = "Joseph E. Vogler"
-			desc = "POLITICS_VOLGER_DESC"
-			picture = "gfx/leaders/ALA/Portrait_Alaska_Joseph_Vogler.png"
-			expire = "1965.1.1"
-			ideology = libertarian_subtype
-			traits = {}
-		}
-		set_party_name = {
-			name = "AKIP"
-			long_name = "Alaska Independence Party"
-			ideology = market_liberal
-		}
-		remove_ideas = ALA_Joseph_E_Vogler_hog_mli
-		add_ideas = ALA_Joseph_E_Vogler_hog_mli
 	}
 }
 

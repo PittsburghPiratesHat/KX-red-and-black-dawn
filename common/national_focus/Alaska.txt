@@ -128,6 +128,268 @@ focus_tree = {
 		}
 	}
 
+	#vogler
+
+	focus = {
+		id = ALA_alaskan_nationialist_victory
+		icon = GFX_goal_ALA_Alaska1
+		cost = 5.00
+		available = {
+			has_government = national_populist
+			has_country_leader = {
+				ruling_only = yes
+				name = "Joseph Vogler"
+			}
+		}
+		bypass = {
+		}
+		x = 18
+		y = 9
+		prerequisite = { focus = ALA_internal_elections }
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			
+			add_political_power = 100
+			increase_ruling_party_popularity_by_5 = yes
+		}
+	}
+
+	focus = {
+		id = ALA_work_with_the_natives
+		icon = GFX_goal_ALA_Alaska3
+		cost = 5.00
+		available = {
+			has_government = national_populist
+			has_country_leader = {
+				ruling_only = yes
+				name = "Joseph Vogler"
+			}
+		}
+		bypass = {
+		}
+		x = 18
+		y = 10
+		prerequisite = { focus = ALA_alaskan_nationialist_victory }
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			
+			country_event = { id = Alaska.129 }
+			add_ideas = ALA_work_with_natives
+		}
+	}
+
+	focus = {
+		id = ALA_end_americanism
+		icon = GFX_goal_ALA_end_americanism
+		cost = 5.00
+		available = {
+			has_government = national_populist
+			has_country_leader = {
+				ruling_only = yes
+				name = "Joseph Vogler"
+			}
+		}
+		bypass = {
+		}
+		x = 18
+		y = 11
+		prerequisite = { focus = ALA_work_with_the_natives }
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			add_timed_idea = {
+			idea = ALA_end_americanism
+			days = 180
+		}
+		}
+	}
+
+	focus = {
+		id = ALA_a_free_and_independent_alaskan_nation
+		icon = GFX_goal_ALA_Alaska6
+		cost = 5.00
+		available = {
+			has_government = national_populist
+			has_country_leader = {
+				ruling_only = yes
+				name = "Joseph Vogler"
+			}
+		}
+		bypass = {
+		}
+		x = 18
+		y = 12
+		prerequisite = { focus = ALA_end_americanism }
+		prerequisite = { focus = ALA_implementing_our_political_agenda }
+		prerequisite = { focus = ALA_the_black_spot_of_the_northwest }
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			
+			add_political_power = 100
+			increase_ruling_party_popularity_by_5 = yes
+		}
+	}
+
+	focus = {
+		id = ALA_without_canada_and_japan
+		icon = GFX_goal_ALA_Alaska4
+		cost = 5.00
+		available = {
+			has_government = national_populist
+			has_country_leader = {
+				ruling_only = yes
+				name = "Joseph Vogler"
+			}
+		}
+		bypass = {
+		}
+		x = 20
+		y = 10
+		prerequisite = { focus = ALA_alaskan_nationialist_victory }
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			
+			remove_power_balance = { id = ALA_two_influences_balance }
+		}
+	}
+
+	focus = {
+		id = ALA_the_black_spot_of_the_northwest
+		icon = GFX_goal_ALA_black_spot
+		cost = 5.00
+		available = {
+			has_government = national_populist
+			has_country_leader = {
+				ruling_only = yes
+				name = "Joseph Vogler"
+			}
+		}
+		bypass = {
+		}
+		x = 20
+		y = 11
+		prerequisite = { focus = ALA_without_canada_and_japan }
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			            	1273 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			463 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ALA_creating_an_alaskan_national_identity
+		icon = GFX_goal_ALA_Alaska2
+		cost = 5.00
+		available = {
+			has_government = national_populist
+			has_country_leader = {
+				ruling_only = yes
+				name = "Joseph Vogler"
+			}
+		}
+		bypass = {
+		}
+		x = 16
+		y = 10
+		prerequisite = { focus = ALA_alaskan_nationialist_victory }
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			
+			country_event = { id = Alaska.132 }
+			add_ideas = ALA_the_alaskan_national_identity
+		}
+	}
+
+	focus = {
+		id = ALA_implementing_our_political_agenda
+		icon = GFX_goal_ALA_Alaska5
+		cost = 5.00
+		available = {
+			has_government = national_populist
+			has_country_leader = {
+				ruling_only = yes
+				name = "Joseph Vogler"
+			}
+		}
+		bypass = {
+		}
+		x = 16
+		y = 11
+		prerequisite = { focus = ALA_creating_an_alaskan_national_identity }
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			
+			country_event = { id = Alaska.130 }
+		}
+	}
+
 	#SocDem Path 
 	
 	focus = {
@@ -2425,10 +2687,6 @@ focus_tree = {
 			463 = { add_extra_state_shared_building_slots = 1 }
 			463 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
 			hidden_effect = {
-				country_event = {
-					id = Alaska.115
-					days = 42
-				}
 			}
 		}
 	}
@@ -4932,6 +5190,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			remove_ideas = ALA_jewish_immigration
+			add_ideas = ALA_jewish_immigration_ended
 			add_political_power= 50
 			add_research_slot = 1
 			country_event = REDAlaska.1

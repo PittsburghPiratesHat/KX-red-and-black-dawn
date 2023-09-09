@@ -274,12 +274,237 @@ focus_tree = {
     focus = {
 		id = BAS_aguirre
 		icon = GFX_BRY_Every_Hand_A_Rifle
-		x = 12
+		x = 10
 		y = 6
 		cost = 1
 
         prerequisite = {
 			focus = BAS_the_first_basque_election
+		}
+
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = BAS_zubigaray
+		icon = GFX_BRY_Every_Hand_A_Rifle
+		x = 15
+		y = 6
+		cost = 1
+
+        prerequisite = {
+			focus = BAS_the_first_basque_election
+		}
+
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+    focus = {
+		id = BAS_flipping_the_script
+		icon = GFX_BRY_Every_Hand_A_Rifle
+		x = 15
+		y = 7
+		cost = 1
+
+        prerequisite = {
+			focus = BAS_zubigaray
+		}
+
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = BAS_ban_the_spanish_language
+		icon = GFX_BRY_Every_Hand_A_Rifle
+		x = 15
+		y = 8
+		cost = 1
+
+        prerequisite = {
+			focus = BAS_flipping_the_script
+		}
+
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = BAS_destroy_anything_and_everything_spanish
+		icon = GFX_BRY_Every_Hand_A_Rifle
+		x = 15
+		y = 8
+		cost = 1
+
+        prerequisite = {
+			focus = BAS_flipping_the_script
+		}
+
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = BAS_seal_it_off
+		icon = GFX_BRY_Every_Hand_A_Rifle
+		x = 16
+		y = 9
+		cost = 1
+
+        prerequisite = {
+			focus = BAS_destroy_anything_and_everything_spanish
+		}
+
+		mutually_exclusive = {
+			focus = BAS_revenge
+		}
+
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = BAS_revenge
+		icon = GFX_BRY_Every_Hand_A_Rifle
+		x = 14
+		y = 9
+		cost = 1
+
+        prerequisite = {
+			focus = BAS_destroy_anything_and_everything_spanish
+		}
+
+		mutually_exclusive = {
+			focus = BAS_seal_it_off
+		}
+
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = BAS_basqueinization
+		icon = GFX_BRY_Every_Hand_A_Rifle
+		x = 12
+		y = 7
+		cost = 1
+
+        prerequisite = {
+			focus = BAS_zubigaray
+			focus = BAS_aguirre
+		}
+
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = BAS_revive_the_basque_language_and_culture
+		icon = GFX_BRY_Every_Hand_A_Rifle
+		x = 12
+		y = 8
+		cost = 1
+
+        prerequisite = {
+			focus = BAS_basqueinization
+		}
+
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = BAS_ban_syndicalism
+		icon = GFX_BRY_Every_Hand_A_Rifle
+		x = 12
+		y = 9
+		cost = 1
+
+        prerequisite = {
+			focus = BAS_revive_the_basque_language_and_culture
+		}
+
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = BAS_reconcile_non_dali_spanish
+		icon = GFX_BRY_Every_Hand_A_Rifle
+		x = 10
+		y = 7
+		cost = 1
+
+        prerequisite = {
+			focus = BAS_aguirre
+		}
+
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = BAS_moderate_basque_nationalism
+		icon = GFX_BRY_Every_Hand_A_Rifle
+		x = 10
+		y = 8
+		cost = 1
+
+        prerequisite = {
+			focus = BAS_reconcile_non_dali_spanish
+		}
+
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = BAS_a_free_basque_state
+		icon = GFX_BRY_Every_Hand_A_Rifle
+		x = 10
+		y = 9
+		cost = 1
+
+        prerequisite = {
+			focus = BAS_moderate_basque_nationalism
 		}
 
 		bypass = {

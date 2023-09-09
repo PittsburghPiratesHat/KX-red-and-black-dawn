@@ -747,6 +747,10 @@ ALA_LIC = {
 	color = rgb { 0 43 127 }
 	color_ui = rgb { 0 43 127 }
 }
+ALA_AIP_cosmetic = {
+	color = rgb { 15 32 75 }
+	color_ui = rgb { 15 32 75 }
+}
 ALA_LIC_USA = {
 	color = rgb { 0 43 127 }
 	color_ui = rgb { 0 43 127 }

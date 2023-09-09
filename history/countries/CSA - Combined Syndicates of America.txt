@@ -274,6 +274,62 @@ create_corps_commander = {# Evans Carlson
 	planning_skill = 2
 	logistics_skill = 3
 }
+create_corps_commander = {# parsons
+	name = "James Kelly Parsons"
+	desc = ""
+	portrait_path = "gfx/leaders/CSA/Portrait_CSA_James_Kelly_Parsons.png"
+	traits = {
+		war_hero
+		commando
+	}
+	skill = 3
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {# merriman
+	name = "Robert Hale Merriman"
+	desc = ""
+	portrait_path = "gfx/leaders/CSA/Portrait_CSA_Robert_Hale_Merriman.png"
+	traits = {
+		infantry_officer
+		politically_connected
+	}
+	skill = 1
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {# davis
+	name = "Ben Davis Sr"
+	desc = ""
+	portrait_path = "gfx/leaders/CSA/Portrait_CSA_Benjamin_Oliver_Davis_Sr.png"
+	traits = {
+		cavalry_officer
+		armor_officer
+	}
+	skill = 2
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {# johnson
+	name = "Campbell Johnson"
+	desc = ""
+	portrait_path = "gfx/leaders/CSA/Portrait_CSA_Campbell_Carrington_Johnson.png"
+	traits = {
+		infantry_officer
+		logistics_skill
+	}
+	skill = 1
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3
+}
 create_corps_commander = {# BBT
 	name = "Bill Bertolli"
 	desc = ""
