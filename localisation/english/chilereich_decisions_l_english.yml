@@ -26,8 +26,15 @@
  CHL_buy_bombers:0 "Buy Tactical Bombers"
  CHL_gun_dealing_buy_focus_tree_air:0 "Finance the Air Force"
  chl_military_salaries:0 "Military Salaries"
+ chl_un_payed_military_salaries:0 "Military Salaries"
+ 
+ 
+ CHL_fuck_you_peru_dec:0 "Occupation of Lima"
+ CHL_fuck_you_peru_dec_desc:0 "The moment finally arrived, the occupation occurred, we decided to never let Peru be free again, we can also destroy their cultural patrimony and exploit them like we desire"
+ CHL_puppet_lima_forever:0 "Fate of Lima"
  CHL_pay_the_salaries:0 "Pay Salaries"
-  
+ CHL_invade_the_fop:0 "Finish the FOP"
+ fuck_patgonic_commies:0 "Start Invasion" 
  CHL_drug_cartels:0 "§HEconomy§!" 
  CHL_drug_cartels_desc:0 "With our economical situation we requiere money to pay our funtionaries and ensure the loyalty of both the military and the political aparatus members.\nWe obtain §HMoney§! principally from the Central Bank, which in theory is for the use of the nation, but we decide how we can use it, that may be: golden statues, golden furnace, luxury goods and also for the nation in some cases\nWe need the §HMoney§! to pay salaries of the army and also get their military equipment in check.\nWe currently have:"
  #SPECIALE COST

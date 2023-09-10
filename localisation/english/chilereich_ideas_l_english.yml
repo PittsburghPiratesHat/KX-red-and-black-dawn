@@ -24,7 +24,7 @@
  CHL_resurrection_fatherland:0 "Fatherland Ressurection"
  CHL_IINAPRO:0 "INNAPRO"
  CHL_railways_nodes:0 "Santiago-Magallanes Railway Project"
- CHL_autarquia_chilena:0 "Chilean Autarky"
+ CHL_allende_autarky:0 "Chilean Autarky"
  CHL_falange_guard:0 "Tropas de Asalto"
  CHL_DINA_IDEA:0 "DINA"
  CHL_Caribineros_al_servicio:0 "Carabineros"
@@ -33,8 +33,8 @@
  CHL_Eugenesics:0 "Allendist Medicine"
  CHL_ss_buth_with_empanadas:0 "Vanguardist Falange"
  CHL_guerra_cultural:0 "Total Cultural War"
- CHL_frente_laboral:0 "FFNT"
- CHL_resurrecion_nacional:0 "National Refoundation"
+ CHL_FFNT:0 "FFNT"
+ CHL_resurrection_fatherland_allende:0 "National Refoundation"
  CHL_CORPORATIONISM:0 "Coporacionismo"
  CHL_allende_youth:0 "Allendist Youth"
  chl_camioneros_protesta:0 "Trucker Protests"
@@ -42,6 +42,7 @@
  payed_salaries_mil_chl:0 "Payed Military Salaries"
  chile_no_payed_salairen:0 "Capitulated"
  CHL_kulturkampfen_alende:0 "El Gran Conflicto"
+ CHL_LIMA_GET_REKT:0 "Chilean Covernment in Peru"
  #CUSTOM FLAG
  chl_allende_victory:0 "Allende Victory"
  CHL_couped_now:0 "Had been Couped"
@@ -53,6 +54,8 @@
  CHL_FLF:0 "Partido Revolucionario Permanente"
  CHL_DAVILA:0 "PSC"
  CHL_DAVILA_long:0 "Partido Sindicalista Chileno"
+ CHL_AOL:0 "AOL"
+ CHL_AOL_long:0 "Administración de Ocupación de Lima"
  
  #HIDDEN
  chile_chiloe_independent:0 "FRNAPA Propaganda"
