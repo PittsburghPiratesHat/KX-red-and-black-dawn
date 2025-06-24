@@ -37,6 +37,22 @@
  fuck_patgonic_commies:0 "Start Invasion" 
  CHL_drug_cartels:0 "§HEconomy§!" 
  CHL_drug_cartels_desc:0 "With our economical situation we requiere money to pay our funtionaries and ensure the loyalty of both the military and the political aparatus members.\nWe obtain §HMoney§! principally from the Central Bank, which in theory is for the use of the nation, but we decide how we can use it, that may be: golden statues, golden furnace, luxury goods and also for the nation in some cases\nWe need the §HMoney§! to pay salaries of the army and also get their military equipment in check.\nWe currently have:"
+ CHL_core_arg_pru:0 "Territorial Integration"
+ 
+ 
+ 
+ ptosi_chl_core:0 "Integrate Potosi"
+ la_paz_chl_core:0 "Integrate La Paz"
+ tarija_chl_core:0 "Integrate Tarija"
+ jujuy_chl_core:0 "Integrate Jujuy"
+ tucuman_chl_core:0 "Integrate Tucumán"
+ rioja_chl_core:0 "Re-Integrate Rioja"
+ mendoza_chl_core_now:0 "Re-Integrate Mendoza"
+ pampa_chl_core_now:0 "Re-Integrate La Pampa"
+ cordoba_chl_core:0 "Integrate La Pampa"
+ estero_chl_core:0 "Integrate Santiago del Estero"
+ 
+ 
  #SPECIALE COST
  
  CHL_INFANTE_infantry_equipment:0 "£manpower_texticon §Y600§!" 

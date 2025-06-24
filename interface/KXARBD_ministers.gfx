@@ -2568,6 +2568,11 @@ spriteTypes = {
 		name = "GFX_idea_BUL_Mirkhad_Vaisov_sec_pau"
 		texturefile = "gfx/interface/ministers/BUL/BUL_Mirkhad_Vaisov.png"
 	}
+
+	spriteType = {
+		name = "GFX_idea_BUL_dochev_hog_npo"
+		texturefile = "gfx/interface/ministers/BUL/BUL_dochev.png"
+	}
 	
 	spriteType = {
 		name = "GFX_idea_BUL_NS_Derzhavin_eco_tot"

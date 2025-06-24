@@ -1,0 +1,106 @@
+﻿capital = 454
+OOB = "PAL"
+set_naval_oob= ""
+starting_train_buffer = 2.0
+
+set_research_slots = 2
+set_technology = {
+	basic_train = 1
+	### Infantry ###
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	gw_artillery = 1
+}
+
+set_politics = {
+	ruling_party = paternal_autocrat
+	last_election = "1888.6.15"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	totalist = 0
+	syndicalist = 0
+	radical_socialist = 0
+	social_democrat = 0
+	social_liberal = 25
+	market_liberal = 15
+	social_conservative = 25
+	authoritarian_democrat = 0
+	paternal_autocrat = 35
+	national_populist = 0
+}
+
+add_ideas = {
+}
+country_lock_all_division_template = no
+
+
+create_country_leader = {
+	name = "empty"
+	picture = "gfx/leaders/PAL/Portrait_PAL_Radwan.png"
+	expire = "1965.1.1"
+	ideology = totalist_subtype
+}
+
+create_country_leader = {
+	name = "empty"
+	picture = "gfx/leaders/PAL/Portrait_PAL_Radwan.png"
+	expire = "1965.1.1"
+	ideology = syndicalist_subtype
+}
+
+create_country_leader = {
+	name = "empty"
+	picture = "gfx/leaders/PAL/Portrait_PAL_Radwan.png"
+	expire = "1965.1.1"
+	ideology = radical_socialist_subtype
+}
+
+create_country_leader = {
+	name = "empty"
+	picture = "gfx/leaders/PAL/Portrait_PAL_Nashashibi.png"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+}
+
+create_country_leader = {
+	name = "empty"
+	picture = "gfx/leaders/PAL/Portrait_PAL_Alami.png"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+}
+
+create_country_leader = {
+	name = "empty"
+	picture = "gfx/leaders/Generic/Portrait_Arabia_Generic_new_4.png"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+}
+
+create_country_leader = {
+	name = "empty"
+	picture = "gfx/leaders/PAL/Portrait_PAL_Esat_Sagay.png"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+}
+
+create_country_leader = {
+	name = "Moshe Dayan"
+	picture = "gfx/leaders/PAL/moshe.png"
+	expire = "1965.1.1"
+	ideology = junta_subtype
+}
+
+create_country_leader = {
+	name = "empty"
+	picture = "gfx/leaders/PAL/Portrait_PAL_al_Husayni.png"
+	expire = "1965.1.1"
+	ideology = national_populist_subtype
+}
+
+
+	

@@ -11,6 +11,5424 @@ focus_tree = {
 	default = no
 	continuous_focus_position = { x = 250 y = 1100 }
 
+	  ### Dayan flipped the table
+	focus = {
+		id = ZIO_Dayan_flipped_the_table
+		icon = GFX_goal_PAL_flipped 
+
+		cost = 5
+
+		available = {
+			has_country_leader = {
+				ruling_only = yes
+				name = "Moshe Dayan"
+			}
+			has_country_flag = ZIO_table_flipping
+		}
+
+		prerequisite = {
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 15
+		y = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = israel.57
+		}
+	}
+
+	focus = {
+		id = ZIO_raid_aresnals 
+		icon = GFX_goal_PAL_raid
+
+		cost = 5
+
+		available = {
+			has_country_leader = {
+				ruling_only = yes
+				name = "Moshe Dayan"
+			}
+			has_war_with = JBS
+		}
+
+		prerequisite = {
+			focus = ZIO_Dayan_flipped_the_table
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 17
+		y = 11
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_disarm_the_gendarmerie 
+		icon = GFX_goal_PAL_disarm
+
+		cost = 5
+
+		available = {
+			has_country_leader = {
+				ruling_only = yes
+				name = "Moshe Dayan"
+			}
+			NOT = {
+					has_war_with = JBS
+				}
+		}
+
+		prerequisite = {
+			focus = ZIO_Dayan_flipped_the_table
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 13
+		y = 11
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+                country_event = {
+                    id = israel.3   
+            } 
+		}
+	}
+
+	focus = {
+        id = ZIO_phone_the_diaspora
+        icon = GFX_goal_PAL_diaspora
+
+        cost = 5
+
+        available = {
+            has_country_leader = {
+                ruling_only = yes
+                name = "Moshe Dayan"
+            }
+            NOT = {
+                has_war_with = JBS
+            }
+        }
+
+        prerequisite = {
+            focus = ZIO_disarm_the_gendarmerie
+            focus = ZIO_raid_aresnals
+        }
+
+        mutually_exclusive = {
+        }
+
+        x = 15
+        y = 12
+
+        ai_will_do = {
+            factor = 4
+        }
+
+        available_if_capitulated = yes
+
+        completion_reward = {
+            country_event = israel.7
+			  hidden_effect = {
+            PAL = {
+                country_event = {
+                    id = israel.2
+                    days = 50
+                }  
+				country_event = {
+                    id = israel.51
+                    days = 150
+                } 
+				country_event = {
+                    id = israel.14
+                    days = 100
+                }   
+            }                
+        }
+        }
+      
+}
+
+	focus = {
+		id = ZIO_found_the_state_of_israel
+		icon = GFX_goal_PAL_found
+
+		cost = 5
+
+		available = {
+			has_country_leader = {
+				ruling_only = yes
+				name = "Moshe Dayan"
+			}
+			has_completed_focus = ZIO_phone_the_diaspora
+			NOT = {
+					has_war_with = JBS
+				}
+		}
+
+		prerequisite = {
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 9
+		y = 12
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = israel.5
+		}
+	}
+
+	focus = {
+		id = ZIO_dayan_consolidates_his_power
+		icon = GFX_goal_PAL_consolidate
+
+		cost = 5
+
+		bypass = {
+			has_country_flag = ZIO_dayan
+		}
+
+		available = {
+			has_country_flag = ZIO_dayan
+			has_country_leader = {
+				ruling_only = yes
+				name = "Moshe Dayan"
+			}
+		}
+
+		prerequisite = {
+			focus = ZIO_found_the_state_of_israel
+		}
+
+			mutually_exclusive = {
+			focus = ZIO_dayan_steps_down_and_calls_elections
+		}
+
+		x = 17
+		y = 14
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_dayan_steps_down_and_calls_elections
+		icon = GFX_goal_PAL_step
+
+		cost = 5
+
+		bypass = {
+			has_country_flag = ZIO_dayan_steps_down
+		}
+
+		available = {
+			has_country_flag = ZIO_dayan_steps_down
+			has_country_leader = {
+				ruling_only = yes
+				name = "Moshe Dayan"
+			}
+		}
+
+		prerequisite = {
+			focus = ZIO_found_the_state_of_israel
+		}
+
+		mutually_exclusive = {
+			focus = ZIO_dayan_consolidates_his_power
+		}
+
+		x = 1
+		y = 14
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_elections
+		icon = GFX_goal_PAL_Elections
+
+		cost = 5
+
+		available = {
+			has_completed_focus = ZIO_dayan_steps_down_and_calls_elections
+		}
+
+		prerequisite = {
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 10
+		y = 17
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = israel.6
+		}
+	}
+
+	focus = {
+		id = ZIO_democrats
+		icon = GFX_goal_PAL_dc
+
+		cost = 5
+        
+		bypass = {
+			has_country_flag = ZIO_democrats
+		}
+
+		available = {
+			has_country_flag = ZIO_democrats
+		}
+
+		prerequisite = {
+			focus = ZIO_elections
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 18
+		y = 18
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_radical
+		icon = GFX_goal_PAL_radical
+
+		cost = 5
+
+		bypass = {
+			has_country_flag = ZIO_radical
+		}
+
+		available = {
+			has_country_flag = ZIO_radical
+		}
+
+		prerequisite = {
+			focus = ZIO_elections
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 5
+		y = 18
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_three_men_enter
+		icon = GFX_goal_PAL_Three
+
+		cost = 5
+
+		available = {
+			has_country_flag = ZIO_radical
+		}
+
+		prerequisite = {
+			focus = ZIO_radical
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 5
+		y = 19
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = israel.15
+		}
+	}
+
+	focus = {
+		id = ZIO_choosing_our_president
+		icon = GFX_goal_PAL_choosing
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_democrats
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 18
+		y = 19
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = israel.4
+		}
+	}
+
+	focus = {
+		id = ZIO_Einstein_reluctantly_agrees_to_serve
+		icon = GFX_goal_PAL_einstein
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_choosing_our_president
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 15
+		y = 20
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_reject_jewish_supremacy
+		icon = GFX_goal_PAL_reject
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_Einstein_reluctantly_agrees_to_serve
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 15
+		y = 21
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_end_zionism
+		icon = GFX_goal_PAL_get_away_from_that_zionism_im_cuttin_it_down
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_reject_jewish_supremacy
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 15
+		y = 22
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = israel.50
+		}
+	}
+
+	focus = {
+		id = ZIO_embrace_moderate_socialism
+		icon = GFX_goal_PAL_moderate
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_end_zionism
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 15
+		y = 23
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_country_flag = ZIO_not_zionist_arab
+			set_country_flag = ZIO_military
+			set_country_flag = ZIO_economy
+			set_country_flag = ZIO_can_do_expansion
+			remove_ideas = pal_sectarian_divide
+		}
+	}
+
+	focus = {
+		id = ZIO_Wiesenthal_brings_peace
+		icon = GFX_goal_PAL_weisenthal
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_choosing_our_president
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 18
+		y = 20
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_reject_militarization
+		icon = GFX_goal_PAL_reject_militarization
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_Wiesenthal_brings_peace
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 18
+		y = 21
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_crackdown_on_anti_semitism_not_non_jews
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_reject_militarization
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 18
+		y = 22
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_a_peaceful_israel
+		icon = GFX_goal_PAL_peaceful
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_denounce_global_anti_semitism
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 18
+		y = 23
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_country_flag = ZIO_not_zionist_arab
+			set_country_flag = ZIO_military
+			set_country_flag = ZIO_economy
+			set_country_flag = ZIO_can_do_expansion
+			remove_ideas = pal_sectarian_divide
+		}
+	}
+
+	focus = {
+		id = ZIO_denounce_global_anti_semitism
+		icon = GFX_goal_PAL_denounce
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_crackdown_on_anti_semitism_not_non_jews
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 18
+		y = 22
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = israel.43
+		}
+	}
+
+	focus = {
+		id = ZIO_Allon_supports_the_people
+		icon = GFX_goal_PAL_allon
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_choosing_our_president
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 21
+		y = 20
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_reconcile_the_moderate_zionists
+		icon = GFX_goal_PAL_reconcile
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_Allon_supports_the_people
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 21
+		y = 21
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = israel.56
+		}
+	}
+
+	focus = {
+		id = ZIO_villanize_dayan
+		icon = GFX_goal_PAL_villanize
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_reconcile_the_moderate_zionists
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 21
+		y = 22
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = israel.52
+		}
+	}
+
+	focus = {
+		id = ZIO_deport_arabs
+		icon = GFX_goal_PAL_deport_arabs
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_villanize_dayan
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 21
+		y = 23
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_country_flag = ZIO_zionist_arab
+			set_country_flag = ZIO_military
+			set_country_flag = ZIO_economy
+			set_country_flag = ZIO_can_do_expansion
+			remove_ideas = pal_sectarian_divide
+			add_timed_idea = {
+			idea = pal_deportations
+			days = 145
+		}
+		}
+	}
+
+	focus = {
+		id = ZIO_the_stern_gang_consolidates_power
+		icon = GFX_goal_PAL_Stern
+
+		cost = 5
+
+		available = {
+			has_country_leader = { ruling_only = yes name = "Avraham Stern" }
+			has_country_flag = ZIO_Stern
+		}
+
+		prerequisite = {
+			focus = ZIO_three_men_enter
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = -1
+		y = 20
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_country_flag = ZIO_stern
+		}
+	}
+
+	focus = {
+		id = ZIO_fold_the_stern_gang_into_the_army
+		icon = GFX_goal_PAL_gang
+
+		cost = 5
+
+		available = {
+			has_country_leader = { ruling_only = yes name = "Avraham Stern" }
+		}
+
+		prerequisite = {
+			focus = ZIO_the_stern_gang_consolidates_power
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = -1
+		y = 21
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_adapt_mavakovsky_socialism
+		icon = GFX_goal_PAL_mayakovsky
+
+		cost = 5
+
+		available = {
+			has_country_leader = { ruling_only = yes name = "Avraham Stern" }
+		}
+
+		prerequisite = {
+			focus = ZIO_fold_the_stern_gang_into_the_army
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = -1
+		y = 22
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = israel.41
+		}
+	}
+
+	focus = {
+		id = ZIO_indoctrinate_the_people_into_the_true_master_race
+		icon = GFX_goal_PAL_indoctrinate
+
+		cost = 5
+
+		available = {
+			has_country_leader = { ruling_only = yes name = "Avraham Stern" }
+		}
+
+		prerequisite = {
+			focus = ZIO_adapt_mavakovsky_socialism
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = -1
+		y = 23
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_our_homeland_above_all
+		icon = GFX_goal_PAL_homeland
+
+		cost = 5
+
+		available = {
+			has_country_leader = { ruling_only = yes name = "Avraham Stern" }
+		}
+
+		prerequisite = {
+			focus = ZIO_indoctrinate_the_people_into_the_true_master_race
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = -1
+		y = 24
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_country_flag = ZIO_zionist_arab
+			set_country_flag = ZIO_military
+			set_country_flag = ZIO_economy
+			set_country_flag = ZIO_can_do_expansion
+			remove_ideas = pal_sectarian_divide
+		}
+	}
+
+
+	focus = {
+		id = ZIO_state_enforced_judiasm
+		icon = GFX_goal_PAL_enforced
+
+		cost = 5
+
+		available = {
+			OR = {
+					has_government = national_populist 
+						has_government = totalist
+				}
+		}
+
+		prerequisite = {
+			focus = ZIO_the_stern_gang_consolidates_power
+			focus = ZIO_the_nationalists_come_out_on_top
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 2
+		y = 21
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_destroy_everything_not_jewish
+		icon = GFX_goal_PAL_everything
+
+		cost = 5
+
+		available = {
+			OR = {
+					has_government = national_populist 
+						has_government = totalist
+				}
+		}
+
+		prerequisite = {
+			focus = ZIO_state_enforced_judiasm
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 2
+		y = 22
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = israel.11
+		}
+	}
+
+	focus = {
+		id = ZIO_seize_non_jewish_property_and_homes
+		icon = GFX_goal_PAL_seize
+
+		cost = 5
+
+		available = {
+			OR = {
+					has_government = national_populist 
+						has_government = totalist
+				}
+		}
+
+		prerequisite = {
+			focus = ZIO_destroy_everything_not_jewish
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 2
+		y = 23
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = israel.13
+		}
+	}
+
+	focus = {
+		id = ZIO_convert_or_else
+		icon = GFX_goal_PAL_convert
+
+		cost = 5
+
+		available = {
+			OR = {
+					has_government = national_populist 
+						has_government = totalist
+				}
+		}
+
+		prerequisite = {
+			focus = ZIO_seize_non_jewish_property_and_homes
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 2
+		y = 24
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_the_nationalists_come_out_on_top
+		icon = GFX_goal_PAL_Nationalists
+
+		cost = 5
+
+		available = {
+			has_country_leader = { ruling_only = yes name = "Avraham Tehomi" }
+			has_country_flag = ZIO_tehomi
+		}
+
+		prerequisite = {
+			focus = ZIO_three_men_enter
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 5
+		y = 20
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_country_flag = ZIO_stern
+		}
+	}
+
+	focus = {
+		id = ZIO_fold_the_irgun_into_the_army
+		icon = GFX_goal_PAL_Irgun
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_the_nationalists_come_out_on_top
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 5
+		y = 21
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_encourage_violence_against_non_jews
+		icon = GFX_goal_PAL_encourage
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_fold_the_irgun_into_the_army
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 5
+		y = 22
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_the_policy_of_total_defense
+		icon = GFX_goal_PAL_total
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_encourage_violence_against_non_jews
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 5
+		y = 23
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_the_great_replacement_at_the_barrel_of_a_gun
+		icon = GFX_goal_PAL_replacement
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_the_policy_of_total_defense
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 5
+		y = 24
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_country_flag = ZIO_zionist_arab
+			set_country_flag = ZIO_military
+			set_country_flag = ZIO_economy
+			set_country_flag = ZIO_can_do_expansion
+			remove_ideas = pal_sectarian_divide
+		}
+	}
+
+	focus = {
+		id = ZIO_living_space_for_the_jewish_people
+		icon = GFX_goal_PAL_living
+
+		cost = 5
+
+		available = {
+			has_country_flag = ZIO_can_do_expansion
+			OR = {
+	has_country_flag = ZIO_Stern
+	has_country_flag = ZIO_tehomi 
+	has_country_flag = ZIO_dayan
+has_country_flag = ZIO_napoleon
+				}
+		}
+
+		prerequisite = {
+		}
+
+		mutually_exclusive = {
+			focus = ZIO_join_the_reichspakt
+			focus = ZIO_turn_to_the_entente
+			focus = ZIO_jewish_isolationism
+		}
+
+		x = 20
+		y = 30
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_join_the_reichspakt
+		icon = GFX_goal_PAL_reichspakt
+
+		cost = 5
+
+		available = {
+			has_country_flag = ZIO_can_do_expansion
+			has_country_flag = ZIO_dayan
+			has_country_flag = ZIO_wiesenthal
+		}
+
+		prerequisite = {
+		}
+
+		mutually_exclusive = {
+			focus = ZIO_jewish_isolationism
+			focus = ZIO_turn_to_the_entente
+			focus = ZIO_living_space_for_the_jewish_people
+		}
+
+		x = 10
+		y = 30
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_grant_naval_access_to_the_germans
+		icon = GFX_goal_PAL_germannavalaccess
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_join_the_reichspakt
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 10
+		y = 31
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			diplomatic_relation = {
+	           country = GER
+	         relation = docking_rights
+			} 
+		}
+	}
+
+	focus = {
+		id = ZIO_naval_exercises_with_the_germans
+		icon = GFX_goal_PAL_germannaval
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_grant_naval_access_to_the_germans
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 11
+		y = 32
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			navy_experience = 100
+		}
+	}
+
+	focus = {
+		id = ZIO_import_german_weapons
+		icon = GFX_goal_PAL_germanweapons
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_grant_naval_access_to_the_germans
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 9
+		y = 32
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 10000
+				producer = GER
+			}
+		}
+	}
+
+	focus = {
+		id = ZIO_denounce_syndicalism
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_naval_exercises_with_the_british
+			focus = ZIO_naval_exercises_with_the_germans
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 13
+		y = 33
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_participate_in_the_liberation_of_europe
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_denounce_syndicalism
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 13
+		y = 34
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_jewish_isolationism
+		icon = GFX_goal_PAL_isolationaism
+
+		cost = 5
+
+		available = {
+			has_country_flag = ZIO_can_do_expansion
+			has_country_flag = ZIO_allon
+			has_country_flag = ZIO_einstein  
+			has_country_flag = ZIO_yellin
+		}
+
+		prerequisite = {
+		}
+
+		mutually_exclusive = {
+			focus = ZIO_join_the_reichspakt
+			focus = ZIO_turn_to_the_entente
+			focus = ZIO_living_space_for_the_jewish_people
+		}
+
+		x = 5
+		y = 30
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_fully_sealing_the_borders
+		icon = GFX_goal_PAL_sealing
+
+		cost = 5
+
+		available = {
+			NOT = {
+					has_completed_focus = ZIO_fortifying_the_borders
+				}
+		}
+
+		prerequisite = {
+			focus = ZIO_jewish_isolationism
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 5
+		y = 31
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			454 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			453 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ZIO_increase_the_eyes_on_the_border
+		icon = GFX_goal_PAL_increase
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_fully_sealing_the_borders
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 5
+		y = 32
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_a_peaceful_land_of_milk_and_honey
+		icon = GFX_goal_PAL_milk
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_increase_the_eyes_on_the_border
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 5
+		y = 33
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_turn_to_the_entente
+		icon = GFX_goal_PAL_entente
+
+		cost = 5
+
+		available = {
+			has_country_flag = ZIO_can_do_expansion
+			has_country_flag = ZIO_dayan
+			has_country_flag = ZIO_wiesenthal
+		}
+
+		prerequisite = {
+		}
+
+		mutually_exclusive = {
+			focus = ZIO_join_the_reichspakt
+			focus = ZIO_jewish_isolationism
+			focus = ZIO_living_space_for_the_jewish_people
+		}
+
+		x = 15
+		y = 30
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_grant_naval_access_to_the_british
+		icon = GFX_goal_PAL_britishacess
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_turn_to_the_entente
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 15
+		y = 31
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_import_weapons_from_the_british
+		icon = GFX_goal_PAL_britishweapons
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_grant_naval_access_to_the_british
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 17
+		y = 32
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_naval_exercises_with_the_british
+		icon = GFX_goal_PAL_britishnaval
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_grant_naval_access_to_the_british
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 15
+		y = 32
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_preemptive_strike_against_egypt
+		icon = GFX_goal_PAL_preemptive
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_living_space_for_the_jewish_people
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 17
+		y = 31
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			type = annex_everything
+			target = EGY
+			}
+		}
+	}
+
+	focus = {
+		id = ZIO_preparing_to_save_the_jews_in_arabia
+		icon = GFX_goal_PAL_preparing
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_living_space_for_the_jewish_people
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 19
+		y = 31
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			type = take_core_state
+			target = JBS
+			}
+					add_state_core = 995
+			add_state_core = 677
+			add_state_core = 1035
+			add_state_core = 994 
+		}
+	}
+
+	focus = {
+		id = ZIO_remove_the_turks_from_lebanon_and_southern_syria
+		icon = GFX_goal_PAL_turks
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_living_space_for_the_jewish_people
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 21
+		y = 31
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			type = take_core_state
+			target = TUR
+			}
+			add_state_core = 455
+			add_state_core = 992
+			add_state_core = 554
+			add_state_core = 553
+		}
+	}
+
+	focus = {
+		id = ZIO_take_the_suez_canal
+		icon = GFX_goal_PAL_canal
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_remove_the_turks_from_lebanon_and_southern_syria
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 21
+		y = 32
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = israel.10
+		}
+	}
+
+	focus = {
+		id = ZIO_a_naval_base_in_cyprus
+		icon = GFX_goal_PAL_cyprus
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_preparing_to_save_the_jews_in_arabia
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 19
+		y = 32
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			type = take_core_state
+			target = CYP
+			}
+			add_state_core = 183
+		}
+	}
+
+	focus = {
+		id = ZIO_greater_israel
+		icon = GFX_goal_PAL_greater
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_take_the_suez_canal
+		}
+
+		prerequisite = {
+			focus = ZIO_a_naval_base_in_cyprus
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 20
+		y = 33
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_rescue_the_ancient_iraqi_jewish_community
+		icon = GFX_goal_PAL_rescue
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_greater_israel
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 21
+		y = 34
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_state_core = 291
+			add_state_core = 676
+			add_state_core = 812
+			add_state_core = 349
+		}
+	}
+
+	focus = {
+		id = ZIO_rescue_the_african_jewish_commmunity
+		icon = GFX_goal_PAL_african
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_greater_israel
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 19
+		y = 34
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			type = annex_everything
+			target = ETH
+			}
+		}
+	}
+
+	focus = {
+		id = ZIO_the_new_judea
+		icon = GFX_goal_PAL_judea
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_rescue_the_african_jewish_commmunity
+		}
+
+		prerequisite = {
+			focus = ZIO_rescue_the_ancient_iraqi_jewish_community
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 20
+		y = 35
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_zionism_is_freed_from_the_bloody_hands
+		icon = GFX_goal_PAL_Yellin
+
+		cost = 5
+
+		available = {
+			has_country_leader = { ruling_only = yes name = "Nathan Yellin-Mor" }
+			has_country_flag = ZIO_yellin
+		}
+
+		prerequisite = {
+			focus = ZIO_three_men_enter
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 11
+		y = 20
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_coexist_with_the_arabs
+		icon = GFX_goal_PAL_coexist
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_zionism_is_freed_from_the_bloody_hands
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 11
+		y = 21
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			remove_ideas = pal_sectarian_divide
+			set_country_flag = ZIO_not_zionist_arab
+		}
+	}
+
+	focus = {
+		id = ZIO_seperate_the_lehi_from_the_stern_gang
+		icon = GFX_goal_PAL_seperate
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_coexist_with_the_arabs
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 11
+		y = 22
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_a_ceasefire_with_our_neighbors
+		icon = GFX_goal_PAL_ceasefire
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_seperate_the_lehi_from_the_stern_gang
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 11
+		y = 23
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_peace_in_the_holy_land
+		icon = GFX_goal_PAL_peace
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_a_ceasefire_with_our_neighbors
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 11
+		y = 24
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_country_flag = ZIO_not_zionist_arab
+			set_country_flag = ZIO_military
+			set_country_flag = ZIO_economy
+			set_country_flag = ZIO_can_do_expansion
+			remove_ideas = pal_sectarian_divide
+		}
+	}
+
+	focus = {
+		id = ZIO_speak_hebrew
+		icon = GFX_goal_PAL_hebrew
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_the_nationalists_come_out_on_top
+			focus = ZIO_zionism_is_freed_from_the_bloody_hands
+			focus = ZIO_the_stern_gang_consolidates_power
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 8
+		y = 21
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_disarm_arab_militants
+		icon = GFX_goal_PAL_militants
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_speak_hebrew
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 8
+		y = 22
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_unify_the_remaining_paramilitaries_and_fold_them_into_the_idf
+		icon = GFX_goal_PAL_remaining
+
+		cost = 5
+
+		available = {
+			OR = {
+					has_completed_focus = ZIO_seperate_the_lehi_from_the_stern_gang
+	                has_completed_focus = ZIO_fold_the_irgun_into_the_army				
+					has_completed_focus = ZIO_fold_the_stern_gang_into_the_army
+				}
+		}
+
+		prerequisite = {
+			focus = ZIO_disarm_arab_militants
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 8
+		y = 23
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_one_zionist_military
+		icon = GFX_goal_PAL_one
+
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = ZIO_unify_the_remaining_paramilitaries_and_fold_them_into_the_idf
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 8
+		y = 24
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_create_the_idf
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+			has_country_flag = ZIO_military
+		}
+
+		prerequisite = {
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 40
+		y = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = ZIO_ban_arabs_from_the_army
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+			has_country_flag = ZIO_zionist_arab
+		}
+
+		prerequisite = {
+			focus = ZIO_create_the_idf
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 41
+		y = 11
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_conscript_arabs
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {
+			has_country_flag = ZIO_not_zionist_arab		
+		}
+
+		prerequisite = {
+			focus = ZIO_create_the_idf
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 39
+		y = 11
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_siphon_talent_from_the_diaspora
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_conscript_arabs
+			focus = ZIO_ban_arabs_from_the_army
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 40
+		y = 12
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = israel.44
+		}
+	}
+
+	focus = {
+		id = ZIO_create_the_israeli_army
+		icon = GFX_goal_PAL_create
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_siphon_talent_from_the_diaspora
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 35
+		y = 13
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_create_the_israeli_air_force
+		icon = GFX_goal_PAL_air
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_siphon_talent_from_the_diaspora
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 40
+		y = 13
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_starting_up_the_israeli_economy
+		icon = GFX_goal_PAL_economy
+
+		cost = 5
+
+		available = {	
+			has_country_flag = ZIO_economy
+		}
+
+		prerequisite = {
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 47
+		y = 20
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			remove_ideas = pal_black_monday
+		}
+	}
+
+	focus = {
+		id = ZIO_expanding_our_dockyards
+		icon = GFX_goal_PAL_dockyards
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_starting_up_the_israeli_economy
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 51
+		y = 21
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			454 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			453 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ZIO_tariff_the_suez
+		icon = GFX_goal_PAL_tariff
+
+		cost = 5
+
+		available = {	
+			owns_state = 753
+		}
+
+		prerequisite = {
+			focus = ZIO_expanding_our_dockyards
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 54
+		y = 22
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_build_new_naval_bases
+		icon = GFX_goal_PAL_naval
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_expanding_our_dockyards
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 52
+		y = 22
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			453 = { 
+				add_building_construction = { 
+					type = naval_base 
+					level = 2 
+					province = 12049
+					instant_build = yes 
+				}
+			}
+			454 = { 
+				add_building_construction = { 
+					type = naval_base 
+					level = 2 
+					province = 4206
+					instant_build = yes 
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ZIO_fortify_the_coast
+		icon = GFX_goal_PAL_coast
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_build_new_naval_bases
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 52
+		y = 23
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			454 = { 
+				add_building_construction = { 
+					type = coastal_bunker
+					level = 2 
+					province = 4206
+					instant_build = yes 
+				}
+			}
+			453 = { 
+				add_building_construction = { 
+					type = coastal_bunker
+					level = 2 
+					province = 4206
+					instant_build = yes 
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ZIO_hire_foreign_naval_designers
+		icon = GFX_goal_PAL_hire
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_fortify_the_coast
+		}
+
+		prerequisite = {
+			focus = ZIO_subsidize_the_local_ship_construction_industry
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 51
+		y = 24
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_subsidize_the_fishing_industry
+		icon = GFX_goal_PAL_fishing
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_expanding_our_dockyards
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 49
+		y = 22
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_subsidize_the_local_ship_construction_industry
+		icon = GFX_goal_PAL_constructing
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_subsidize_the_fishing_industry
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 49
+		y = 23
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_scavange_ottoman_and_gendarmerie_weapons
+		icon = GFX_goal_PAL_scavange
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_starting_up_the_israeli_economy
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 41
+		y = 21
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 100
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 100
+				producer = AUS
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 300
+				producer = TUR
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 100
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 100
+				producer = CAN
+			}
+		}
+	}
+
+	focus = {
+		id = ZIO_build_our_first_international_airport
+		icon = GFX_goal_PAL_airport
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_starting_up_the_israeli_economy
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 45
+		y = 21
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			454 = { add_building_construction = { type = air_base level = 2 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = ZIO_the_language_question
+		icon = GFX_goal_PAL_language
+
+		cost = 5
+
+		available = {
+			NOT = {
+					has_completed_focus = ZIO_speak_hebrew
+				}
+		}
+
+		prerequisite = {
+			focus = ZIO_starting_up_the_israeli_economy
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 47
+		y = 21
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = israel.39
+		}
+	}
+
+	focus = {
+		id = ZIO_encourage_tourism
+		icon = GFX_goal_PAL_tourism
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_build_our_first_international_airport
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 45
+		y = 22
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_build_the_healthcare_and_science_industry
+		icon = GFX_goal_PAL_healthcare
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_create_and_standardize_the_shekil
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 43
+		y = 25
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_open_the_weizman_institute_of_science
+		icon = GFX_goal_PAL_institute
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_connecting_israel
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 47
+		y = 25
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+			add_ideas = pal_weizman
+		}
+	}
+
+	focus = {
+		id = ZIO_an_israeli_economic_miracle
+		icon = GFX_goal_PAL_miracle
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_open_the_weizman_institute_of_science
+		}
+
+		prerequisite = {
+			focus = ZIO_build_the_healthcare_and_science_industry
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 45
+		y = 26
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = pal_miracle
+		}
+	}
+
+	focus = {
+		id = ZIO_work_out_resource_import_deals
+		icon = GFX_goal_PAL_deals
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_encourage_tourism
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 43
+		y = 23
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_resource = { type = steel amount = 7 state = 454 }
+			add_resource = { type = aluminium amount = 10 state = 454 }
+			add_resource = { type = tungsten amount = 8 state = 454 }
+			add_resource = { type = oil amount = 7 state = 453 }
+			add_resource = { type = rubber amount = 10 state = 453 }
+			add_resource = { type = chromium amount = 8 state = 453 }
+		}
+	}
+
+	focus = {
+		id = ZIO_create_and_standardize_the_shekil
+		icon = GFX_goal_PAL_shekil
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_work_out_resource_import_deals
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 43
+		y = 24
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_build_civilian_industries
+		icon = GFX_goal_PAL_civilian
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_encourage_tourism
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 47
+		y = 23
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			454 = { add_extra_state_shared_building_slots = 2 }
+			454 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+			454 = { add_extra_state_shared_building_slots = 2 }
+			454 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+			453 = { add_extra_state_shared_building_slots = 2 }
+			453 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+			453 = { add_extra_state_shared_building_slots = 2 }
+			453 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = ZIO_connecting_israel
+		icon = GFX_goal_PAL_connecting
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_build_civilian_industries
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 47
+		y = 24
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { owns_state = 454 }
+				454 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			}
+			if = {
+				limit = { owns_state = 453 }
+				453 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			}
+		}
+	}
+
+	focus = {
+		id = ZIO_study_foreign_weapon_designs
+		icon = GFX_goal_PAL_study
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_scavange_ottoman_and_gendarmerie_weapons
+		}
+
+		mutually_exclusive = {
+			focus = ZIO_create_our_own
+		}
+
+		x = 42
+		y = 22
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = israel.9
+			add_tech_bonus = {
+				name = infantry_bonus
+				bonus = 1
+				uses = 2
+				category = infantry_weapons
+			}	
+		}
+	}
+
+	focus = {
+		id = ZIO_create_our_own
+		icon = GFX_goal_PAL_own
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_scavange_ottoman_and_gendarmerie_weapons
+		}
+
+		mutually_exclusive = {
+			focus = ZIO_study_foreign_weapon_designs
+		}
+
+		x = 40
+		y = 22
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1 amount = 5000 producer = PAL
+			}
+			add_tech_bonus = {
+				name = infantry_bonus
+				bonus = 1
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = ZIO_building_military_factories
+		icon = GFX_goal_PAL_building
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_create_our_own focus = ZIO_study_foreign_weapon_designs
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 41
+		y = 23
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			454 = { add_extra_state_shared_building_slots = 1 }
+			454 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			454 = { add_extra_state_shared_building_slots = 1 }
+			454 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			453 = { add_extra_state_shared_building_slots = 1 }
+			453 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			453 = { add_extra_state_shared_building_slots = 1 }
+			453 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			453 = { add_extra_state_shared_building_slots = 1 }
+			453 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = ZIO_expand_armament_production
+		icon = GFX_goal_PAL_armament
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_building_military_factories
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 41
+		y = 24
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_create_the_israeli_navy
+		icon = GFX_goal_PAL_navy
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_siphon_talent_from_the_diaspora
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 47
+		y = 13
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_shamir_plan
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_create_the_israeli_navy
+		}
+
+		mutually_exclusive = {
+			focus = ZIO_zak_plan
+			focus = ZIO_tankus_plan
+		}
+
+		x = 45
+		y = 14
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = naval_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_fleet_in_being
+			}
+		}
+	}
+
+	focus = {
+		id = ZIO_cooperation_with_the_air_force_and_army
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_shamir_plan
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 45
+		y = 15
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_focus_on_battleships
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_cooperation_with_the_air_force_and_army
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 45
+		y = 16
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_creating_an_israeli_marine_corp
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_cooperation_with_the_air_force_and_army
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 45
+		y = 16
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_study_foreign_cruiser_and_battleship_designs
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_creating_an_israeli_marine_corp
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 45
+		y = 17
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_tankus_plan
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_create_the_israeli_navy
+		}
+
+		mutually_exclusive = {
+			focus = ZIO_shamir_plan
+			focus = ZIO_zak_plan
+		}
+
+		x = 47
+		y = 14
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = naval_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_trade_interdiction
+			}
+		}
+	}
+
+	focus = {
+		id = ZIO_form_an_israeli_coast_guard
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_tankus_plan
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 47
+		y = 15
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_give_women_opportunities_in_the_navy
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_form_an_israeli_coast_guard
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 47
+		y = 16
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_focus_on_submarines
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_give_women_opportunities_in_the_navy
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 47
+		y = 17
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = ss_tech
+			}
+			set_technology = {
+									basic_submarine = 1
+									early_submarine = 1
+								}
+		}
+	}
+
+	focus = {
+		id = ZIO_zak_plan
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_create_the_israeli_navy
+		}
+
+		mutually_exclusive = {
+			focus = ZIO_tankus_plan
+			focus = ZIO_shamir_plan
+		}
+
+		x = 49
+		y = 14
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = naval_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_base_strike
+			}
+		}
+	}
+
+	focus = {
+		id = ZIO_seize_civilian_vessels
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_zak_plan
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 49
+		y = 15
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 134
+				producer = PAL
+			}
+		}
+	}
+
+	focus = {
+		id = ZIO_developing_light_cruisers
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_seize_civilian_vessels
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 49
+		y = 16
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_create_the_israeli_naval_academy
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_developing_light_cruisers
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 49
+		y = 17
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+
+	focus = {
+		id = ZIO_rubenfeld_plan
+		icon = GFX_goal_PAL_peewee
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_create_the_israeli_air_force
+		}
+
+		mutually_exclusive = {
+			focus = ZIO_amir_plan
+		}
+
+		x = 39
+		y = 14
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_standardizing_the_language_for_pilots
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_rubenfeld_plan
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 39
+		y = 15
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_encourage_women_and_foreign_volunteers_to_sign_up
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_standardizing_the_language_for_pilots
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 39
+		y = 16
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_rule = { can_generate_female_aces = yes }
+			add_manpower = 15000
+		}
+	}
+
+	focus = {
+		id = ZIO_israel_rules_the_sky
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_encourage_women_and_foreign_volunteers_to_sign_up
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 39
+		y = 17
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_amir_plan
+		icon = GFX_goal_PAL_amir
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_create_the_israeli_air_force
+		}
+
+		mutually_exclusive = {
+			focus = ZIO_rubenfeld_plan
+		}
+
+		x = 41
+		y = 14
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_coordinate_with_the_army
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_amir_plan
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 41
+		y = 15
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_focus_on_ground_support
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_coordinate_with_the_army
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 41
+		y = 16
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_increase_investment_into_radar_tech
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_focus_on_ground_support
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 41
+		y = 17
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_create_mossad
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_create_the_israeli_army
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 37
+		y = 14
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = pal_mossad
+		}
+	}
+
+	focus = {
+		id = ZIO_dori_plan
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_create_the_israeli_army
+		}
+
+		mutually_exclusive = {
+			focus = ZIO_go_with_ben_gurion
+			focus = ZIO_go_with_dayan
+			focus = ZIO_the_zionist_plan
+		}
+
+		x = 35
+		y = 15
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_expand_israeli_tank_production
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_dori_plan
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 35
+		y = 16
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_study_german_blitzkreig_tactics
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_expand_israeli_tank_production
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 35
+		y = 17
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_adapt_our_vehicles_for_our_terrain
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_study_german_blitzkreig_tactics
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 35
+		y = 18
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_go_with_ben_gurion
+		icon = GFX_goal_PAL_go_with_ben
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_create_the_israeli_army
+		}
+
+		mutually_exclusive = {
+			focus = ZIO_the_zionist_plan
+			focus = ZIO_dori_plan
+			focus = ZIO_go_with_dayan
+		}
+
+		x = 31
+		y = 15
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_the_zionist_plan
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+			has_country_flag = ZIO_zionist_arab
+		}
+
+		prerequisite = {
+			focus = ZIO_create_the_israeli_army
+		}
+
+		mutually_exclusive = {
+			focus = ZIO_go_with_ben_gurion
+			focus = ZIO_dori_plan
+			focus = ZIO_go_with_dayan
+		}
+
+		x = 33
+		y = 15
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = pal_zioplan
+			add_doctrine_cost_reduction = {
+				name = COR_War_Of_Numbers
+				cost_reduction = 0.5
+				uses = 1
+				category = cat_mass_assault
+			}
+		}
+	}
+
+	focus = {
+		id = ZIO_use_the_arabs_and_christians_as_cannon_fodder
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_the_zionist_plan
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 33
+		y = 16
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_creating_an_israeli_home_guard
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_use_the_arabs_and_christians_as_cannon_fodder
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 33
+		y = 17
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_mass_conscription_of_jews
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_creating_an_israeli_home_guard
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 33
+		y = 18
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_finalize_the_unified_israeli_army
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_go_with_ben_gurion
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 31
+		y = 16
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_prioritze_israeli_artillery
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_finalize_the_unified_israeli_army
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 31
+		y = 17
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_fortifying_the_borders
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+			NOT = {
+					has_completed_focus = ZIO_fully_sealing_the_borders
+				}
+		}
+
+		prerequisite = {
+			focus = ZIO_prioritze_israeli_artillery
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 31
+		y = 18
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			454 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			453 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ZIO_go_with_dayan
+		icon = GFX_goal_PAL_go_with_dayan
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_create_the_israeli_army
+		}
+
+		mutually_exclusive = {
+			focus = ZIO_go_with_ben_gurion
+			focus = ZIO_the_zionist_plan
+			focus = ZIO_dori_plan
+		}
+
+		x = 29
+		y = 15
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_expand_israeli_special_forces
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_go_with_dayan
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 29
+		y = 16
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_training_for_harsh_conditions
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_expand_israeli_special_forces
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 29
+		y = 17
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_planning_our_battles_from_every_angle
+		icon = GFX_goal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_training_for_harsh_conditions
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 29
+		y = 18
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_dayan_stays
+		icon = GFX_goal_PAL_stays
+
+		cost = 5
+
+		bypass = {
+			has_country_flag = ZIO_dayan_consolidates_his_power
+		}
+
+		available = {	
+			has_completed_focus = ZIO_dayan_consolidates_his_power
+		}
+
+		prerequisite = {
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 25
+		y = 16
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_country_flag = ZIO_dayan
+		}
+	}
+
+	focus = {
+		id = ZIO_tolerate_the_arabs
+		icon = GFX_goal_PAL_tolerate
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_dayan_stays
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 24
+		y = 17
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			remove_ideas = pal_sectarian_divide
+			set_country_flag = ZIO_not_zionist_arab
+		}
+	}
+
+	focus = {
+		id = ZIO_jewish_culture_without_forced_judiasm
+		icon = GFX_goal_PAL_culture
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_dayan_stays
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 26
+		y = 17
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_rein_in_radical_zionists
+		icon = GFX_goal_PAL_rein
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_jewish_culture_without_forced_judiasm
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 26
+		y = 18
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			event = israel.32
+		}
+	}
+
+	focus = {
+		id = ZIO_remove_the_flag_from_the_temple_mount
+		icon = GFX_goal_PAL_remove
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_tolerate_the_arabs
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 24
+		y = 18
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = israel.12
+		}
+	}
+
+	focus = {
+		id = ZIO_reorganize_the_army
+		icon = GFX_goal_PAL_reorganize
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_remove_the_flag_from_the_temple_mount
+		}
+
+		prerequisite = {
+			focus = ZIO_rein_in_radical_zionists
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 25
+		y = 19
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_country_flag = ZIO_military
+			set_country_flag = ZIO_economy
+			set_country_flag = ZIO_can_do_expansion
+			country_event = israel.8
+		}
+	}
+
+	focus = {
+		id = ZIO_I_could_be_napoleon
+		icon = GFX_goal_PAL_napoleon
+
+		cost = 5
+
+		available = {	
+			has_country_flag = ZIO_napoleon
+		}
+
+		prerequisite = {
+			focus = ZIO_reorganize_the_army
+		}
+
+		mutually_exclusive = {
+			focus = ZIO_I_will_stay_israeli
+		}
+
+		x = 26
+		y = 20
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_I_will_stay_israeli
+		icon = GFX_goal_PAL_nonapoleon
+
+		cost = 5
+
+		available = {	
+			has_country_flag = ZIO_junta
+		}
+
+		prerequisite = {
+			focus = ZIO_reorganize_the_army
+		}
+
+		mutually_exclusive = {
+			focus = ZIO_I_could_be_napoleon
+		}
+
+		x = 24
+		y = 20
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_cementing_the_power_of_the_idf_junta
+		icon = GFX_goal_PAL_cementing
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_I_will_stay_israeli
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 24
+		y = 21
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_stick_with_what_we_have
+		icon = GFX_goal_PAL_stick
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_cementing_the_power_of_the_idf_junta
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 25
+		y = 22
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_destroy_the_remaining_radical_zionist_paramilitaries
+		icon = GFX_goal_PAL_destroy 
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_stick_with_what_we_have
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 25
+		y = 23
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			manpower = -5000
+			add_popularity = { ideology = national_populist popularity = -0.03 }
+			add_popularity = { ideology = totalist popularity = -0.03 }
+		}
+	}
+
+	focus = {
+		id = ZIO_the_navy_and_air_force_are_equal_to_the_army
+		icon = GFX_goal_PAL_equal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_cementing_the_power_of_the_idf_junta
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 23
+		y = 22
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_deal_with_the_democrats
+		icon = GFX_goal_PAL_deal
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_the_navy_and_air_force_are_equal_to_the_army
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 23
+		y = 23
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_end_allon
+		icon = GFX_goal_PAL_end
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_deal_with_the_democrats
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 23
+		y = 24
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = israel.59
+		}
+	}
+
+	focus = {
+		id = ZIO_sign_a_non_aggression_pact_with_the_egyptians
+		icon = GFX_goal_PAL_non
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_end_allon
+		}
+
+		prerequisite = {
+			focus = ZIO_support_the_people
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 24
+		y = 25
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_the_idf_is_israel
+		icon = GFX_goal_PAL_is
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_sign_a_non_aggression_pact_with_the_egyptians
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 24
+		y = 26
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = pal_idf_is
+		}
+	}
+
+	focus = {
+		id = ZIO_support_the_people
+		icon = GFX_goal_PAL_support
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_destroy_the_remaining_radical_zionist_paramilitaries
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 25
+		y = 24
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_adapt_the_napoleonic_code_to_our_situation
+		icon = GFX_goal_PAL_code
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_I_could_be_napoleon
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 35
+		y = 22
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_the_idf_is_the_new_grand_armie
+		icon = GFX_goal_PAL_grand
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_adapt_the_napoleonic_code_to_our_situation
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 35
+		y = 23
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_keep_israeli_culture
+		icon = GFX_goal_PAL_keep
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_the_idf_is_the_new_grand_armie
+		}
+
+		mutually_exclusive = {
+			focus = ZIO_decouple_religious_discrimination_from_french_culture
+		}
+
+		x = 37
+		y = 24
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_decouple_religious_discrimination_from_french_culture
+		icon = GFX_goal_PAL_decouple
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_the_idf_is_the_new_grand_armie
+		}
+
+		mutually_exclusive = {
+			focus = ZIO_keep_israeli_culture
+		}
+
+		x = 33
+		y = 24
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_destroy_our_albion
+		icon = GFX_goal_PAL_albion
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_keep_israeli_culture
+			focus = ZIO_decouple_religious_discrimination_from_french_culture
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 35
+		y = 25
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_destroy_our_russia
+		icon = GFX_goal_PAL_russia
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_destroy_our_albion
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 35
+		y = 26
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_continuing_the_napoleonic_dream
+		icon = GFX_goal_PAL_dream
+
+		cost = 5
+
+		available = {	
+			has_completed_focus = ZIO_decouple_religious_discrimination_from_french_culture
+		}
+
+		prerequisite = {
+			focus = ZIO_destroy_our_russia
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 35
+		y = 27
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_two_cults_of_personality
+		icon = GFX_goal_PAL_two
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_continuing_the_napoleonic_dream
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 35
+		y = 28
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_the_new_french_empire
+		icon = GFX_goal_PAL_empire
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_the_new_spanish_campaign
+		}
+
+		prerequisite = {
+			focus = ZIO_take_our_true_homeland_back
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 35
+		y = 30
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_the_new_spanish_campaign
+		icon = GFX_goal_PAL_spanish
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_two_cults_of_personality
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 33
+		y = 29
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_take_our_true_homeland_back
+		icon = GFX_goal_PAL_french
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_two_cults_of_personality
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 37
+		y = 29
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	
+
 ### Political & Economic Part ###
 	focus = {
 		id = MOJ_1936_Census
@@ -44,6 +5462,10 @@ focus_tree = {
 		}
 
 		available = {
+			has_country_leader = {
+				ruling_only = yes
+				name = "Esat Sagay"
+			}
 			has_idea = pal_black_monday
 		}
 
@@ -74,2435 +5496,6 @@ focus_tree = {
 				remove_idea = pal_black_monday
 				add_idea = pal_black_monday2
 			}
-		}
-	}
-
-    ### Dayan flipped the table
-	focus = {
-		id = MOJ_Dayan_flipped_the_table
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-			has_country_leader = {
-				ruling_only = yes
-				name = "Moshe Dayan"
-			}
-		}
-
-		prerequisite = {
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 15
-		y = 10
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_raid_aresnals 
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-			has_country_leader = {
-				ruling_only = yes
-				name = "Moshe Dayan"
-			}
-			has_war_with = JBS
-		}
-
-		prerequisite = {
-			focus = MOJ_Dayan_flipped_the_table
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 17
-		y = 11
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_disarm_the_gendarmerie 
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-			has_country_leader = {
-				ruling_only = yes
-				name = "Moshe Dayan"
-			}
-			NOT = {
-					has_war_with = JBS
-				}
-		}
-
-		prerequisite = {
-			focus = MOJ_Dayan_flipped_the_table
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 13
-		y = 11
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			country_event = {
-				id = palcon.20
-				days = 0
-				}
-		}
-	}
-
-	focus = {
-		id = MOJ_phone_the_diaspora
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-			has_country_leader = {
-				ruling_only = yes
-				name = "Moshe Dayan"
-			}
-			NOT = {
-					has_war_with = JBS
-				}
-		}
-
-		prerequisite = {
-			focus = MOJ_disarm_the_gendarmerie
-			focus = MOJ_raid_aresnals
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 15
-		y = 12
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_found_the_state_of_israel
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-			has_country_leader = {
-				ruling_only = yes
-				name = "Moshe Dayan"
-			}
-			has_completed_focus = MOJ_phone_the_diaspora
-			NOT = {
-					has_war_with = JBS
-				}
-		}
-
-		prerequisite = {
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 9
-		y = 12
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_dayan_consolidates_his_power
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-			has_country_leader = {
-				ruling_only = yes
-				name = "Moshe Dayan"
-			}
-		}
-
-		prerequisite = {
-			focus = MOJ_found_the_state_of_israel
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 17
-		y = 14
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_dayan_steps_down_and_calls_elections
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-			has_country_leader = {
-				ruling_only = yes
-				name = "Moshe Dayan"
-			}
-		}
-
-		prerequisite = {
-			focus = MOJ_found_the_state_of_israel
-		}
-
-		mutually_exclusive = {
-			focus = MOJ_dayan_consolidates_his_power
-		}
-
-		x = 1
-		y = 14
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_elections
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-			has_completed_focus = MOJ_dayan_steps_down_and_calls_elections
-		}
-
-		prerequisite = {
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 10
-		y = 17
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_democrats
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = MOJ_elections
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 18
-		y = 18
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_radical
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-			has_country_leader = "Avraham Stern" 
-		}
-
-		prerequisite = {
-			focus = MOJ_elections
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 5
-		y = 18
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_three_men_enter
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-			has_country_leader = "Avraham Stern" 
-		}
-
-		prerequisite = {
-			focus = MOJ_radical
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 5
-		y = 19
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_choosing_our_president
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = MOJ_democrats
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 18
-		y = 19
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_Einstein_reluctantly_agrees_to_serve
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = MOJ_choosing_our_president
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 15
-		y = 20
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_reject_jewish_supremacy
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = MOJ_Einstein_reluctantly_agrees_to_serve
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 15
-		y = 21
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_end_zionism
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = MOJ_reject_jewish_supremacy
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 15
-		y = 22
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_embrace_moderate_socialism
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = MOJ_end_zionism
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 15
-		y = 23
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_Wiesenthal_brings_peace
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = MOJ_choosing_our_president
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 18
-		y = 20
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_reject_militarization
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = MOJ_Wiesenthal_brings_peace
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 18
-		y = 21
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_crackdown_on_anti_semitism_not_non_jews
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = MOJ_reject_militarization
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 18
-		y = 22
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_a_peaceful_israel
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = MOJ_denounce_global_anti_semitism
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 18
-		y = 23
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_denounce_global_anti_semitism
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = MOJ_crackdown_on_anti_semitism_not_non_jews
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 18
-		y = 22
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_Allon_supports_the_people
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = MOJ_choosing_our_president
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 21
-		y = 20
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_reconcile_the_moderate_zionists
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = MOJ_Allon_supports_the_people
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 21
-		y = 21
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_villanize_dayan
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = MOJ_reconcile_the_moderate_zionists
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 21
-		y = 22
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_deport_arabs
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = MOJ_villanize_dayan
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 21
-		y = 23
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_the_stern_gang_consolidates_power
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-			has_country_leader = "Avraham Stern" 
-		}
-
-		prerequisite = {
-			focus = MOJ_three_men_enter
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = -1
-		y = 20
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_fold_the_stern_gang_into_the_army
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-			has_country_leader = "Avraham Stern" 
-		}
-
-		prerequisite = {
-			focus = MOJ_the_stern_gang_consolidates_power
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = -1
-		y = 21
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_adapt_mavakovsky_socialism
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-			has_country_leader = "Avraham Stern" 
-		}
-
-		prerequisite = {
-			focus = MOJ_fold_the_stern_gang_into_the_army
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = -1
-		y = 22
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_indoctrinate_the_people_into_the_true_master_race
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-			has_country_leader = "Avraham Stern" 
-		}
-
-		prerequisite = {
-			focus = MOJ_adapt_mavakovsky_socialism
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = -1
-		y = 23
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_our_homeland_above_all
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-			has_country_leader = "Avraham Stern" 
-		}
-
-		prerequisite = {
-			focus = MOJ_indoctrinate_the_people_into_the_true_master_race
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = -1
-		y = 24
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-
-	focus = {
-		id = MOJ_state_enforced_judiasm
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-			has_government = totalist
-			has_government = national_populist 
-		}
-
-		prerequisite = {
-			focus = MOJ_the_stern_gang_consolidates_power
-			focus = MOJ_the_nationalists_come_out_on_top
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 2
-		y = 21
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_destroy_everything_not_jewish
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-			has_government = totalist
-			has_government = national_populist 
-		}
-
-		prerequisite = {
-			focus = MOJ_state_enforced_judiasm
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 2
-		y = 22
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_seize_non_jewish_property_and_homes
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-			has_government = totalist
-			has_government = national_populist 
-		}
-
-		prerequisite = {
-			focus = MOJ_destroy_everything_not_jewish
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 2
-		y = 23
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_convert_or_else
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-			has_government = totalist
-			has_government = national_populist 
-		}
-
-		prerequisite = {
-			focus = MOJ_seize_non_jewish_property_and_homes
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 2
-		y = 24
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_the_nationalists_come_out_on_top
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = MOJ_three_men_enter
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 5
-		y = 20
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_fold_the_irgun_into_the_army
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = MOJ_the_nationalists_come_out_on_top
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 5
-		y = 21
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_encourage_violence_against_non_jews
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = MOJ_fold_the_irgun_into_the_army
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 5
-		y = 22
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_the_policy_of_total_defense
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = MOJ_encourage_violence_against_non_jews
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 5
-		y = 23
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_the_great_replacement_at_the_barrel_of_a_gun
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = MOJ_the_policy_of_total_defense
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 5
-		y = 24
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_living_space_for_the_jewish_people
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-		}
-
-		prerequisite = {
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 20
-		y = 30
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_preemptive_strike_against_egypt
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = MOJ_living_space_for_the_jewish_people
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 19
-		y = 31
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_remove_the_turks_from_lebanon_and_southern_syria
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = MOJ_living_space_for_the_jewish_people
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 21
-		y = 31
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_take_the_suez_canal
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = MOJ_remove_the_turks_from_lebanon_and_southern_syria
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 21
-		y = 32
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_a_naval_base_in_cyprus
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = MOJ_preemptive_strike_against_egypt
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 19
-		y = 32
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_greater_israel
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = MOJ_take_the_suez_canal
-		}
-
-		prerequisite = {
-			focus = MOJ_a_naval_base_in_cyprus
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 20
-		y = 33
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_zionism_is_freed_from_the_bloody_hands
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = MOJ_three_men_enter
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 11
-		y = 20
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_coexist_with_the_arabs
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = MOJ_zionism_is_freed_from_the_bloody_hands
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 11
-		y = 21
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_seperate_the_lehi_from_the_stern_gang
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = MOJ_coexist_with_the_arabs
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 11
-		y = 22
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_a_ceasefire_with_our_neighbors
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = MOJ_seperate_the_lehi_from_the_stern_gang
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 11
-		y = 23
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_peace_in_the_holy_land
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = MOJ_a_ceasefire_with_our_neighbors
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 11
-		y = 24
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_speak_hebrew
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = MOJ_the_nationalists_come_out_on_top
-			focus = MOJ_zionism_is_freed_from_the_bloody_hands
-			focus = MOJ_the_stern_gang_consolidates_power
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 8
-		y = 21
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_disarm_arab_militants
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = MOJ_speak_hebrew
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 8
-		y = 22
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_unify_the_remaining_paramilitaries_and_fold_them_into_the_idf
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-			OR = {
-					has_completed_focus = MOJ_seperate_the_lehi_from_the_stern_gang
-	                has_completed_focus = MOJ_fold_the_irgun_into_the_army				
-					has_completed_focus = MOJ_fold_the_stern_gang_into_the_army
-				}
-		}
-
-		prerequisite = {
-			focus = MOJ_disarm_arab_militants
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 8
-		y = 23
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_one_zionist_military
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = MOJ_unify_the_remaining_paramilitaries_and_fold_them_into_the_idf
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 8
-		y = 24
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_create_the_idf
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {	
-			NOT = {
-					has_idea = PAL_MOJ
-				}
-			has_completed_focus = MOJ_phone_the_diaspora
-			OR = {
-					has_completed_focus = MOJ_dayan_consolidates_his_power
-				}		
-					has_completed_focus = MOJ_dayan_steps_down_and_calls_elections
-		}
-
-		prerequisite = {
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 40
-		y = 10
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-		focus = {
-		id = MOJ_ban_arabs_from_the_army
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {	
-			OR = {
-			has_government = totalist
-			has_government = national_populist
-			has_government = radical_socialist
-			has_completed_focus = MOJ_elections
-			has_completed_focus = MOJ_radical
-			}
-			NOT = {
-					has_completed_focus = MOJ_dayan_consolidates_his_power
-				}
-		}
-
-		prerequisite = {
-			focus = MOJ_create_the_idf
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 41
-		y = 11
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_conscript_arabs
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {
-			OR = {
-									has_completed_focus = MOJ_elections
-				has_government = social_democrat
-				has_government = paternal_autocrat
-					has_completed_focus = MOJ_dayan_consolidates_his_power
-				}		
-		}
-
-		prerequisite = {
-			focus = MOJ_create_the_idf
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 39
-		y = 11
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_siphon_talent_from_the_diaspora
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {	
-		}
-
-		prerequisite = {
-			focus = MOJ_conscript_arabs
-			focus = MOJ_ban_arabs_from_the_army
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 40
-		y = 12
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_create_the_israeli_army
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {	
-		}
-
-		prerequisite = {
-			focus = MOJ_siphon_talent_from_the_diaspora
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 35
-		y = 13
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_dayan_stays
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {	
-			has_completed_focus = MOJ_dayan_consolidates_his_power
-		}
-
-		prerequisite = {
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 25
-		y = 16
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_tolerate_the_arabs
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {	
-		}
-
-		prerequisite = {
-			focus = MOJ_dayan_stays
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 24
-		y = 17
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_jewish_culture_without_forced_judiasm
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {	
-		}
-
-		prerequisite = {
-			focus = MOJ_dayan_stays
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 26
-		y = 17
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_rein_in_radical_zionists
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {	
-		}
-
-		prerequisite = {
-			focus = MOJ_jewish_culture_without_forced_judiasm
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 26
-		y = 18
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_remove_the_flag_from_the_temple_mount
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {	
-		}
-
-		prerequisite = {
-			focus = MOJ_tolerate_the_arabs
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 24
-		y = 18
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_reorganize_the_army
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {	
-		}
-
-		prerequisite = {
-			focus = MOJ_remove_the_flag_from_the_temple_mount
-		}
-
-		prerequisite = {
-			focus = MOJ_rein_in_radical_zionists
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 25
-		y = 19
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_I_could_be_napoleon
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {	
-		}
-
-		prerequisite = {
-			focus = MOJ_reorganize_the_army
-		}
-
-		mutually_exclusive = {
-			focus = MOJ_I_will_stay_israeli
-		}
-
-		x = 26
-		y = 20
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_I_will_stay_israeli
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {	
-		}
-
-		prerequisite = {
-			focus = MOJ_reorganize_the_army
-		}
-
-		mutually_exclusive = {
-			focus = MOJ_I_could_be_napoleon
-		}
-
-		x = 24
-		y = 20
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_cementing_the_power_of_the_idf_junta
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {	
-		}
-
-		prerequisite = {
-			focus = MOJ_I_will_stay_israeli
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 24
-		y = 21
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_stick_with_what_we_have
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {	
-		}
-
-		prerequisite = {
-			focus = MOJ_cementing_the_power_of_the_idf_junta
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 25
-		y = 22
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_adapt_the_napoleonic_code_to_our_situation
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {	
-		}
-
-		prerequisite = {
-			focus = MOJ_I_could_be_napoleon
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 35
-		y = 22
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_the_idf_is_the_new_grand_armie
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {	
-		}
-
-		prerequisite = {
-			focus = MOJ_adapt_the_napoleonic_code_to_our_situation
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 35
-		y = 23
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_keep_israeli_culture
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {	
-		}
-
-		prerequisite = {
-			focus = MOJ_the_idf_is_the_new_grand_armie
-		}
-
-		mutually_exclusive = {
-			focus = MOJ_decouple_religious_discrimination_from_french_culture
-		}
-
-		x = 37
-		y = 24
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_decouple_religious_discrimination_from_french_culture
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {	
-		}
-
-		prerequisite = {
-			focus = MOJ_the_idf_is_the_new_grand_armie
-		}
-
-		mutually_exclusive = {
-			focus = MOJ_keep_israeli_culture
-		}
-
-		x = 33
-		y = 24
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_destroy_our_albion
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {	
-		}
-
-		prerequisite = {
-			focus = MOJ_keep_israeli_culture
-			focus = MOJ_decouple_religious_discrimination_from_french_culture
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 35
-		y = 25
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_destroy_our_russia
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {	
-		}
-
-		prerequisite = {
-			focus = MOJ_destroy_our_albion
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 35
-		y = 26
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_continuing_the_napoleonic_dream
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {	
-			has_completed_focus = MOJ_decouple_religious_discrimination_from_french_culture
-		}
-
-		prerequisite = {
-			focus = MOJ_destroy_our_russia
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 35
-		y = 27
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_two_cults_of_personality
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {	
-		}
-
-		prerequisite = {
-			focus = MOJ_continuing_the_napoleonic_dream
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 35
-		y = 28
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_the_new_french_empire
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {	
-		}
-
-		prerequisite = {
-			focus = MOJ_the_new_spanish_campaign
-		}
-
-		prerequisite = {
-			focus = MOJ_take_our_true_homeland_back
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 35
-		y = 30
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_the_new_spanish_campaign
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {	
-		}
-
-		prerequisite = {
-			focus = MOJ_two_cults_of_personality
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 33
-		y = 29
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = MOJ_take_our_true_homeland_back
-		icon = GFX_goal
-
-		cost = 1
-
-		available = {	
-		}
-
-		prerequisite = {
-			focus = MOJ_two_cults_of_personality
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 37
-		y = 29
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
 		}
 	}
 
@@ -3153,7 +6146,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+			has_idea = pal_moj
 		}
 
 		x = 1
@@ -3291,6 +6284,13 @@ focus_tree = {
 
 		cost = 8
 
+		available = {
+			has_country_leader = {
+				ruling_only = yes
+				name = "Esat Sagay"
+			}
+		}
+
 		prerequisite = {
 			focus = MOJ_1936_Census
 		}
@@ -3335,7 +6335,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus MOJ_Restructure_Palestine_Education"
 			add_tech_bonus = {
 				name = MOJ_Restructure_Palestine_Education
-				category = efficiency_tech
+				category = cat_production
 				bonus = 1
 				uses = 1
 			}

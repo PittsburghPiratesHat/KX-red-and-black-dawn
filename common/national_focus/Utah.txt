@@ -1,0 +1,153 @@
+###########################
+# Utah Focus Tree
+# By Pittsburgh Pirates Hat
+###########################
+
+focus_tree = {
+
+	id = utah_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 11
+			tag = DSR
+		}
+	}
+	
+	default = no
+	continuous_focus_position = { x = 200 y = 950 }
+
+	focus = {
+		id = DSR_the_rebellion_begins
+		icon = GFX_goal_
+		cost = 0.00
+		available = {
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		x = 25
+		y = 0
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = DSR_wall_up_the_arizona_border
+		icon = GFX_goal_
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = DSR_the_rebellion_begins
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 23
+		y = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = DSR_conscript_mormons
+		icon = GFX_goal_
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = DSR_the_rebellion_begins
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 27
+		y = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = DSR_rescue_arizona_and_wcc_exiles
+		icon = GFX_goal_
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = DSR_the_rebellion_begins
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 30
+		y = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = DSR_let_in_civil_war_refugees
+		icon = GFX_goal_
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = DSR_conscript_mormons
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 27
+		y = 2
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+}

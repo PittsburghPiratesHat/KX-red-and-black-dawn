@@ -1,0 +1,9 @@
+
+SWE_scandinavia = {
+	owns_state = 110
+			owns_state = 840
+			owns_state = 37
+			owns_state = 100
+			has_idea = SWE_Birger_Furugard_hog_npo
+}
+	

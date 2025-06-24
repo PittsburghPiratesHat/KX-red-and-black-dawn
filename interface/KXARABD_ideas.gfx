@@ -9,8 +9,144 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ARZ/ARZ_brush.png"
 	}
 	spriteType = {
+		name = "GFX_idea_PAL_zioplan"
+		texturefile = "gfx/interface/ideas/PAL/zioplan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_mossad"
+		texturefile = "gfx/interface/ideas/PAL/mossad.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_idf_is"
+		texturefile = "gfx/interface/ideas/PAL/is.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_fate"
+		texturefile = "gfx/interface/ideas/PAL/fate.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_coexist"
+		texturefile = "gfx/interface/ideas/PAL/coexist.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_replacement"
+		texturefile = "gfx/interface/ideas/PAL/replacement.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_yiddish"
+		texturefile = "gfx/interface/ideas/PAL/yiddish.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_hebrew"
+		texturefile = "gfx/interface/ideas/PAL/hebrew.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_code"
+		texturefile = "gfx/interface/ideas/PAL/code.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_personality"
+		texturefile = "gfx/interface/ideas/PAL/personality.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_sheikl"
+		texturefile = "gfx/interface/ideas/PAL/sheikl.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_tax"
+		texturefile = "gfx/interface/ideas/PAL/tax.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_fate"
+		texturefile = "gfx/interface/ideas/PAL/fate.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_fate"
+		texturefile = "gfx/interface/ideas/PAL/fate.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_miracle"
+		texturefile = "gfx/interface/ideas/PAL/miracle.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_zioplan"
+		texturefile = "gfx/interface/ideas/PAL/zioplan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_zioplan"
+		texturefile = "gfx/interface/ideas/PAL/zioplan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_zioplan"
+		texturefile = "gfx/interface/ideas/PAL/zioplan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_zioplan"
+		texturefile = "gfx/interface/ideas/PAL/zioplan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_zioplan"
+		texturefile = "gfx/interface/ideas/PAL/zioplan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_zioplan"
+		texturefile = "gfx/interface/ideas/PAL/zioplan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_zioplan"
+		texturefile = "gfx/interface/ideas/PAL/zioplan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_deportations"
+		texturefile = "gfx/interface/ideas/PAL/deportations.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_remnants"
+		texturefile = "gfx/interface/ideas/PAL/remnants.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_secterian"
+		texturefile = "gfx/interface/ideas/PAL/secterian.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_return"
+		texturefile = "gfx/interface/ideas/PAL/return.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_weizman"
+		texturefile = "gfx/interface/ideas/PAL/weizman.png"
+	}
+	spriteType = {
 		name = "GFX_idea_ARZ_collective_spirit"
 		texturefile = "gfx/interface/ideas/ARZ/ARZ_collective_spirit.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SWE_idea_pride"
+		texturefile = "gfx/interface/ideas/SWE/SWE_idea_pride.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SWE_idea_right"
+		texturefile = "gfx/interface/ideas/SWE/SWE_idea_right.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SWE_idea_church"
+		texturefile = "gfx/interface/ideas/SWE/SWE_idea_church.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SWE_idea_russophobia"
+		texturefile = "gfx/interface/ideas/SWE/SWE_idea_russophobia.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SWE_idea_family"
+		texturefile = "gfx/interface/ideas/SWE/SWE_idea_family.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SWE_idea_school"
+		texturefile = "gfx/interface/ideas/SWE/SWE_idea_school.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_jewish_banditry"
+		texturefile = "gfx/interface/ideas/PAL/jewish_banditry.png"
 	}
 	spriteType = {
 		name = "GFX_idea_NEE_respect_the_leaders_or_else"
@@ -2544,6 +2680,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_BUL_ambition"
 		texturefile = "gfx/interface/ideas/BUL/BUL_ambition.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_BUL_Enforced"
+		texturefile = "gfx/interface/ideas/BUL/BUL_Enforced.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_BUL_Legion"
+		texturefile = "gfx/interface/ideas/BUL/BUL_Legion.png"
 	}
 	
 	spriteType = {

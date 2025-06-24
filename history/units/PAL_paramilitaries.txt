@@ -1,0 +1,80 @@
+division_template = {
+	name = "Irgun"
+	division_names_group = ZIO_INF_02
+	regiments = {
+		infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+	}
+	support = {
+	}
+}
+
+division_template = {
+	name = "Lehi"
+	division_names_group = ZIO_INF_03
+	regiments = {
+		infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+	}
+	support = {
+	}
+}
+
+division_template = {
+	name = "Haganah"
+	division_names_group = ZIO_INF_04
+	regiments = {
+		infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+	}
+	support = {
+	}
+}
+
+units = {
+	division = {
+		name = "Irgun"
+		location = 1086
+		division_template = "Irgun"
+		start_experience_factor = 0.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Irgun"
+		location = 1086
+		division_template = "Irgun"
+		start_experience_factor = 0.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Lehi"
+		location = 1086
+		division_template = "Lehi"
+		start_experience_factor = 0.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Haganah"
+		location = 1086
+		division_template = "Haganah"
+		start_experience_factor = 0.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Lehi"
+		location = 1086
+		division_template = "Lehi"
+		start_experience_factor = 0.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Haganah"
+		location = 1086
+		division_template = "Haganah"
+		start_experience_factor = 0.0
+		start_equipment_factor = 1.0
+	}
+}

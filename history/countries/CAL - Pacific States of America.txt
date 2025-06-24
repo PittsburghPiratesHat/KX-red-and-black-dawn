@@ -34,6 +34,7 @@ set_technology = {
 	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
+	tech_trucks = 1
 	motorised_infantry = 1
 	gw_artillery = 1
 	marines = 1
@@ -54,6 +55,7 @@ if = {
 		iw_large_airframe = 1
 		basic_small_airframe = 1
 		basic_medium_airframe = 1
+		air_torpedoe_1 = 1
 	}
 	CAL_BBA_air_variants = yes
 }
@@ -184,14 +186,11 @@ if = {
 	}
 }
 
-set_research_slots = 3
+set_research_slots = 4
 set_convoys = 100
 set_stability = 0.5
 set_war_support = 0.5
 
-add_opinion_modifier = { target = CSA modifier = embargo }
-add_opinion_modifier = { target = TEX modifier = embargo }
-add_opinion_modifier = { target = USA modifier = embargo }
 set_politics = {
 	ruling_party = social_conservative
 	last_election = "1936.11.08"
@@ -223,23 +222,23 @@ create_country_leader = {# Hiram Johnson
 	name = "Hiram Johnson"
 	desc = "POLITICS_HIRAM_JOHNSON_DESC"
 	picture = "gfx/leaders/CAL/Portrait_CAL_Hiram_Johnson.png"
-	expire = "1965.1.1"
-	ideology = georgism_subtype
+	expire = "1.1.1"
+	ideology = socdem_radical_progressivism_subtype
 	traits = { PSA_inward_reformer }
 }
 create_country_leader = {# Earl Warren
 	name = "Earl Warren"
 	desc = "POLITICS_EARL_WARREN_DESC"
 	picture = "gfx/leaders/CAL/Portrait_CAL_Earl_Warren.png"
-	expire = "1965.1.1"
-	ideology = centrist_subtype
+	expire = "1.1.1"
+	ideology = radical_liberalism_subtype
 	traits = { PSA_crusader_of_justice }
 }
 create_country_leader = {# Pacific Congress
 	name = "Pacific Congress"
 	desc = "POLITICS_PACIFIC_CONGRESS_DESC"
-	picture = "gfx/leaders/CAL/CAL_pacific_congress.png"
-	expire = "1965.1.1"
+	picture = "gfx/leaders/CAL/Portrait_CAL_Pacific_Congress.png"
+	expire = "1.1.1"
 	ideology = social_conservative_subtype
 	traits = { provisional_congress }
 }
@@ -247,7 +246,7 @@ create_country_leader = {# Frank Merriam
 	name = "Frank Merriam"
 	desc = "POLITICS_FRANK_MERRIAM_DESC"
 	picture = "gfx/leaders/CAL/Portrait_CAL_Frank_Merrimam.png"
-	expire = "1965.1.1"
+	expire = "1.1.1"
 	ideology = liberal_conservative_subtype
 	traits = { PSA_champion_of_the_establishment }
 }
@@ -255,33 +254,44 @@ create_country_leader = {
 	name = "Upton Sinclair"
 	desc = "POLITICS_UPTON_SINCLAIR_DESC"
 	picture = "gfx/leaders/CAL/Portrait_CAL_Upton_Sinclair.png"
-	expire = "1965.1.1"
+	expire = "1.1.1"
 	ideology = radical_progressivism_subtype
 	traits = { PSA_an_end_to_poverty }
 }
 create_country_leader = {
 	name = "Frank T. Johns"
 	picture = "gfx/leaders/CSA/Portrait_CSA_Frank_T_Johns.png"
-	expire = "1965.1.1"
-	ideology = democratic_syndicalism_subtype
+	expire = "1.1.1"
+	ideology = syndicalist_subtype
 }
 create_country_leader = {
 	name = "Frank T. Johns"
 	picture = "gfx/leaders/CSA/Portrait_CSA_Frank_T_Johns.png"
-	expire = "1965.1.1"
+	expire = "1.1.1"
 	ideology = popcom_subtype
 }
 create_country_leader = {
 	name = "Edward Longstreet Bodin"
 	desc = "POLITICS_EDWARD_LONGSTREET_BODIN_DESC"
-	picture = "gfx/leaders/CAL/CAL_edward_longstreet_bodin.png"
-	expire = "1965.1.1"
+	picture = "gfx/leaders/CAL/Portrait_CAL_Edward_Longstreet_Bodin.png"
+	expire = "1.1.1"
 	ideology = spiritualism_subtype
 	traits = { cult_leader }
 }
 
 
 ###Field Commander####
+create_field_marshal = {# "bash"
+	name = "Louis Bash"
+	desc = "POLITICS_BASH_DESC"
+	portrait_path = "gfx/leaders/CAL/bash.png"
+	traits = { infantry_officer old_guard logistics_wizard trait_engineer organizer career_officer}
+	skill = 5
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 5
+}	
 
 ### Corps Commander
 create_corps_commander = {# Alexander Patch
@@ -299,6 +309,35 @@ create_corps_commander = {# Alexander Patch
 	logistics_skill = 3
 	id = 980
 }
+create_corps_commander = {# Lewis H. Brereton
+	name = "Lewis H. Brereton"
+	desc = "CAL_LEWIS_BRERETON_ARMY_DESC"
+	portrait_path = "gfx/leaders/CAL/Portrait_CAL_lewis_brereton.png"
+	traits = {
+		career_officer
+		air_commander
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+	id = 981
+}
+create_corps_commander = {# Augustine
+	name = "Augustine Warner Robbins"
+	desc = ""
+	portrait_path = "gfx/leaders/CAL/Portrait_CAL_Augustine_Warner_Robbins.png"
+	traits = {
+		career_officer
+		air_commander
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
+}
 create_corps_commander = {# dewitt
 	name = "John DeWitt"
 	desc = ""
@@ -313,22 +352,6 @@ create_corps_commander = {# dewitt
 	planning_skill = 2
 	logistics_skill = 3
 	id = 9802
-}
-create_corps_commander = {# Lewis H. Brereton
-	name = "Lewis H. Brereton"
-	desc = "CAL_LEWIS_BRERETON_ARMY_DESC"
-	portrait_path = "gfx/leaders/CAL/Portrait_CAL_lewis_brereton.png"
-	traits = {
-		career_officer
-		politically_connected
-		infantry_leader
-	}
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 1
-	id = 981
 }
 create_corps_commander = {# Isaac D. White
 	name = "Isaac D. White"
@@ -399,7 +422,7 @@ create_corps_commander = {# Jimmy Doolittle
 	desc = "CAL_JIMMY_DOOLITTLE_ARMY_DESC"
 	portrait_path = "gfx/leaders/CAL/Portrait_CAL_Jimmy_Doolittle.png"
 	traits = {
-		politically_connected
+		air_commander
 		career_officer
 		trickster
 	}
@@ -456,6 +479,24 @@ create_corps_commander = {# Millard Fillmore Harmon
 	logistics_skill = 2
 	id = 9864
 }
+create_corps_commander = {# Millard Fillmore Harmon
+	name = "Delbert Burke"
+	desc = ""
+	portrait_path = "gfx/leaders/CAL/burke.png"
+	traits = {
+		naval_liason
+		naval_invader
+		commando
+		infantry_leader
+		infantry_officer
+		young_leader
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
 create_corps_commander = {# George C. Shaw
 	name = "George C. Shaw"
 	desc = "CAL_GEORGE_SHAW_ARMY_DESC"
@@ -487,6 +528,23 @@ create_corps_commander = {# Herbert B. Powell
 	logistics_skill = 2
 	id = 987
 }
+create_corps_commander = {# astorm
+	name = "Johnny Alstrom"
+	desc = ""
+	portrait_path = "gfx/leaders/CAL/alstrom.png"
+	traits = {
+		young_leader
+		infantry_officer
+		infantry_leader
+		naval_liason
+		naval_invader
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
 create_corps_commander = {#
 	name = "George E. Stratemeyer"
 	portrait_path = "gfx/leaders/CAL/Portrait_CAL_George_E_Stratemeyer.png"
@@ -502,9 +560,10 @@ create_corps_commander = {#
 }
 create_corps_commander = {#
 	name = "Marion Robert Morrison"
-	portrait_path = "gfx/leaders/AML/John_Wayne.png"
+	portrait_path = "gfx/leaders/AML/Portrait_AML_John_Wayne.png"
 	traits = {
 		media_personality
+		cavalry_officer
 	}
 	skill = 1
 	attack_skill = 1
@@ -514,10 +573,23 @@ create_corps_commander = {#
 }
 create_corps_commander = {#
 	name = "William Holden"
-	portrait_path = "gfx/leaders/AML/William_Holden.png"
+	portrait_path = "gfx/leaders/AML/Portrait_AML_William_Holden.png"
 	traits = {
 		air_commander
 		media_personality
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {#
+	name = "Casper Volk"
+	portrait_path = "gfx/leaders/CAL/Volk.png"
+	traits = {
+		infantry_leader
+		infantry_officer
 	}
 	skill = 1
 	attack_skill = 1

@@ -2049,6 +2049,7 @@
 	BUL_Aleksandar_Malinov_hog_ade:0 "Aleksandar Malinov"
 	BUL_Bogdan_Filov_hog_pau:0 "Bogdan Filov"
 	BUL_Petar_Todorov_hog_npo:0 "Petar Todorov"
+	BUL_dochev_hog_npo:0 "Ivan Dochev"
 
 	### Person of Influence ###
 	## Foreign Minister
@@ -11245,13 +11246,11 @@
 	PAL_Aly_al_Muttalib_carm_npo:0 "Aly al-Muttalib"
 
 	### Chief of Navy ###
-	PAL_Ahmad_Wasi_Pasha_cnav_rso:0 "Ahmad Wasi Pasha"
-	PAL_Ali_Djemal_Pasha_cnav_npo:0 "Ali Djemal Pasha"
+	PAL_bagelswithshamir_cnav_rso:0 "Shlomo Shamir"
 
 	### Chief of Air Force ###
-	PAL_Muhammed_al_Taif_cair_rso:0 "Muhammed al-Taif"
-	PAL_Abdullah_Jaffer_Dalal_cair_ade:0 "Abdullah Jaffer Dalal"
-	PAL_Mohammed_Azmy_Pasha_cair_npo:0 "Mohammed Azmy Pasha"
+		PAL_peewee_herman_cair_rso:0 "Milton Rubenfeld"
+
 
   ################################################################################################################################################################################################
   ### PAN
