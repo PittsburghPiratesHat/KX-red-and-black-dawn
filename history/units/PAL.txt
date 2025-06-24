@@ -1,9 +1,0 @@
-division_template = {
-	name = "International Gendarmerie"
-	division_names_group = PAL_INF_01
-	regiments = {
-		infantry = { x = 0 y = 0 }
-	}
-	support = {
-	}
-}

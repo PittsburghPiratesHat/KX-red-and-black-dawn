@@ -1,6 +1,0 @@
-spriteTypes = {
-    SpriteType = {
-		name = "GFX_rus_gorguloff_vozhd"
-		texturefile = "gfx/event_pictures/Europe/Russia/rus_gorguloff_vozhd.png"
-	}
-}  
