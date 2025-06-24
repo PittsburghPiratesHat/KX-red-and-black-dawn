@@ -1,0 +1,5 @@
+ZIO_diaspora_is_home_trigger = {
+    tag = ZIO
+	has_completed_focus = ZIO_phone_the_diaspora
+    ZIO_diaspora_is_home = yes
+}

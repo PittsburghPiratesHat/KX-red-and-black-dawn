@@ -1,0 +1,100 @@
+ZIO_setup = {
+	PAL = {
+			set_cosmetic_tag = ZIO_main
+            set_country_flag = ZIO_table_flipping
+			remove_ideas = pal_jewish_banditry
+				add_state_core = 453
+		add_state_core = 454
+		    454 = { set_demilitarized_zone = 0 } 
+        453 = { set_demilitarized_zone = 0 }
+		set_party_name = {
+			ideology = totalist
+			name = ZIO_totalist_party
+			long_name = ZIO_totalist_party_long
+		}
+		set_party_name = {
+			ideology = national_populist
+			name = ZIO_national_populist_party
+			long_name = ZIO_national_populist_party_long
+		}
+		set_party_name = {
+			ideology = market_liberal
+			name = ZIO_market_liberal_party
+			long_name = ZIO_market_liberal_party_long
+		}
+		set_party_name = {
+			ideology = social_democrat
+			name = ZIO_social_democrat_party
+			long_name = ZIO_social_democrat_party_long
+		}
+		set_party_name = {
+			ideology = syndicalist
+			name = ZIO_syndicalist_party
+			long_name = ZIO_syndicalist_party_long
+		}
+		set_party_name = {
+			ideology = social_liberal
+			name = ZIO_social_liberal_party
+			long_name = ZIO_social_liberal_party_long
+		}
+		set_party_name = {
+			ideology = social_conservative
+			name = ZIO_social_conservative_party
+			long_name = ZIO_social_conservative_party_long
+		}
+		set_party_name = {
+			ideology = radical_socialist
+			name = ZIO_radical_socialist_party
+			long_name = ZIO_radical_socialist_party_long
+		}
+		set_party_name = {
+			ideology = authoritarian_democrat
+			name = ZIO_authoritarian_democrat_party
+			long_name = ZIO_authoritarian_democrat_party_long
+		}
+		TUR = {
+			set_autonomy = {
+				target = PAL
+				autonomy_state = autonomy_free
+			}
+		} 
+		create_field_marshal = {# dayan
+	name = "Moshe Dayan"
+	desc = ""
+	portrait_path = "gfx/leaders/PAL/moshe.png"
+	traits = {
+		offensive_doctrine
+		career_officer
+		commando
+		war_hero
+		infantry_officer
+	}
+	skill = 5
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
+	id = 5743
+}
+create_corps_commander = {# dayan
+	name = "Yigal Allon"
+	desc = ""
+	portrait_path = "gfx/leaders/PAL/Allon.png"
+	traits = {
+		war_hero
+		infantry_officer
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
+	id = 5744
+}
+	}
+}
+
+ZIO_diaspora_is_home = {
+}
+
+

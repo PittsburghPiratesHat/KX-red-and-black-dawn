@@ -1,0 +1,810 @@
+﻿###########################
+# zion
+###########################
+
+add_namespace = israel
+
+########
+# dayan #
+########
+
+country_event = {#dayan makes his move
+    id = israel.1
+    title = israel.1.t
+    desc = israel.1.d
+    trigger = {
+        tag = PAL 
+        has_completed_focus = MOJ_Pole_Report
+    }
+
+   #picture = 
+
+    is_triggered_only = yes
+
+
+    fire_only_once = yes
+
+    option = {
+        name = israel.1.a
+        remove_ideas = pal_jewish_banditry
+    }
+
+    option = {
+        name = israel.1.b
+        ZIO = { change_tag_from = PAL }
+        ZIO = { annex_country = { target = PAL } }
+        ZIO_setup = yes
+    }
+}
+
+
+country_event = {    #haredi
+    id = israel.2
+    title = israel.2.t
+    desc = israel.2.d
+    #picture =
+	
+			is_triggered_only = yes
+
+    option = {
+        name = israel.2.a
+    }
+
+    option = {
+        name = israel.2.b
+    }
+}
+
+country_event = {	#end gendermarie
+	id = israel.3
+	title = israel.3.t
+	desc = israel.3.d
+
+
+	#picture = 
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = israel.3.a
+		country_lock_all_division_template = no
+		remove_ideas = pal_moj
+		 add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 100
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 100
+				producer = AUS
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 100
+				producer = TUR
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 100
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 100
+				producer = CAN
+			}
+			add_manpower = -500
+	}
+}
+
+country_event = {	#flagzionist
+	id = israel.15
+	title = israel.15.t
+	desc = israel.15.d
+
+
+	#picture = 
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = israel.15.a
+		set_party_name = {
+			ideology = totalist
+			name = ZIO_totalist_party_stern
+			long_name = ZIO_totalist_party_stern_long
+		}
+		set_country_flag = ZIO_stern
+		create_country_leader = {
+					name = "Avraham Stern"
+					desc = ""
+					picture = "gfx/leaders/PAL/stern.png"
+					expire = "1965.1.1"
+					ideology = tot_left_zionism_subtype
+				}
+				set_politics = {
+				ruling_party = totalist
+			}
+	}
+
+	option = {
+		name = israel.15.b
+		set_party_name = {
+			ideology = national_populist
+			name = ZIO_national_populist_party_tehomi
+			long_name = ZIO_national_populist_party_tehomi_long
+		}
+		set_country_flag = ZIO_tehomi 
+		create_country_leader = {
+					name = "Avraham Tehomi"
+					desc = ""
+					picture = "gfx/leaders/PAL/tehomi.png"
+					expire = "1965.1.1"
+					ideology = right_zionism_group_subtype
+				}
+				set_politics = {
+				ruling_party = national_populist 
+			}
+	}
+
+	option = {
+		name = israel.15.c
+		set_party_name = {
+			ideology = radical_socialist 
+			name = ZIO_radical_socialist_party_yellin-mor
+			long_name = ZIO_radical_socialist_party_yellin-mor_long
+		}
+		set_country_flag = ZIO_yellin
+		create_country_leader = {
+					name = "Nathan Yellin-Mor"
+					desc = ""
+					picture = "gfx/leaders/PAL/Yellin-mor.png"
+					expire = "1965.1.1"
+					ideology = radsoc_left_zionism_subtype
+				}
+				set_politics = {
+				ruling_party = radical_socialist
+			}
+	}
+}
+
+country_event = {	#flagzioni
+	id = israel.4
+	title = israel.4.t
+	desc = israel.4.d
+
+
+	#picture = 
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = israel.4.a
+		set_country_flag = ZIO_einstein
+		create_country_leader = {
+					name = "Albert Einstein"
+					desc = ""
+					picture = "gfx/leaders/PAL/.png"
+					expire = "1965.1.1"
+					ideology = social_democrat
+				}
+				set_politics = {
+				ruling_party = social_democrat
+			}
+	}
+
+	option = {
+		name = israel.4.b
+		set_country_flag = ZIO_wiesenthal
+		create_country_leader = {
+					name = "Simon Wiesenthal"
+					desc = ""
+					picture = "gfx/leaders/PAL/moshe.png"
+					expire = "1965.1.1"
+					ideology = social_conservative
+				}
+				set_politics = {
+				ruling_party = social_conservative
+			}
+	}
+
+	option = {
+		name = israel.4.c
+		set_country_flag = ZIO_allon
+		create_country_leader = {
+					name = "Yigal Allon"
+					desc = ""
+					picture = "gfx/leaders/PAL/moshe.png"
+					expire = "1965.1.1"
+					ideology = moderate_zionism
+				}
+				set_politics = {
+				ruling_party = radical_socialist
+			}
+	}
+}
+
+country_event = {	#flagzio
+	id = israel.5
+	title = israel.5.t
+	desc = israel.5.d
+
+
+	#picture = 
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = israel.5.a
+		set_country_flag = ZIO_dayan_steps_down
+	}
+
+	option = {
+		name = israel.5.b
+		set_country_flag = ZIO_dayan
+	}
+}
+
+country_event = {	#flagzi
+	id = israel.6
+	title = israel.6.t
+	desc = israel.6.d
+
+
+	#picture = 
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = israel.6.a
+		set_country_flag = ZIO_radical
+		create_country_leader = {
+					name = "radical congress"
+					desc = ""
+					picture = "gfx/leaders/PAL/moshe.png"
+					expire = "1965.1.1"
+					ideology = national_populist_subtype
+				}
+				set_politics = {
+				ruling_party = national_populist
+			}
+	}
+
+	option = {
+		name = israel.6.b
+		set_country_flag = ZIO_democrats
+		create_country_leader = {
+					name = "democrat congress"
+					desc = ""
+					picture = "gfx/leaders/PAL/moshe.png"
+					expire = "1965.1.1"
+					ideology = social_democrat
+				}
+				set_politics = {
+				ruling_party = social_democrat
+			}
+	}
+}
+
+country_event = {	#flagz
+	id = israel.7
+	title = israel.7.t
+	desc = israel.7.d
+
+
+	#picture = 
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = israel.7.a
+		add_manpower = 1000000
+		453 = {
+			add_manpower = 900000
+		}
+		454 = {
+			add_manpower = 2000000
+		}
+		
+    }
+}	
+
+country_event = {	#fla
+	id = israel.8
+	title = israel.8.t
+	desc = israel.8.d
+
+
+	#picture = 
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = israel.8.a
+	}
+
+	option = {
+		name = israel.8.b
+		set_country_flag = ZIO_napoleon
+		create_country_leader = {
+					name = "Moshe I"
+					desc = ""
+					picture = "gfx/leaders/PAL/moshe_cool.png"
+					expire = "1965.1.1"
+					ideology = pataut_bonapartism_subtype
+				}
+	}
+}
+
+country_event = {	#import
+	id = israel.48
+	title = israel.48.t
+	desc = israel.48.d
+
+
+	#picture = 
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = israel.48.a
+        division_template = {
+					name = "irgun"
+					division_names_group = ZIO_INF_02
+					regiments = {
+		infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+	}
+				}
+				random_owned_controlled_state = {
+					prioritize = { 454 453 }
+					limit = { valid_state_for_spawning_friendly_unit = yes }
+					create_unit = {
+						division = "division_template = \"irgun\" start_experience_factor = 0.4"
+						owner = PAL
+						count = 2
+					}
+				}
+				 division_template = {
+					name = "Lehi"
+					division_names_group = ZIO_INF_03
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						    infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+					}
+				}
+				random_owned_controlled_state = {
+					prioritize = { 454 453 }
+					limit = { valid_state_for_spawning_friendly_unit = yes }
+					create_unit = {
+						division = "division_template = \"lehi\" start_experience_factor = 0.4"
+						owner = ZIO
+						count = 2
+					}
+				}
+				 division_template = {
+					name = "haganah"
+					division_names_group = ZIO_INF_04
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						    infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+					}
+				}
+				random_owned_controlled_state = {
+					prioritize = { 454 453 }
+					limit = { valid_state_for_spawning_friendly_unit = yes }
+					create_unit = {
+						division = "division_template = \"haganah\" start_experience_factor = 0.4"
+						owner = ZIO
+						count = 3
+					}
+				}
+		create_field_marshal = {# dayan
+	name = "Avraham Stern"
+	desc = ""
+	portrait_path = "gfx/leaders/PAL/stern.png"
+	traits = {
+		young_leader
+		politically_connected
+		harsh_leader
+	}
+	skill = 1
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
+	id = 120
+}
+create_field_marshal = {# dayan
+	name = "Avraham Tehomi"
+	desc = ""
+	portrait_path = "gfx/leaders/PAL/tehomi.png"
+	traits = {
+		young_leader
+		politically_connected
+		harsh_leader
+	}
+	skill = 1
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
+	id = 121
+}
+	}
+}
+
+country_event = {	#import
+	id = israel.9
+	title = israel.9.t
+	desc = israel.9.d
+
+
+	#picture = 
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = israel.9.a
+		add_equipment_to_stockpile = {
+				type = infantry_equipment_1 amount = 1000 producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1 amount = 1000 producer = AUS
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1 amount = 1000 producer = JAP
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1 amount = 1000 producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1 amount = 1000 producer = CAN
+			}
+	}
+}
+
+country_event = {	#suez
+	id = israel.10
+	title = israel.10.t
+	desc = israel.10.d
+
+
+	#picture = 
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = israel.10.a
+		transfer_state = 753
+		add_state_core = 753
+	}
+}
+
+country_event = {	#hellfire
+	id = israel.11
+	title = israel.11.t
+	desc = israel.11.d
+
+
+	#picture = 
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = israel.11.a
+		add_manpower = -1000
+		damage_building = {
+    type = infrastructure
+    damage = 3
+}
+	}
+}
+
+country_event = {	#removeflag
+	id = israel.12
+	title = israel.12.t
+	desc = israel.12.d
+
+
+	#picture = 
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = israel.12.a
+		add_stability = 0.05
+		add_popularity = {
+				ideology = paternal_autocrat
+				popularity = 0.05
+		   } 
+	}
+}
+
+country_event = {	#seized
+	id = israel.13
+	title = israel.13.t
+	desc = israel.13.d
+
+
+	#picture = 
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = israel.13.a
+		random_owned_controlled_state = {
+     add_extra_state_shared_building_slots = 3 }
+	}
+}
+
+country_event = {	#gordonramsay
+	id = israel.14
+	title = israel.14.t
+	desc = israel.14.d
+
+
+	#picture = 
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = israel.14.a
+				
+	}
+}
+
+country_event = {	#gordonramsay
+	id = israel.52
+	title = israel.52.t
+	desc = israel.52.d
+
+
+	#picture = 
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = israel.52.a
+				
+	}
+}
+
+country_event = {	#gordonramsay
+	id = israel.43
+	title = israel.43.t
+	desc = israel.43.d
+
+
+	#picture = 
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = israel.43.a
+				
+	}
+}
+
+country_event = {	#gordonramsay
+	id = israel.50
+	title = israel.50.t
+	desc = israel.50.d
+
+
+	#picture = 
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = israel.50.a
+				
+	}
+}
+
+country_event = {	#gordonramsay
+	id = israel.41
+	title = israel.41.t
+	desc = israel.41.d
+
+
+	#picture = 
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = israel.41.a
+				
+	}
+	option = {
+		name = israel.41.b
+				set_country_leader_ideology = national_marxism_subtype
+	}
+	option = {
+		name = israel.41.c
+				set_country_leader_ideology = social_futurism_subtype
+	}
+}
+
+country_event = {	#gordonramsay
+	id = israel.49
+	title = israel.49.t
+	desc = israel.49.d
+
+
+	#picture = 
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = israel.49.a
+				set_country_leader_ideology = national_security_state_subtype
+	}
+	option = {
+		name = israel.49.b
+				
+	}
+	option = {
+		name = israel.49.c
+				set_country_leader_ideology = legionarism_subtype
+	}
+}
+
+country_event = {	#gordonramsay
+	id = israel.39
+	title = israel.39.t
+	desc = israel.39.d
+
+
+	#picture = 
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = israel.39.a
+				
+	}
+	option = {
+		name = israel.39.b
+				
+	}
+}
+
+country_event = {	#gordonramsay
+	id = israel.44
+	title = israel.44.t
+	desc = israel.44.d
+
+
+	#picture = 
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = israel.44.a
+				
+	}
+}
+
+country_event = {	#gordonramsay
+	id = israel.54
+	title = israel.54.t
+	desc = israel.54.d
+
+
+	#picture = 
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = israel.54.a
+				
+	}
+}
+
+country_event = {	#gordonramsay
+	id = israel.56
+	title = israel.56.t
+	desc = israel.56.d
+
+
+	#picture = 
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = israel.56.a
+				
+	}
+}
+
+
+country_event = {	#gordonramsay
+	id = israel.57
+	title = israel.57.t
+	desc = israel.57.d
+
+
+	#picture = 
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = israel.57.a
+        division_template = {
+					name = "Jewish bandits"
+					division_names_group = ZIO_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+					}
+				}
+				random_owned_controlled_state = {
+					prioritize = { 454 453 }
+					limit = { valid_state_for_spawning_friendly_unit = yes }
+					create_unit = {
+						division = "division_template = \"Jewish Bandits\" start_experience_factor = 0.4"
+						owner = PAL
+						count = 2
+					}
+				}
+	}
+}
+
+
+
+
+	
+	
+		
