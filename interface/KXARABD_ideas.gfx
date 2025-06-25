@@ -17,6 +17,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/PAL/mossad.png"
 	}
 	spriteType = {
+		name = "GFX_idea_PAL_haredi_conscription"
+		texturefile = "gfx/interface/ideas/PAL/ultraorthodox.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_dayanplan"
+		texturefile = "gfx/interface/ideas/PAL/dayanplan.png"
+	}
+	spriteType = {
 		name = "GFX_idea_PAL_idf_is"
 		texturefile = "gfx/interface/ideas/PAL/is.png"
 	}

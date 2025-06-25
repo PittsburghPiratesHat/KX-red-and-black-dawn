@@ -103,6 +103,7 @@ country_event = {    #haredi
 
     option = {
         name = israel.2.a
+				add_ideas = PAL_haredi_conscription
     }
 
     option = {
@@ -447,6 +448,36 @@ country_event = {	#import
 			long_name = ZIO_radical_socialist_party_yellin-mor_long
 		}
         load_oob = PAL_paramilitaries
+		create_corps_commander = {# dayan
+	name = "Yaakov Dori"
+	desc = ""
+	portrait_path = "gfx/leaders/PAL/dori.png"
+	traits = {
+		 trait_engineer
+ fortress_buster
+  career_officer
+ combined_arms_expert
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
+}
+create_corps_commander = {# dayan
+	name = "David Ben-Gurion"
+	desc = ""
+	portrait_path = "gfx/leaders/PAL/ben.png"
+	traits = {
+	  career_officer
+	   infantry_leader
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
+}
 		create_field_marshal = {# dayan
 	name = "Avraham Stern"
 	desc = ""
@@ -805,6 +836,20 @@ create_navy_leader = {# dayan
 		air_controller
 	}
 	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+create_navy_leader = {# dayan
+	name = "Shmuel Tankus"
+	desc = ""
+	portrait_path = "gfx/leaders/PAL/tankus.png"
+	traits = {
+		 blockade_runner
+ spotter
+	}
+	skill = 3
 	attack_skill = 1
 	defense_skill = 2
 	maneuvering_skill = 2

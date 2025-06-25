@@ -3862,7 +3862,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_encourage_women_and_foreign_volunteers_to_sign_up
-		icon = GFX_goal_PAL_encourage
+		icon = GFX_goal_PAL_foreign
 
 		cost = 5
 
@@ -4069,7 +4069,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_dori_plan
-		icon = GFX_goal
+		icon = GFX_goal_PAL_dori
 
 		cost = 5
 
@@ -4101,7 +4101,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_expand_israeli_tank_production
-		icon = GFX_goal
+		icon = GFX_goal_PAL_expand
 
 		cost = 5
 
@@ -4130,7 +4130,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_study_german_blitzkreig_tactics
-		icon = GFX_goal
+		icon = GFX_goal_PAL_blitzkrieg
 
 		cost = 5
 
@@ -4159,7 +4159,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_adapt_our_vehicles_for_our_terrain
-		icon = GFX_goal
+		icon = GFX_goal_PAL_vehicles
 
 		cost = 5
 
@@ -4220,7 +4220,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_the_zionist_plan
-		icon = GFX_goal
+		icon = GFX_goal_PAL_zionist
 
 		cost = 5
 
@@ -4260,7 +4260,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_use_the_arabs_and_christians_as_cannon_fodder
-		icon = GFX_goal
+		icon = GFX_goal_PAL_cannon
 
 		cost = 5
 
@@ -4289,7 +4289,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_creating_an_israeli_home_guard
-		icon = GFX_goal
+		icon = GFX_goal_PAL_home
 
 		cost = 5
 
@@ -4318,7 +4318,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_mass_conscription_of_jews
-		icon = GFX_goal
+		icon = GFX_goal_PAL_mass
 
 		cost = 5
 
@@ -4347,7 +4347,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_finalize_the_unified_israeli_army
-		icon = GFX_goal
+		icon = GFX_goal_PAL_finalize
 
 		cost = 5
 
@@ -4376,7 +4376,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_prioritze_israeli_artillery
-		icon = GFX_goal
+		icon = GFX_goal_PAL_artillery
 
 		cost = 5
 
@@ -4405,7 +4405,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_fortifying_the_borders
-		icon = GFX_goal
+		icon = GFX_goal_PAL_fortifying
 
 		cost = 5
 
@@ -4486,12 +4486,13 @@ has_country_flag = ZIO_napoleon
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = PAL_dayanplan
 		}
 	}
 
 	focus = {
 		id = ZIO_expand_israeli_special_forces
-		icon = GFX_goal
+		icon = GFX_goal_PAL_special
 
 		cost = 5
 
@@ -4520,7 +4521,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_training_for_harsh_conditions
-		icon = GFX_goal
+		icon = GFX_goal_PAL_harsh
 
 		cost = 5
 
@@ -4549,7 +4550,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_planning_our_battles_from_every_angle
-		icon = GFX_goal
+		icon = GFX_goal_PAL_angle
 
 		cost = 5
 

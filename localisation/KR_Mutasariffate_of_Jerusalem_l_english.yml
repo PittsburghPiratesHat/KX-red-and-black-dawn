@@ -138,6 +138,10 @@ pal_fate:0 "fate of the aliyah"
 pal_fate_desc:0 "With Israel being freed, the fate of ongoing jewish immigration also known as the aliyah hangs in the balance."
 pal_without:0 "Jewish culture without forced Judaism"
 pal_without_desc:0 "To smoothe things over with the Arabs and Christians, we will maintain overall Jewish culture without enforcing Judaism."
+pal_dayanplan:0 "Dayan plan"
+pal_dayanplan_desc:0 "We choose Moshe Dayan for our military leader."
+PAL_haredi_conscription:0 "Haredi conscription"
+PAL_haredi_conscription_desc:0 "We have begun conscripting ultra orthodox/haredi jews into the army."
 
 ### Events
 pal.1.t:0 "The Mutasarrifate of Jerusalem in 1936"

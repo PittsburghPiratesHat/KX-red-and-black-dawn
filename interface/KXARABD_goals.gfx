@@ -28,6 +28,18 @@ SpriteTypes = {
 		texturefile = "gfx/interface/goals/PAL_participate.png"
 	}
 	SpriteType = {
+		name = "GFX_goal_PAL_fortifying"
+		texturefile = "gfx/interface/goals/PAL_fortifying.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_vehicles"
+		texturefile = "gfx/interface/goals/PAL_vehicles.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_angle"
+		texturefile = "gfx/interface/goals/PAL_angle.png"
+	}
+	SpriteType = {
 		name = "GFX_goal_PAL_tankus"
 		texturefile = "gfx/interface/goals/PAL_tankus.png"
 	}
@@ -36,12 +48,64 @@ SpriteTypes = {
 		texturefile = "gfx/interface/goals/PAL_shamir.png"
 	}
 	SpriteType = {
+		name = "GFX_goal_PAL_angle"
+		texturefile = "gfx/interface/goals/PAL_angle.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_mass"
+		texturefile = "gfx/interface/goals/PAL_mass.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_home"
+		texturefile = "gfx/interface/goals/PAL_home.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_blitzkrieg"
+		texturefile = "gfx/interface/goals/PAL_blitzkreig.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_dori"
+		texturefile = "gfx/interface/goals/PAL_dori.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_foreign"
+		texturefile = "gfx/interface/goals/PAL_foreign.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_zionist"
+		texturefile = "gfx/interface/goals/PAL_zionist.png"
+	}
+	SpriteType = {
 		name = "GFX_goal_PAL_idf"
 		texturefile = "gfx/interface/goals/PAL_idf.png"
 	}
 	SpriteType = {
 		name = "GFX_goal_PAL_conscript"
 		texturefile = "gfx/interface/goals/PAL_conscript.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_cannon"
+		texturefile = "gfx/interface/goals/PAL_cannon.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_artillery"
+		texturefile = "gfx/interface/goals/PAL_artillery.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_expand"
+		texturefile = "gfx/interface/goals/PAL_expand.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_finalize"
+		texturefile = "gfx/interface/goals/PAL_finalize.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_special"
+		texturefile = "gfx/interface/goals/PAL_special.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_harsh"
+		texturefile = "gfx/interface/goals/PAL_harsh.png"
 	}
 	SpriteType = {
 		name = "GFX_goal_PAL_light"
