@@ -16,6 +16,110 @@ SpriteTypes = {
 		texturefile = "gfx/interface/goals/PAL_nonapoleon.png"
 	}
 	SpriteType = {
+		name = "GFX_goal_PAL_denounc"
+		texturefile = "gfx/interface/goals/PAL_denounce.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_coastguard"
+		texturefile = "gfx/interface/goals/PAL_coastguard.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_participate"
+		texturefile = "gfx/interface/goals/PAL_participate.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_tankus"
+		texturefile = "gfx/interface/goals/PAL_tankus.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_shamir"
+		texturefile = "gfx/interface/goals/PAL_shamir.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_idf"
+		texturefile = "gfx/interface/goals/PAL_idf.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_conscript"
+		texturefile = "gfx/interface/goals/PAL_conscript.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_light"
+		texturefile = "gfx/interface/goals/PAL_light.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_ban"
+		texturefile = "gfx/interface/goals/PAL_ban.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_siphon"
+		texturefile = "gfx/interface/goals/PAL_siphon.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_zak"
+		texturefile = "gfx/interface/goals/PAL_zak.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_cooperation"
+		texturefile = "gfx/interface/goals/PAL_cooperation.png"
+	}
+		SpriteType = {
+		name = "GFX_goal_PAL_standardizing"
+		texturefile = "gfx/interface/goals/PAL_standardizing.png"
+	}
+		SpriteType = {
+		name = "GFX_goal_PAL_mossad"
+		texturefile = "gfx/interface/goals/PAL_mossad.png"
+	}
+		SpriteType = {
+		name = "GFX_goal_PAL_encourage"
+		texturefile = "gfx/interface/goals/PAL_encourage.png"
+	}
+		SpriteType = {
+		name = "GFX_goal_PAL_radio"
+		texturefile = "gfx/interface/goals/PAL_radio.png"
+	}
+		SpriteType = {
+		name = "GFX_goal_PAL_rules"
+		texturefile = "gfx/interface/goals/PAL_rules.png"
+	}
+		SpriteType = {
+		name = "GFX_goal_PAL_coordinate"
+		texturefile = "gfx/interface/goals/PAL_coordinate.png"
+	}
+		SpriteType = {
+		name = "GFX_goal_PAL_ground"
+		texturefile = "gfx/interface/goals/PAL_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_vessels"
+		texturefile = "gfx/interface/goals/PAL_vessels.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_women"
+		texturefile = "gfx/interface/goals/PAL_women.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_light"
+		texturefile = "gfx/interface/goals/PAL_light.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_marine"
+		texturefile = "gfx/interface/goals/PAL_marine.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_submarines"
+		texturefile = "gfx/interface/goals/PAL_submarines.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_association"
+		texturefile = "gfx/interface/goals/PAL_association.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_crusier"
+		texturefile = "gfx/interface/goals/PAL_cruiser.png"
+	}
+	SpriteType = {
 		name = "GFX_goal_PAL_flipped"
 		texturefile = "gfx/interface/goals/PAL_flipped.png"
 	}

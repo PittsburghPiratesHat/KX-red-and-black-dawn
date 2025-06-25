@@ -1466,7 +1466,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_denounce_syndicalism
-		icon = GFX_goal
+		icon = GFX_goal_PAL_denounc
 
 		cost = 5
 
@@ -1496,7 +1496,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_participate_in_the_liberation_of_europe
-		icon = GFX_goal
+		icon = GFX_goal_PAL_participate
 
 		cost = 5
 
@@ -2372,7 +2372,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_create_the_idf
-		icon = GFX_goal
+		icon = GFX_goal_PAL_idf
 
 		cost = 5
 
@@ -2401,7 +2401,7 @@ has_country_flag = ZIO_napoleon
 
 		focus = {
 		id = ZIO_ban_arabs_from_the_army
-		icon = GFX_goal
+		icon = GFX_goal_PAL_ban
 
 		cost = 5
 
@@ -2431,7 +2431,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_conscript_arabs
-		icon = GFX_goal
+		icon = GFX_goal_PAL_conscript
 
 		cost = 5
 
@@ -2461,7 +2461,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_siphon_talent_from_the_diaspora
-		icon = GFX_goal
+		icon = GFX_goal_PAL_siphon
 
 		cost = 5
 
@@ -3387,7 +3387,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_shamir_plan
-		icon = GFX_goal
+		icon = GFX_goal_PAL_shamir
 
 		cost = 5
 
@@ -3424,7 +3424,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_cooperation_with_the_air_force_and_army
-		icon = GFX_goal
+		icon = GFX_goal_PAL_cooperation
 
 		cost = 5
 
@@ -3453,7 +3453,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_focus_on_battleships
-		icon = GFX_goal
+		icon = GFX_goal_PAL
 
 		cost = 5
 
@@ -3482,7 +3482,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_creating_an_israeli_marine_corp
-		icon = GFX_goal
+		icon = GFX_goal_PAL_marine
 
 		cost = 5
 
@@ -3511,7 +3511,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_study_foreign_cruiser_and_battleship_designs
-		icon = GFX_goal
+		icon = GFX_goal_PAL_crusier
 
 		cost = 5
 
@@ -3540,7 +3540,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_tankus_plan
-		icon = GFX_goal
+		icon = GFX_goal_PAL_tankus
 
 		cost = 5
 
@@ -3577,7 +3577,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_form_an_israeli_coast_guard
-		icon = GFX_goal
+		icon = GFX_goal_PAL_coastguard
 
 		cost = 5
 
@@ -3606,7 +3606,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_give_women_opportunities_in_the_navy
-		icon = GFX_goal
+		icon = GFX_goal_PAL_women
 
 		cost = 5
 
@@ -3635,7 +3635,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_focus_on_submarines
-		icon = GFX_goal
+		icon = GFX_goal_PAL_submarines
 
 		cost = 5
 
@@ -3673,7 +3673,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_zak_plan
-		icon = GFX_goal
+		icon = GFX_goal_PAL_zak
 
 		cost = 5
 
@@ -3710,7 +3710,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_seize_civilian_vessels
-		icon = GFX_goal
+		icon = GFX_goal_PAL_vessels
 
 		cost = 5
 
@@ -3744,7 +3744,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_developing_light_cruisers
-		icon = GFX_goal
+		icon = GFX_goal_PAL_light
 
 		cost = 5
 
@@ -3773,7 +3773,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_create_the_israeli_naval_academy
-		icon = GFX_goal
+		icon = GFX_goal_PAL_association
 
 		cost = 5
 
@@ -3833,7 +3833,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_standardizing_the_language_for_pilots
-		icon = GFX_goal
+		icon = GFX_goal_PAL_standardizing
 
 		cost = 5
 
@@ -3862,7 +3862,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_encourage_women_and_foreign_volunteers_to_sign_up
-		icon = GFX_goal
+		icon = GFX_goal_PAL_encourage
 
 		cost = 5
 
@@ -3893,7 +3893,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_israel_rules_the_sky
-		icon = GFX_goal
+		icon = GFX_goal_PAL_rules
 
 		cost = 5
 
@@ -3952,7 +3952,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_coordinate_with_the_army
-		icon = GFX_goal
+		icon = GFX_goal_PAL_coordinate
 
 		cost = 5
 
@@ -3981,7 +3981,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_focus_on_ground_support
-		icon = GFX_goal
+		icon = GFX_goal_PAL_ground
 
 		cost = 5
 
@@ -4010,7 +4010,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_increase_investment_into_radar_tech
-		icon = GFX_goal
+		icon = GFX_goal_PAL_radio
 
 		cost = 5
 
@@ -4039,7 +4039,7 @@ has_country_flag = ZIO_napoleon
 
 	focus = {
 		id = ZIO_create_mossad
-		icon = GFX_goal
+		icon = GFX_goal_PAL_mossad
 
 		cost = 5
 
