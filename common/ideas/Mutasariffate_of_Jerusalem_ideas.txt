@@ -84,6 +84,70 @@ ideas = {
 				political_power_gain = 0.05
 			}
 		}
+		pal_doriplanone = {
+			picture = PAL_doriplan
+			allowed = { always = no }
+            	modifier = {
+				army_morale_factor = -0.10
+				army_speed_factor = 0.05
+				army_armor_attack_factor = 0.05
+				army_armor_defence_factor = 0.05
+				army_armor_speed_factor = 0.05
+			}
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+					maximum_speed = 0.05
+					reliability = -0.05
+					instant = yes
+				}
+			}
+		}
+		pal_doriplantwo = {
+			picture = PAL_doriplan
+			allowed = { always = no }
+            	modifier = {
+				army_attack_factor = 0.05
+				army_morale_factor = -0.10
+				army_speed_factor = 0.05
+				army_armor_attack_factor = 0.05
+				army_armor_defence_factor = 0.05
+				army_armor_speed_factor = 0.05
+			}
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+					maximum_speed = 0.05
+					reliability = -0.05
+					build_cost_ic = -0.2
+					hard_attack = 0.10
+					instant = yes
+				}
+			}
+		}
+		pal_doriplanthree = {
+			picture = PAL_doriplan
+			allowed = { always = no }
+            	modifier = {
+					heat_attrition_factor = -0.15
+				army_attack_factor = 0.05
+				army_morale_factor = -0.10
+				army_speed_factor = 0.05
+				army_armor_attack_factor = 0.05
+				army_armor_defence_factor = 0.05
+				army_armor_speed_factor = 0.05
+			}
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+					maximum_speed = 0.05
+					reliability = -0.05
+					build_cost_ic = -0.2
+					hard_attack = 0.10
+					instant = yes
+				}
+			}
+		}
 		pal_coexist = {
 			picture = PAL_coexist
 			allowed = { always = no }
@@ -228,12 +292,141 @@ ideas = {
 				research_speed_factor = 0.03
 			}
 		}
+		PAL_haredi_conscription = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = PAL_haredi_conscription
+			modifier = {
+				stability_factor = -0.01
+				recruitable_population_factor = 0.03
+			}
+		}
+		pal_peeweeplan = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = PAL_peeweeplan
+			modifier = {
+				enemy_army_bonus_air_superiority_factor = -0.10
+				air_interception_detect_factor = 0.10
+				ground_attack_factor = 0.20
+			}
+		}
+			pal_peeweeplantwo = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = PAL_peeweeplan
+			modifier = {
+				enemy_army_bonus_air_superiority_factor = -0.10
+				air_interception_detect_factor = 0.10
+				ground_attack_factor = 0.20
+				air_range_factor = 0.12
+				air_accidents_factor = -0.1
+			}
+		}
+			pal_peeweeplanthree = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = PAL_peeweeplan
+			modifier = {
+				enemy_army_bonus_air_superiority_factor = -0.10
+				air_interception_detect_factor = 0.10
+				ground_attack_factor = 0.20
+				air_range_factor = 0.12
+				air_accidents_factor = -0.1
+					air_night_penalty = -0.1
+				air_weather_penalty	= -0.1
+			}
+		}
+		pal_amirplan = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = PAL_amirplan
+			modifier = {
+					army_bonus_air_superiority_factor = 0.05
+				air_intercept_efficiency = 0.05
+				air_strategic_bomber_bombing_factor = 0.10
+			}
+		}
+			pal_amirplantwo = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = PAL_amirplan
+			modifier = {
+					army_bonus_air_superiority_factor = 0.05
+				air_intercept_efficiency = 0.05
+				air_strategic_bomber_bombing_factor = 0.10
+				ground_attack_factor = 0.20
+			}
+		}
+		pal_dayanplan = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = PAL_dayanplan
+			modifier = {
+				army_org_Factor = 0.05
+				attrition = -0.05
+				out_of_supply_factor = -0.05
+				supply_consumption_factor = -0.05
+				max_planning = 0.1
+				max_command_power = 25
+				max_dig_in_factor = 0.1
+				paternal_autocrat_drift = 0.02
+			}
+		}
+		pal_dayanplantwo = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = PAL_dayanplan
+			modifier = {
+				army_org_Factor = 0.05
+				out_of_supply_factor = -0.05
+				supply_consumption_factor = -0.05
+				max_planning = 0.1
+				attrition = -0.05
+				max_command_power = 25
+				max_dig_in_factor = 0.1
+				paternal_autocrat_drift = 0.02
+				recon_factor = 0.5
+				heat_attrition_factor = -0.15
+			}
+		}
+		pal_dayanplanthree = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = PAL_dayanplan
+			modifier = {
+				army_org_Factor = 0.05
+				attrition = -0.05
+				out_of_supply_factor = -0.05
+				supply_consumption_factor = -0.05
+				max_planning = 0.1
+				attrition = -0.05
+				recon_factor = 0.5
+				max_command_power = 25
+				max_dig_in_factor = 0.1
+				paternal_autocrat_drift = 0.02
+				heat_attrition_factor = -0.17
+				land_night_attack = 0.10
+			}
+		}
 		pal_remnants = {
 			allowed = { always = no }
 			removal_cost = -1
 			picture = PAL_remnants
 			modifier = {
 				stability_factor = -0.06
+			}
+		}
+		pal_embraced = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = PAL_embraced
+			modifier = {
+				totalist_drift = -0.06
+				syndicalist_drift = -0.06
+				radical_socialist_drift = -0.06
+				social_democrat_drift = 0.06
+				stability_factor = 0.02
 			}
 		}
 		pal_zioplan = {
@@ -250,6 +443,63 @@ ideas = {
 				army_infantry_attack_factor = 0.05
 				planning_speed = 0.4
 				conscription_factor	= 0.02
+			}
+		}
+			pal_zioplantwo = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = PAL_zioplan
+			modifier = {
+				recruitable_population_factor = 0.08
+				command_power_gain_mult = 0.002
+				weekly_manpower = 100
+				army_core_defence_factor = 0.05
+				encryption_factor = 0.05
+				justify_war_goal_time = -0.25
+				army_infantry_attack_factor = 0.05
+				planning_speed = 0.4
+				conscription_factor	= 0.02
+				stability_factor = -0.01
+				army_org_Factor = -0.01
+				training_time_factor = -0.10
+			}
+		}
+			pal_zioplanthree = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = PAL_zioplan
+			modifier = {
+				recruitable_population_factor = 0.08
+				command_power_gain_mult = 0.002
+				weekly_manpower = 100
+				army_core_defence_factor = 0.07
+				encryption_factor = 0.05
+				justify_war_goal_time = -0.25
+				army_infantry_attack_factor = 0.05
+				planning_speed = 0.4
+				conscription_factor	= 0.02
+				stability_factor = -0.01
+				army_org_Factor = 0.002
+				training_time_factor = -0.10
+			}
+		}
+			pal_zioplanfour = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = PAL_zioplan
+			modifier = {
+				recruitable_population_factor = 0.10
+				command_power_gain_mult = 0.002
+				weekly_manpower = 150
+				army_core_defence_factor = 0.07
+				encryption_factor = 0.05
+				justify_war_goal_time = -0.25
+				army_infantry_attack_factor = 0.05
+				planning_speed = 0.4
+					army_org_Factor = 0.003
+				conscription_factor	= 0.02
+				stability_factor = -0.01
+				training_time_factor = -0.10
 			}
 		}
 		pal_secterian = {

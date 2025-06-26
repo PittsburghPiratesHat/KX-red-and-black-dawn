@@ -25,6 +25,22 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/PAL/dayanplan.png"
 	}
 	spriteType = {
+		name = "GFX_idea_PAL_embraced"
+		texturefile = "gfx/interface/ideas/PAL/embraced.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_doriplan"
+		texturefile = "gfx/interface/ideas/PAL/doriplan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_peeweeplan"
+		texturefile = "gfx/interface/ideas/PAL/peeweeplan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_amirplan"
+		texturefile = "gfx/interface/ideas/PAL/amirplan.png"
+	}
+	spriteType = {
 		name = "GFX_idea_PAL_idf_is"
 		texturefile = "gfx/interface/ideas/PAL/is.png"
 	}

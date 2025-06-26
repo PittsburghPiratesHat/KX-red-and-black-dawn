@@ -567,6 +567,7 @@ focus_tree = {
 			set_country_flag = ZIO_economy
 			set_country_flag = ZIO_can_do_expansion
 			remove_ideas = 	pal_secterian
+			add_ideas = pal_embraced
 		}
 	}
 
@@ -3135,6 +3136,7 @@ has_country_flag = ZIO_napoleon
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = pal_sheikl
 		}
 	}
 
@@ -3828,6 +3830,7 @@ has_country_flag = ZIO_napoleon
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = pal_peeweeplan
 		}
 	}
 
@@ -3857,6 +3860,10 @@ has_country_flag = ZIO_napoleon
 		available_if_capitulated = yes
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = pal_peeweeplan
+				add_idea = pal_peeweeplantwo
+			}
 		}
 	}
 
@@ -3917,6 +3924,10 @@ has_country_flag = ZIO_napoleon
 		available_if_capitulated = yes
 
 		completion_reward = {
+				swap_ideas = {
+				remove_idea = pal_peeweeplantwo
+				add_idea = pal_peeweeplanthree
+			}
 		}
 	}
 
@@ -3947,6 +3958,7 @@ has_country_flag = ZIO_napoleon
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = pal_amirplan
 		}
 	}
 
@@ -3976,6 +3988,12 @@ has_country_flag = ZIO_napoleon
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = TEX_CAS_focus
+				bonus = 0.75
+				uses = 2
+				category = cas_bomber
+			}
 		}
 	}
 
@@ -4005,6 +4023,10 @@ has_country_flag = ZIO_napoleon
 		available_if_capitulated = yes
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = pal_amirplan
+				add_idea = pal_amirplantwo
+			}
 		}
 	}
 
@@ -4034,6 +4056,11 @@ has_country_flag = ZIO_napoleon
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = radar_tech
+			}
 		}
 	}
 
@@ -4096,6 +4123,7 @@ has_country_flag = ZIO_napoleon
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = pal_doriplanone
 		}
 	}
 
@@ -4125,6 +4153,39 @@ has_country_flag = ZIO_napoleon
 		available_if_capitulated = yes
 
 		completion_reward = {
+				if = {
+				limit = {
+					NOT = { has_dlc = "No Step Back" }
+				}
+				add_equipment_to_stockpile = {
+			type = light_tank_equipment_1
+			amount = 100
+			producer = PAL
+			}
+			}
+			if = {
+				limit = {
+					has_dlc = "No Step Back"
+				}
+				add_equipment_to_stockpile = {
+			type = light_tank_chassis
+			amount = 100
+			producer = PAL
+			}
+			}
+			
+			add_tech_bonus = {
+				name = tank_bonus
+				bonus = 1
+				uses = 1
+				category = armor
+			}
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
 		}
 	}
 
@@ -4154,6 +4215,11 @@ has_country_flag = ZIO_napoleon
 		available_if_capitulated = yes
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = pal_doriplanone
+				add_idea = pal_doriplantwo
+			}
+			
 		}
 	}
 
@@ -4183,6 +4249,10 @@ has_country_flag = ZIO_napoleon
 		available_if_capitulated = yes
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = pal_doriplantwo
+				add_idea = pal_doriplanthree
+			}
 		}
 	}
 
@@ -4284,6 +4354,10 @@ has_country_flag = ZIO_napoleon
 		available_if_capitulated = yes
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = pal_zioplan
+				add_idea = pal_zioplantwo
+			}
 		}
 	}
 
@@ -4313,6 +4387,10 @@ has_country_flag = ZIO_napoleon
 		available_if_capitulated = yes
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = pal_zioplantwo
+				add_idea = pal_zioplanthree
+			}
 		}
 	}
 
@@ -4342,6 +4420,10 @@ has_country_flag = ZIO_napoleon
 		available_if_capitulated = yes
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = pal_zioplanthree
+				add_idea = pal_zioplanfour
+			}
 		}
 	}
 
@@ -4516,6 +4598,11 @@ has_country_flag = ZIO_napoleon
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 5
+				technology = tech_special_forces
+			}
 		}
 	}
 
@@ -4545,6 +4632,11 @@ has_country_flag = ZIO_napoleon
 		available_if_capitulated = yes
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = pal_dayanplan
+				add_idea = pal_dayanplantwo
+			}
+			set_technology = { desert_warfare = 1 }
 		}
 	}
 
@@ -4574,6 +4666,10 @@ has_country_flag = ZIO_napoleon
 		available_if_capitulated = yes
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = pal_dayanplantwo
+				add_idea = pal_dayanplanthree
+			}
 		}
 	}
 
@@ -5126,6 +5222,7 @@ has_country_flag = ZIO_napoleon
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = pal_code
 		}
 	}
 
@@ -5333,6 +5430,7 @@ has_country_flag = ZIO_napoleon
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = pal_personality
 		}
 	}
 
