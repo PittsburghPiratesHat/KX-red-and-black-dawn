@@ -790,11 +790,11 @@ country_event = {	#gordonramsay
 
 	option = {
 		name = israel.39.a
-				
+				add_ideas = PAL_yiddish
 	}
 	option = {
 		name = israel.39.b
-				
+				add_ideas = PAL_hebrew
 	}
 }
 

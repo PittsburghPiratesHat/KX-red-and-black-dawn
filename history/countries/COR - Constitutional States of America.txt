@@ -436,6 +436,20 @@ create_corps_commander = {# Virgil Effinger
 	logistics_skill = 2
 	id = 136
 }
+create_corps_commander = {# Virgil Effinger
+	name = "Bull Connor"
+	desc = ""
+	portrait_path = "gfx/leaders/COR/bull_connor.png"
+	traits = {
+		harsh_leader
+		COR_NDWL_leader
+	}
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
 create_corps_commander = {# Samuel Green
 	name = "Samuel Green"
 	desc = "TEX_SAMUEL_GREEN_ARMY_DESC"

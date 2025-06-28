@@ -34,6 +34,16 @@ ideas = {
 				paternal_autocrat_drift = 0.03
 			}
 		}
+		pal_fate = {
+			picture = PAL_fate
+			allowed = { always = no }
+            modifier = {
+			}
+				targeted_modifier = {
+				tag = FRA
+				defense_bonus_against = 0.25
+			}
+		}
 		pal_yiddish = {
 			picture = PAL_yiddish
 			allowed = { always = no }
@@ -41,14 +51,6 @@ ideas = {
 				radical_socialist_drift = 0.03
 				social_conservative_drift = 0.03
 				social_democrat_drift = 0.03
-			}
-		}
-		pal_fate = {
-			picture = PAL_fate
-			allowed = { always = no }
-            modifier = {
-				stability_factor = -0.07
-				MONTHLY_POPULATION = 0.30
 			}
 		}
 		pal_code = {
