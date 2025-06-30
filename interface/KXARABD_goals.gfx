@@ -1,15 +1,63 @@
 SpriteTypes = {
 	SpriteType = {
-		name = "GFX_goal_ARZ_artistry"
-		texturefile = "gfx/interface/goals/ARZ_artistry.png"
+		name = "GFX_goal_NEE_sandmen"
+		texturefile = "gfx/interface/goals/NEE_sandmen.png"
 	}
 	SpriteType = {
-		name = "GFX_goal_ARZ_cement"
-		texturefile = "gfx/interface/goals/ARZ_cement.png"
+		name = "GFX_goal_NEE_skinard"
+		texturefile = "gfx/interface/goals/NEE_skinard.png"
 	}
 	SpriteType = {
-		name = "GFX_goal_ARZ_cement_1"
-		texturefile = "gfx/interface/goals/ARZ_cement_1.png"
+		name = "GFX_goal_NEE_purge"
+		texturefile = "gfx/interface/goals/NEE_purge.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_NEE_atheism"
+		texturefile = "gfx/interface/goals/NEE_atheism.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_NEE_communities"
+		texturefile = "gfx/interface/goals/NEE_communities.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_NEE_rite"
+		texturefile = "gfx/interface/goals/NEE_rite.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_NEE_hives"
+		texturefile = "gfx/interface/goals/NEE_hives.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_NEE_failure"
+		texturefile = "gfx/interface/goals/NEE_failure.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_NEE_nationwide"
+		texturefile = "gfx/interface/goals/NEE_nationwide.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_NEE_rotenberg"
+		texturefile = "gfx/interface/goals/NEE_rotenberg.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_NEE_good"
+		texturefile = "gfx/interface/goals/NEE_good.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_NEE_perfected"
+		texturefile = "gfx/interface/goals/NEE_perfected.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_NEE_save"
+		texturefile = "gfx/interface/goals/NEE_save.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_NEE_skinner"
+		texturefile = "gfx/interface/goals/NEE_skinner.png"
+	}
+		SpriteType = {
+		name = "GFX_goal_NEE_science"
+		texturefile = "gfx/interface/goals/NEE_science.png"
 	}
 	SpriteType = {
 		name = "GFX_goal_PAL_nonapoleon"

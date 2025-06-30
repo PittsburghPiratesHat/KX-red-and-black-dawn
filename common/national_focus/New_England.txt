@@ -21,7 +21,7 @@ focus_tree = {
 
 	focus = {
 		id = NEE_skinner
-		icon = GFX_focus_generic_strike_at_democracy3
+		icon = GFX_goal_NEE_skinner
 		cost = 5
 		x = -5
 		y = 8
@@ -37,7 +37,7 @@ focus_tree = {
 
 		focus = {
 		id = NEE_create_the_sandmen
-		icon = GFX_focus_generic_strike_at_democracy3
+		icon = GFX_goal_NEE_sandmen
 		cost = 5
 		prerequisite = {
 			focus = NEE_skinner
@@ -56,7 +56,7 @@ focus_tree = {
 
 	focus = {
 		id = NEE_the_right_of_carousel
-		icon = GFX_focus_generic_strike_at_democracy3
+		icon = GFX_goal_NEE_rite
 		cost = 5
 		prerequisite = {
 			focus = NEE_create_the_sandmen
@@ -75,7 +75,7 @@ focus_tree = {
 
 	focus = {
 		id = NEE_coopt_stoddards_ideas
-		icon = GFX_focus_generic_strike_at_democracy3
+		icon = GFX_goal_NEE_skinard
 		cost = 5
 		prerequisite = {
 			focus = NEE_the_right_of_carousel
@@ -94,7 +94,7 @@ focus_tree = {
 
 	focus = {
 		id = NEE_open_the_centers
-		icon = GFX_focus_generic_strike_at_democracy3
+		icon = GFX_goal_NEE_rotenberg
 		cost = 5
 		prerequisite = {
 			focus = NEE_skinner
@@ -113,7 +113,7 @@ focus_tree = {
 
 	focus = {
 		id = NEE_state_funding_for_science
-		icon = GFX_focus_generic_strike_at_democracy3
+		icon = GFX_goal_NEE_science
 		cost = 5
 		prerequisite = {
 			focus = NEE_open_the_centers
@@ -132,7 +132,7 @@ focus_tree = {
 
 	focus = {
 		id = NEE_failure_to_comply_means
-		icon = GFX_focus_generic_strike_at_democracy3
+		icon = GFX_goal_NEE_failure
 		cost = 5
 		prerequisite = {
 			focus = NEE_state_funding_for_science
@@ -151,7 +151,7 @@ focus_tree = {
 
 	focus = {
 		id = NEE_purge_the_anglophiles
-		icon = GFX_focus_generic_strike_at_democracy3
+		icon = GFX_goal_NEE_purge
 		cost = 5
 		prerequisite = {
 			focus = NEE_skinner
@@ -170,7 +170,7 @@ focus_tree = {
 
 	focus = {
 		id = NEE_nationwide_behavior_modification_programs
-		icon = GFX_focus_generic_strike_at_democracy3
+		icon = GFX_goal_NEE_nationwide
 		cost = 5
 		prerequisite = {
 			focus = NEE_purge_the_anglophiles
@@ -189,7 +189,7 @@ focus_tree = {
 
 	focus = {
 		id = NEE_to_save_humanity_from_itself
-		icon = GFX_focus_generic_strike_at_democracy3
+		icon = GFX_goal_NEE_save
 		cost = 5
 		prerequisite = {
 			focus = NEE_failure_to_comply_means
@@ -220,7 +220,7 @@ focus_tree = {
 
 	focus = {
 		id = NEE_a_utopia_perfected
-		icon = GFX_focus_generic_strike_at_democracy3
+		icon = GFX_goal_NEE_perfected
 		cost = 5
 		prerequisite = {
 			focus = NEE_failure_to_comply_means
@@ -251,7 +251,7 @@ focus_tree = {
 
 	focus = {
 		id = NEE_total_state_atheism
-		icon = GFX_focus_generic_strike_at_democracy3
+		icon =  GFX_goal_NEE_atheism
 		cost = 5
 		prerequisite = {
 			focus = NEE_nationwide_behavior_modification_programs
@@ -270,7 +270,7 @@ focus_tree = {
 
 	focus = {
 		id = NEE_adapt_lovells_hives
-		icon = GFX_focus_generic_strike_at_democracy3
+		icon =  GFX_goal_NEE_hives
 		cost = 5
 		prerequisite = {
 			focus = NEE_skinner
@@ -289,7 +289,7 @@ focus_tree = {
 
 	focus = {
 		id = NEE_create_the_communities
-		icon = GFX_focus_generic_strike_at_democracy3
+		icon = GFX_goal_NEE_communities
 		cost = 5
 		prerequisite = {
 			focus = NEE_adapt_lovells_hives
@@ -308,7 +308,7 @@ focus_tree = {
 
 	focus = {
 		id = NEE_the_good_life
-		icon = GFX_focus_generic_strike_at_democracy3
+		icon =  GFX_goal_NEE_good
 		cost = 5
 		prerequisite = {
 			focus = NEE_create_the_communities
