@@ -368,6 +368,21 @@ create_corps_commander = {# Augustine
 	planning_skill = 2
 	logistics_skill = 4
 }
+create_corps_commander = {# dewitt
+	name = "John DeWitt"
+	desc = ""
+	portrait_path = "gfx/leaders/CAL/Portrait_CAL_John_Lesesne_DeWitt.png"
+	traits = {
+		inflexible_strategist
+		trait_cautious
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+	id = 9802
+}
 create_corps_commander = {# Alexander Vandegrift
 	name = "Alexander Vandegrift"
 	desc = "CAL_ALEXANDER_VANDEGRIFT_ARMY_DESC"
