@@ -186,6 +186,13 @@ if = {
 	}
 }
 
+complete_special_project = {
+	project = sp:sp_naval_cruiser_submarine
+}
+complete_special_project = {
+	project = sp:sp_naval_super_heavy_battleship
+}
+
 set_research_slots = 4
 set_convoys = 100
 set_stability = 0.5
@@ -262,13 +269,15 @@ create_country_leader = {
 	name = "Frank T. Johns"
 	picture = "gfx/leaders/CSA/Portrait_CSA_Frank_T_Johns.png"
 	expire = "1.1.1"
-	ideology = syndicalist_subtype
+	ideology = de_leonism_subtype
 }
 create_country_leader = {
-	name = "Frank T. Johns"
-	picture = "gfx/leaders/CSA/Portrait_CSA_Frank_T_Johns.png"
+	name = "Eugene Dennis"
+	desc = "POLITICS_EUGENE_DENNIS_DESC"
+	picture = "gfx/leaders/CSA/Portrait_CSA_Eugene_Dennis.png"
 	expire = "1.1.1"
-	ideology = popcom_subtype
+	ideology = william_foster_thought_subtype
+	traits = { indecisive }
 }
 create_country_leader = {
 	name = "Edward Longstreet Bodin"
@@ -281,17 +290,6 @@ create_country_leader = {
 
 
 ###Field Commander####
-create_field_marshal = {# "bash"
-	name = "Louis Bash"
-	desc = "POLITICS_BASH_DESC"
-	portrait_path = "gfx/leaders/CAL/bash.png"
-	traits = { infantry_officer old_guard logistics_wizard trait_engineer organizer career_officer}
-	skill = 5
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 5
-}	
 
 ### Corps Commander
 create_corps_commander = {# Alexander Patch
@@ -324,35 +322,6 @@ create_corps_commander = {# Lewis H. Brereton
 	logistics_skill = 1
 	id = 981
 }
-create_corps_commander = {# Augustine
-	name = "Augustine Warner Robbins"
-	desc = ""
-	portrait_path = "gfx/leaders/CAL/Portrait_CAL_Augustine_Warner_Robbins.png"
-	traits = {
-		career_officer
-		air_commander
-	}
-	skill = 3
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 4
-}
-create_corps_commander = {# dewitt
-	name = "John DeWitt"
-	desc = ""
-	portrait_path = "gfx/leaders/CAL/Portrait_CAL_John_Lesesne_DeWitt.png"
-	traits = {
-		inflexible_strategist
-		trait_cautious
-	}
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 3
-	id = 9802
-}
 create_corps_commander = {# Isaac D. White
 	name = "Isaac D. White"
 	desc = "CAL_ISAAC_WHITE_ARMY_DESC"
@@ -384,6 +353,20 @@ create_corps_commander = {# Albert Coady Wedemeyer
 	planning_skill = 3
 	logistics_skill = 1
 	id = 936
+}
+create_corps_commander = {# Augustine
+	name = "Augustine Warner Robbins"
+	desc = ""
+	portrait_path = "gfx/leaders/CAL/Portrait_CAL_Augustine_Warner_Robbins.png"
+	traits = {
+		career_officer
+		air_commander
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
 }
 create_corps_commander = {# Alexander Vandegrift
 	name = "Alexander Vandegrift"
@@ -479,24 +462,6 @@ create_corps_commander = {# Millard Fillmore Harmon
 	logistics_skill = 2
 	id = 9864
 }
-create_corps_commander = {# Millard Fillmore Harmon
-	name = "Delbert Burke"
-	desc = ""
-	portrait_path = "gfx/leaders/CAL/burke.png"
-	traits = {
-		naval_liason
-		naval_invader
-		commando
-		infantry_leader
-		infantry_officer
-		young_leader
-	}
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 2
-}
 create_corps_commander = {# George C. Shaw
 	name = "George C. Shaw"
 	desc = "CAL_GEORGE_SHAW_ARMY_DESC"
@@ -527,23 +492,6 @@ create_corps_commander = {# Herbert B. Powell
 	planning_skill = 2
 	logistics_skill = 2
 	id = 987
-}
-create_corps_commander = {# astorm
-	name = "Johnny Alstrom"
-	desc = ""
-	portrait_path = "gfx/leaders/CAL/alstrom.png"
-	traits = {
-		young_leader
-		infantry_officer
-		infantry_leader
-		naval_liason
-		naval_invader
-	}
-	skill = 2
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 2
 }
 create_corps_commander = {#
 	name = "George E. Stratemeyer"
@@ -585,11 +533,34 @@ create_corps_commander = {#
 	logistics_skill = 1
 }
 create_corps_commander = {#
-	name = "Casper Volk"
-	portrait_path = "gfx/leaders/CAL/Volk.png"
+	name = "Leslie Skinner"
+	portrait_path = "gfx/leaders/CAL/Portrait_CAL_Leslie_Skinner.png"
 	traits = {
-		infantry_leader
-		infantry_officer
+		air_commander
+	}
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {#
+	name = "August Vollmer"
+	portrait_path = "gfx/leaders/CAL/Portrait_CAL_August_Vollmer.png"
+	traits = {
+		war_hero
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {#
+	name = "Dave Brubeck"
+	portrait_path = "gfx/leaders/CAL/Portrait_CAL_Dave_Brubeck.png"
+	traits = { 
+		media_personality
 	}
 	skill = 1
 	attack_skill = 1
@@ -690,8 +661,25 @@ if = {
 		bypass_recruitment = yes
 		available_to_spy_master = yes
 		female = yes
-		nationalities = { CSA COR USA TEX CAL NEE WCC }
+		nationalities = { CSA COR USA TEX CAL NEE WCC JAP }
 	}
 }
+
+if = {
+	limit = { has_dlc = "La Resistance" }
+	create_operative_leader = {
+		name = "Raymond Burr"
+		GFX = GFX_Portrait_CAL_Raymond_Burr
+		traits = { operative_master_interrogator }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { CSA COR USA TEX CAL NEE WCC CAN }
+	}
+}
+
+recruit_character = CAL_Jack_Parsons
+recruit_character = CAL_Edward_Curtis_Wells
+recruit_character = CAL_Edwin_McMillan
+recruit_character = CAL_Paul_Pigott
 
 USA_start_naval_variant = yes
