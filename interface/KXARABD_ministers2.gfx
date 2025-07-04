@@ -36602,20 +36602,24 @@ spriteTypes = {
 		texturefile = "gfx/interface/ministers/PAL/PAL_tehomi.png"
 	}
 	spriteType = {
-		name = "GFX_idea_PAL_stern_hog_pat"
+		name = "GFX_idea_PAL_stern_hog_tot"
 		texturefile = "gfx/interface/ministers/PAL/PAL_stern.png"
 	}
 	spriteType = {
-		name = "GFX_idea_PAL_dayan_hog_pat"
-		texturefile = "gfx/interface/ministers/PAL/PAL_dayan.png"
+		name = "GFX_idea_PAL_yellin_hog_rso"
+		texturefile = "gfx/interface/ministers/PAL/PAL_yellin.png"
 	}
 	spriteType = {
-		name = "GFX_idea_PAL_dayan_hog_pat"
-		texturefile = "gfx/interface/ministers/PAL/PAL_dayan.png"
+		name = "GFX_idea_PAL_allon_hog_rso"
+		texturefile = "gfx/interface/ministers/PAL/PAL_allon.png"
 	}
 	spriteType = {
-		name = "GFX_idea_PAL_dayan_hog_pat"
-		texturefile = "gfx/interface/ministers/PAL/PAL_dayan.png"
+		name = "GFX_idea_pal_enstein_hog_sde"
+		texturefile = "gfx/interface/ministers/PAL/pal_enstein.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_simon_hog_sco"
+		texturefile = "gfx/interface/ministers/PAL/PAL_simon.png"
 	}
 
 	### Person of Influence
@@ -36624,17 +36628,74 @@ spriteTypes = {
 		name = "GFX_idea_PAL_lawyer_for_sco"
 		texturefile = "gfx/interface/ministers/PAL/pal_lawyer.png"
 	}
+	spriteType = {
+		name = "GFX_idea_PAL_herzog_for_pat"
+		texturefile = "gfx/interface/ministers/PAL/pal_herzog.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_netanyahu_sec_pat"
+		texturefile = "gfx/interface/ministers/PAL/pal_netanyahu.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_yes_for_rso"
+		texturefile = "gfx/interface/ministers/PAL/pal_yes.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_david_for_tot"
+		texturefile = "gfx/interface/ministers/PAL/pal_david.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_yit_for_rso"
+		texturefile = "gfx/interface/ministers/PAL/pal_yit.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_yadin_for_pat"
+		texturefile = "gfx/interface/ministers/PAL/pal_yadin.png"
+	}
+
 
 	# Economy Minister
 	spriteType = {
 		name = "GFX_idea_PAL_isser_eco_sco"
 		texturefile = "gfx/interface/ministers/PAL/pal_isser.png"
 	}
+	spriteType = {
+		name = "GFX_idea_PAL_jab_eco_tot"
+		texturefile = "gfx/interface/ministers/PAL/pal_jab.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_ugly_eco_rso"
+		texturefile = "gfx/interface/ministers/PAL/pal_ugly.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_carmel_eco_pat"
+		texturefile = "gfx/interface/ministers/PAL/pal_carmel.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_begin_eco_tot"
+		texturefile = "gfx/interface/ministers/PAL/pal_begin.png"
+	}
 
 	# Security Minister
 	spriteType = {
 		name = "GFX_idea_PAL_avner_sec_pat"
 		texturefile = "gfx/interface/ministers/PAL/PAL_avner.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_allon_sec_rso"
+		texturefile = "gfx/interface/ministers/PAL/PAL_allon.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_gil_sec_tot"
+		texturefile = "gfx/interface/ministers/PAL/PAL_gil.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_munich_sec_sde"
+		texturefile = "gfx/interface/ministers/PAL/PAL_munich.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_raz_sec_npo"
+		texturefile = "gfx/interface/ministers/PAL/PAL_raz.png"
 	}
 
 
@@ -36643,19 +36704,35 @@ spriteTypes = {
 		name = "GFX_idea_PAL_dayan_cos_pat"
 		texturefile = "gfx/interface/ministers/PAL/PAL_dayan.png"
 	}
+	spriteType = {
+		name = "GFX_idea_PAL_stern_cos_tot"
+		texturefile = "gfx/interface/ministers/PAL/PAL_stern.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_ben_cos_tot"
+		texturefile = "gfx/interface/ministers/PAL/PAL_ben.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_dori_cos_tot"
+		texturefile = "gfx/interface/ministers/PAL/PAL_dori.png"
+	}
 
 	### Chief of Army
 	spriteType = {
-		name = "GFX_idea_PAL_Sharif_Nasir_al_Qagli_carm_rso"
-		texturefile = "gfx/interface/ministers/PAL/PAL_Sharif_Nasir_al_Qagli.png"
+		name = "GFX_idea_PAL_trump_carm_pat"
+		texturefile = "gfx/interface/ministers/PAL/PAL_trump.png"
 	}
 	spriteType = {
-		name = "GFX_idea_PAL_Liwa_al_Mawawiyi_carm_sde"
-		texturefile = "gfx/interface/ministers/PAL/PAL_Liwa_al_Mawawiyi.png"
+		name = "GFX_idea_PAL_marcus_carm_pat"
+		texturefile = "gfx/interface/ministers/PAL/PAL_marcus.png"
 	}
 	spriteType = {
-		name = "GFX_idea_PAL_Aly_al_Muttalib_carm_npo"
-		texturefile = "gfx/interface/ministers/PAL/PAL_Aly_al_Muttalib.png"
+		name = "GFX_idea_PAL_yadin_carm_pat"
+		texturefile = "gfx/interface/ministers/PAL/PAL_yadin.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_laskov_carm_pat"
+		texturefile = "gfx/interface/ministers/PAL/PAL_laskov.png"
 	}
 
 	### Chief of Navy
@@ -36663,11 +36740,23 @@ spriteTypes = {
 		name = "GFX_idea_PAL_bagelswithshamir_cnav_rso"
 		texturefile = "gfx/interface/ministers/PAL/PAL_shlomo_shamir.png"
 	}
+	spriteType = {
+		name = "GFX_idea_PAL_zak_cnav_rso"
+		texturefile = "gfx/interface/ministers/PAL/PAL_zak.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_tankus_cnav_rso"
+		texturefile = "gfx/interface/ministers/PAL/PAL_tankman.png"
+	}
 
 	### Chief of Air Force
 	spriteType = {
 		name = "GFX_idea_PAL_peewee_herman_cair_rso"
 		texturefile = "gfx/interface/ministers/PAL/PAL_peewee_herman.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_amir_cair_rso"
+		texturefile = "gfx/interface/ministers/PAL/PAL_amir.png"
 	}
 
 

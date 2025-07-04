@@ -182,6 +182,11 @@ country_event = {	#flagzionist
 				set_politics = {
 				ruling_party = totalist
 			}
+			remove_all_ministers = yes
+			add_ideas = PAL_stern_hog_tot
+			add_ideas = PAL_david_for_tot
+			add_ideas = PAL_begin_eco_tot
+			add_ideas =  PAL_gil_sec_tot
 	}
 
 	option = {
@@ -198,6 +203,11 @@ country_event = {	#flagzionist
 				set_politics = {
 				ruling_party = national_populist 
 			}
+			remove_all_ministers = yes
+			add_ideas = PAL_tehomi_hog_npo
+			add_ideas = PAL_david_for_tot
+			add_ideas = PAL_jab_eco_tot
+			add_ideas =  PAL_raz_sec_npo
 	}
 
 	option = {
@@ -214,6 +224,11 @@ country_event = {	#flagzionist
 				set_politics = {
 				ruling_party = radical_socialist
 			}
+			remove_all_ministers = yes
+			add_ideas = PAL_yellin_hog_rso
+			add_ideas = PAL_yit_for_rso
+			add_ideas = PAL_ugly_eco_rso
+			add_ideas =  PAL_allon_sec_rso
 	}
 }
 
@@ -242,6 +257,11 @@ country_event = {	#flagzioni
 				set_politics = {
 				ruling_party = social_democrat
 			}
+			remove_all_ministers = yes
+			add_ideas = pal_enstein_hog_sde
+			add_ideas = PAL_herzog_for_pat
+			add_ideas = PAL_isser_eco_sco
+			add_ideas =  PAL_munich_sec_sde
 	}
 
 	option = {
@@ -257,6 +277,11 @@ country_event = {	#flagzioni
 				set_politics = {
 				ruling_party = social_conservative
 			}
+			remove_all_ministers = yes
+			add_ideas = PAL_simon_hog_sco
+			add_ideas = PAL_lawyer_for_sco
+			add_ideas = PAL_isser_eco_sco
+			add_ideas =  PAL_avner_sec_pat
 	}
 
 	option = {
@@ -272,6 +297,11 @@ country_event = {	#flagzioni
 				set_politics = {
 				ruling_party = radical_socialist
 			}
+			remove_all_ministers = yes
+			add_ideas = PAL_allon_hog_rso
+			add_ideas = PAL_yes_for_rso
+			add_ideas = PAL_ugly_eco_rso
+			add_ideas =  PAL_netanyahu_sec_pat
 	}
 }
 
@@ -829,6 +859,118 @@ country_event = {	#gordonramsay
 	logistics_skill = 4
 	id = 167
 }
+create_corps_commander = {# dayan
+	name = "Richard Stern"
+	desc = ""
+	portrait_path = "gfx/leaders/PAL/brokenglass.png"
+	traits = {
+		old_guard
+		infantry_leader
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
+}
+create_corps_commander = {# dayan
+	name = "Otto Frank"
+	desc = ""
+	portrait_path = "gfx/leaders/PAL/diary.png"
+	traits = {
+		infantry_leader
+		old_guard
+	}
+	skill = 1
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
+}
+create_corps_commander = {# dayan
+	name = "Joseph Trumpledor"
+	desc = ""
+	portrait_path = "gfx/leaders/PAL/trump.png"
+	traits = {
+		commando
+		career_officer
+	}
+	skill = 1
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
+}
+create_corps_commander = {# dayan
+	name = "Chaim Herzog"
+	desc = ""
+	portrait_path = "gfx/leaders/PAL/herzog.png"
+	traits = {
+		young_leader
+		armor_officer
+		panzer_leader
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
+}
+create_corps_commander = {# dayan
+	name = "Yisrael Amir"
+	desc = ""
+	portrait_path = "gfx/leaders/PAL/amir.png"
+	traits = {
+		air_commander
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
+}
+create_corps_commander = {# dayan
+	name = "Haim Laskov"
+	desc = ""
+	portrait_path = "gfx/leaders/PAL/laskov.png"
+	traits = {
+		commando
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
+}
+create_corps_commander = {# dayan
+	name = "Mickey Marcus"
+	desc = ""
+	portrait_path = "gfx/leaders/PAL/mickey.png"
+	traits = {
+		infantry_officer
+		career_officer
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
+}
+create_corps_commander = {# dayan
+	name = "Yitzhak Sadeh"
+	desc = ""
+	portrait_path = "gfx/leaders/PAL/sadeh.png"
+	traits = {
+		old_guard
+		infantry_officer
+		career_officer
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
+}
 create_navy_leader = {# dayan
 	name = "Shlomo Shamir"
 	desc = ""
@@ -852,6 +994,32 @@ create_navy_leader = {# dayan
  spotter
 	}
 	skill = 3
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+create_navy_leader = {# dayan
+	name = "Gershon Zak"
+	desc = ""
+	portrait_path = "gfx/leaders/PAL/zak.png"
+	traits = {
+		superior_tactician
+		search_pattern_expert
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+create_navy_leader = {# dayan
+	name = "Edmond Brilliant"
+	desc = ""
+	portrait_path = "gfx/leaders/PAL/eddie.png"
+	traits = {
+	}
+	skill = 1
 	attack_skill = 1
 	defense_skill = 2
 	maneuvering_skill = 2
@@ -950,6 +1118,8 @@ random_unit_leader = {
 			limit = { has_id = 5744 }
 			remove_unit_leader = yes
 		}
+		remove_ideas = PAL_allon_sec_rso
+		add_ideas = PAL_avner_sec_pat
 	}
 }
 

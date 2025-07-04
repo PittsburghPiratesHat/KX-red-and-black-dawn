@@ -3,6 +3,10 @@ ZIO_setup = {
 			set_cosmetic_tag = ZIO_main
             set_country_flag = ZIO_table_flipping
 			remove_ideas = pal_jewish_banditry
+			add_ideas = PAL_dayan_hog_pat
+			add_ideas = PAL_carmel_eco_pat
+			add_ideas = PAL_allon_sec_rso
+			add_ideas = PAL_yadin_for_pat
 				add_state_core = 453
 		add_state_core = 454
 		    454 = { set_demilitarized_zone = 0 } 
@@ -90,6 +94,36 @@ create_corps_commander = {# dayan
 	planning_skill = 2
 	logistics_skill = 4
 	id = 5744
+}
+create_corps_commander = {# dayan
+	name = "Moshe Carmel"
+	desc = ""
+	portrait_path = "gfx/leaders/PAL/salted.png"
+	traits = {
+		infantry_officer
+		logistics_skill
+	}
+	skill = 1
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
+	id = 5984
+}
+create_corps_commander = {# dayan
+	name = "Yigal Yadin"
+	desc = ""
+	portrait_path = "gfx/leaders/PAL/yadin.png"
+	traits = {
+		infantry_officer
+		commando
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
+	id = 1972
 }
 	}
 }

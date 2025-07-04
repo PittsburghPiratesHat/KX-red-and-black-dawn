@@ -1,12 +1,28 @@
 spriteTypes = {
     ### Arizona ###
 	spriteType = {
-		name = "GFX_idea_ARZ_free"
-		texturefile = "gfx/interface/ideas/ARZ/ARZ_free.png"
+		name = "GFX_idea_PAL_tankusplan"
+		texturefile = "gfx/interface/ideas/PAL/tankusplan.png"
 	}
 	spriteType = {
-		name = "GFX_idea_ARZ_brush"
-		texturefile = "gfx/interface/ideas/ARZ/ARZ_brush.png"
+		name = "GFX_idea_PAL_without"
+		texturefile = "gfx/interface/ideas/PAL/without.png"
+	}
+	spriteType = {
+		name = "GFX_idea_pal_indoctrinating"
+		texturefile = "gfx/interface/ideas/PAL/indoctrinating.png"
+	}
+	spriteType = {
+		name = "GFX_idea_pal_one"
+		texturefile = "gfx/interface/ideas/PAL/one.png"
+	}
+	spriteType = {
+		name = "GFX_idea_pal_enforced"
+		texturefile = "gfx/interface/ideas/PAL/enforced.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_zakplan"
+		texturefile = "gfx/interface/ideas/PAL/zakplan.png"
 	}
 	spriteType = {
 		name = "GFX_idea_NEE_atheism"
@@ -15,6 +31,30 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_PAL_zioplan"
 		texturefile = "gfx/interface/ideas/PAL/zioplan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_production"
+		texturefile = "gfx/interface/ideas/PAL/production.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_benplan"
+		texturefile = "gfx/interface/ideas/PAL/benplan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_is"
+		texturefile = "gfx/interface/ideas/PAL/is.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_science"
+		texturefile = "gfx/interface/ideas/PAL/science.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_arab_recruitment"
+		texturefile = "gfx/interface/ideas/PAL/arabrecruitment.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_arab_recruitmentno"
+		texturefile = "gfx/interface/ideas/PAL/noarabrecruitment.png"
 	}
 	spriteType = {
 		name = "GFX_idea_PAL_mossad"
@@ -632,44 +672,48 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ideas/TXS_God_Howard.png"
 	}
 	spriteType = {
-		name = "GFX_idea_TXS_expulsion_of_the_dirty_and_wide"
-		texturefile = "gfx/interface/ideas/TXS/TXS_expulsion_of_the_dirty_and_wide.png"
+		name = "GFX_idea_NEE_sandmen"
+		texturefile = "gfx/interface/ideas/NEE/NEE_sandmen.png"
 	}
 	spriteType = {
-		name = "GFX_idea_TXS_controlling_the_dirty_and_wide"
-		texturefile = "gfx/interface/ideas/TXS/TXS_expulsion_of_the_dirty_and_wide.png"
+		name = "GFX_idea_NEE_eugenics"
+		texturefile = "gfx/interface/ideas/NEE/NEE_eugenics.png"
 	}
 	spriteType = {
-		name = "GFX_idea_TXS_segregation"
-		texturefile = "gfx/interface/ideas/TXS/TXS_segregation.png"
+		name = "GFX_idea_NEE_centers"
+		texturefile = "gfx/interface/ideas/NEE/NEE_centers.png"
 	}
 	spriteType = {
-		name = "GFX_idea_TXS_HUTA"
-		texturefile = "gfx/interface/ideas/TXS/TXS_Huta.png"
+		name = "GFX_idea_NEE_behaviors"
+		texturefile = "gfx/interface/ideas/NEE/NEE_behaviors.png"
 	}
 	spriteType = {
-		name = "GFX_idea_TXS_texans"
-		texturefile = "gfx/interface/ideas/TXS/TXS_texans.png"
+		name = "GFX_idea_NEE_atheism"
+		texturefile = "gfx/interface/ideas/NEE/NEE_atheism.png"
 	}
 	spriteType = {
-		name = "GFX_idea_TXS_ranger_bars"
-		texturefile = "gfx/interface/ideas/TXS/TXS_ranger_bars.png"
+		name = "GFX_idea_NEE_carrousel"
+		texturefile = "gfx/interface/ideas/NEE/NEE_carrousel.png"
 	}
 	spriteType = {
-		name = "GFX_idea_TXS_identity"
-		texturefile = "gfx/interface/ideas/TXS/TXS_identity.png"
+		name = "GFX_idea_NEE_carrousel2"
+		texturefile = "gfx/interface/ideas/NEE/NEE_carrousel.png"
 	}
 	spriteType = {
-		name = "GFX_idea_TXS_cap"
-		texturefile = "gfx/interface/ideas/TXS/TXS_cap.png"
+		name = "GFX_idea_NEE_carrousel3"
+		texturefile = "gfx/interface/ideas/NEE/NEE_carrousel.png"
 	}
 	spriteType = {
-		name = "GFX_idea_TXS_integration"
-		texturefile = "gfx/interface/ideas/TXS/TXS_civil_rights.png"
+		name = "GFX_idea_NEE_communities"
+		texturefile = "gfx/interface/ideas/NEE/NEE_communities.png"
 	}
 	spriteType = {
-		name = "GFX_idea_TXS_law_and_order"
-		texturefile = "gfx/interface/ideas/TXS/TXS_law_order.png"
+		name = "GFX_idea_NEE_good"
+		texturefile = "gfx/interface/ideas/NEE/NEE_good.png"
+	}
+	spriteType = {
+		name = "GFX_idea_NEE_science"
+		texturefile = "gfx/interface/ideas/NEE/NEE_science.png"
 	}
 	spriteType = {
 		name = "GFX_idea_WCC_Hoover_Master"

@@ -35,7 +35,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		complete_tooltip = {}
 		completion_reward = {
-
+CAN = {
+				set_autonomy = {
+					target = NEE
+					autonomy_state = autonomy_free
+				}
+			}
 		}
 	}
 
