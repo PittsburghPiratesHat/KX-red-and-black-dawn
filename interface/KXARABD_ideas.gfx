@@ -9,6 +9,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ARZ/ARZ_brush.png"
 	}
 	spriteType = {
+		name = "GFX_idea_NEE_atheism"
+		texturefile = "gfx/interface/ideas/NEE/NEE_atheism.png"
+	}
+	spriteType = {
 		name = "GFX_idea_PAL_zioplan"
 		texturefile = "gfx/interface/ideas/PAL/zioplan.png"
 	}

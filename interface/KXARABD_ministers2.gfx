@@ -12,6 +12,22 @@ spriteTypes = {
 
 	### Head of Government
 	spriteType = {
+		name = "GFX_idea_NEE_skinner_hog_tot"
+		texturefile = "gfx/interface/ministers/NEE/NEE_skinner.png"
+	}
+	spriteType = {
+		name = "GFX_idea_NEE_park_sec_tot"
+		texturefile = "gfx/interface/ministers/NEE/NEE_park.png"
+	}
+	spriteType = {
+		name = "GFX_idea_NEE_keller_eco_tot"
+		texturefile = "gfx/interface/ministers/NEE/NEE_keller.png"
+	}
+	spriteType = {
+		name = "GFX_idea_NEE_watson_for_tot"
+		texturefile = "gfx/interface/ministers/NEE/NEE_watson.png"
+	}
+	spriteType = {
 		name = "GFX_idea_BBR_Herman_Poole_Blount_sec_npo"
 		texturefile = "gfx/interface/ministers/BBR/BBR_Herman_Poole_Blount.png"
 	}
@@ -36578,86 +36594,54 @@ spriteTypes = {
 
 	### Head of Government
 	spriteType = {
-		name = "GFX_idea_PAL_Haj_Mustafa_Abboushi_hog_rso"
-		texturefile = "gfx/interface/ministers/PAL/PAL_Haj_Mustafa_Abboushi.png"
+		name = "GFX_idea_PAL_dayan_hog_pat"
+		texturefile = "gfx/interface/ministers/PAL/PAL_dayan.png"
 	}
 	spriteType = {
-		name = "GFX_idea_PAL_Ahmad_Shukairy_hog_sde"
-		texturefile = "gfx/interface/ministers/PAL/PAL_Ahmad_Shukairy.png"
+		name = "GFX_idea_PAL_tehomi_hog_npo"
+		texturefile = "gfx/interface/ministers/PAL/PAL_tehomi.png"
 	}
 	spriteType = {
-		name = "GFX_idea_PAL_Yussef_Pasha_al_Khalidi_hog_npo"
-		texturefile = "gfx/interface/ministers/PAL/PAL_Yussef_Pasha_al_Khalidi.png"
+		name = "GFX_idea_PAL_stern_hog_pat"
+		texturefile = "gfx/interface/ministers/PAL/PAL_stern.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_dayan_hog_pat"
+		texturefile = "gfx/interface/ministers/PAL/PAL_dayan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_dayan_hog_pat"
+		texturefile = "gfx/interface/ministers/PAL/PAL_dayan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_dayan_hog_pat"
+		texturefile = "gfx/interface/ministers/PAL/PAL_dayan.png"
 	}
 
 	### Person of Influence
 	# Foreign Minister
 	spriteType = {
-		name = "GFX_idea_PAL_Hafiz_Pasha_Abdul_Hadi_for_rso"
-		texturefile = "gfx/interface/ministers/PAL/PAL_Hafiz_Pasha_Abdul_Hadi.png"
-	}
-	spriteType = {
-		name = "GFX_idea_PAL_Nazif_al_Khalidi_for_mli"
-		texturefile = "gfx/interface/ministers/PAL/PAL_Nazif_al_Khalidi.png"
-	}
-	spriteType = {
-		name = "GFX_idea_PAL_Ragheed_Nashasbibi_for_npo"
-		texturefile = "gfx/interface/ministers/PAL/PAL_Ragheed_Nashasbibi.png"
+		name = "GFX_idea_PAL_lawyer_for_sco"
+		texturefile = "gfx/interface/ministers/PAL/pal_lawyer.png"
 	}
 
 	# Economy Minister
 	spriteType = {
-		name = "GFX_idea_PAL_Sharif_Nasir_al_Qagli_eco_rso"
-		texturefile = "gfx/interface/ministers/PAL/PAL_Sharif_Nasir_al_Qagli.png"
-	}
-	spriteType = {
-		name = "GFX_idea_PAL_Ruhi_Abdul_Hadi_eco_sde"
-		texturefile = "gfx/interface/ministers/PAL/PAL_Ruhi_Abdul_Hadi.png"
-	}
-	spriteType = {
-		name = "GFX_idea_PAL_George_Humsi_eco_mli"
-		texturefile = "gfx/interface/ministers/PAL/PAL_George_Humsi.png"
-	}
-	spriteType = {
-		name = "GFX_idea_PAL_Abdullah_Jaffer_Dalal_eco_ade"
-		texturefile = "gfx/interface/ministers/PAL/PAL_Abdullah_Jaffer_Dalal.png"
+		name = "GFX_idea_PAL_isser_eco_sco"
+		texturefile = "gfx/interface/ministers/PAL/pal_isser.png"
 	}
 
 	# Security Minister
 	spriteType = {
-		name = "GFX_idea_PAL_Dekel_Shukri_sec_rso"
-		texturefile = "gfx/interface/ministers/PAL/PAL_Dekel_Shukri.png"
-	}
-	spriteType = {
-		name = "GFX_idea_PAL_Nicolas_Abdo_sec_sde"
-		texturefile = "gfx/interface/ministers/PAL/PAL_Nicolas_Abdo.png"
-	}
-	spriteType = {
-		name = "GFX_idea_PAL_Musa_Qassem_al_Husseini_sec_mli"
-		texturefile = "gfx/interface/ministers/PAL/PAL_Musa_Qassem_al_Husseini.png"
-	}
-	spriteType = {
-		name = "GFX_idea_PAL_George_Antinous_sec_ade"
-		texturefile = "gfx/interface/ministers/PAL/PAL_George_Antinous.png"
-	}
-	spriteType = {
-		name = "GFX_idea_PAL_Awni_Abdul_Hadi_sec_npo"
-		texturefile = "gfx/interface/ministers/PAL/PAL_Awni_Abdul_Hadi.png"
+		name = "GFX_idea_PAL_avner_sec_pat"
+		texturefile = "gfx/interface/ministers/PAL/PAL_avner.png"
 	}
 
 
 	### Chief of Staff
 	spriteType = {
-		name = "GFX_idea_PAL_Jaafra_Pasha_cos_rso"
-		texturefile = "gfx/interface/ministers/PAL/PAL_Jaafra_Pasha.png"
-	}
-	spriteType = {
-		name = "GFX_idea_PAL_Faruk_Haydar_cos_sde"
-		texturefile = "gfx/interface/ministers/PAL/PAL_Faruk_Haydar.png"
-	}
-	spriteType = {
-		name = "GFX_idea_PAL_Ali_Djemal_Pasha_cos_npo"
-		texturefile = "gfx/interface/ministers/PAL/PAL_Ali_Djemal_Pasha.png"
+		name = "GFX_idea_PAL_dayan_cos_pat"
+		texturefile = "gfx/interface/ministers/PAL/PAL_dayan.png"
 	}
 
 	### Chief of Army

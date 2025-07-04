@@ -10227,6 +10227,7 @@
 	NEE_Ralph_Adams_Cram_hog_pau:0 "Ralph Adams Cram"
 	NEE_Irenee_du_Pont_hog_npo:0 "Irenee du Pont"
 	NEE_Henry_H_Goddard_hog_npo:0 "Henry H. Goddard"
+		NEE_skinner_hog_tot:0 "B.F. Skinner"
 	
 	### Person of Influence ###
 	## Foreign Minister
@@ -10246,6 +10247,7 @@
 	NEE_H_L_Mencken_for_npo:0 "H.L. Mencken"
 	NEE_Alexander_Lincoln_for_npo:0 "Alexander Lincoln"
 	NEE_Charles_Benedict_Davenport_for_npo:0 "Charles Benedict Davenport"
+		NEE_watson_for_tot:0 "John Watson"
 	
 	## Economy Minister
 	NEE_James_Carey_eco_rso:0 "James Francis Carey"
@@ -10265,6 +10267,7 @@
 	NEE_Robert_Shaw_II_eco_pau:0 "Robert Gould Shaw II"
 	NEE_Arthur_Atwater_Kent_eco_npo:0 "Arthur Atwater Kent"
 	NEE_Harry_H_Laughlin_eco_npo:0 "Harry H. Laughlin"
+		NEE_keller_eco_tot:0 "Fred Keller"
 	
 	## Security Minister
 	NEE_Alfred_Baker_Louis_sec_rso:0 "Alfred Baker Lewis"
@@ -10280,6 +10283,7 @@
 	NEE_Lewis_Mumford_sec_pau:0 "Lewis Mumford"
 	NEE_Pierre_S_du_Pont_sec_npo:0 "Pierre S. du Pont"
 	NEE_John_Bell_sec_npo:0 "John Bell"
+		NEE_park_sec_tot:0 "Robert Park"
 
 	### Chief of Staff ###
 	NEE_Hugh_Joseph_Gaffey_cos:0 "Hugh Joseph Gaffey"
@@ -11214,36 +11218,21 @@
   ################################################################################################################################################################################################
 
 	### Head of Government ###
-	PAL_Haj_Mustafa_Abboushi_hog_rso:0 "Haj Mustafa Abboushi"
-	PAL_Ahmad_Shukairy_hog_sde:0 "Ahmad Shukairy"
-	PAL_Yussef_Pasha_al_Khalidi_hog_npo:0 "Yussef Pasha al-Khalidi"
+	PAL_dayan_hog_pat:0 "Moshe Dayan"
 
 	### Person of Influence ###
 	## Foreign Minister
-	PAL_Hafiz_Pasha_Abdul_Hadi_for_rso:0 "Hafiz Pasha Abdul Hadi"
-	PAL_Nazif_al_Khalidi_for_mli:0 "Nazif al-Khalidi"
-	PAL_Ragheed_Nashasbibi_for_npo:0 "Ragheed Nashasbibi"
+	PAL_lawyer_for_sco:0 "Maurycy Allerhand"
 	## Economy Minister
-	PAL_Sharif_Nasir_al_Qagli_eco_rso:0 "Sharif Nasir al-Qagli"
-	PAL_Ruhi_Abdul_Hadi_eco_sde:0 "Ruhi Abdul Hadi"
-	PAL_George_Humsi_eco_mli:0 "George Humsi"
-	PAL_Abdullah_Jaffer_Dalal_eco_ade:0 "Abdullah Jaffer Dalal"
+		PAL_isser_eco_sco:0 "Isser Harrel"
 	## Security Minister
-	PAL_Dekel_Shukri_sec_rso:0 "Dekel Shukri"
-	PAL_Nicolas_Abdo_sec_sde:0 "Nicolas Abdo"
-	PAL_Musa_Qassem_al_Husseini_sec_mli:0 "Musa Qassem al-Husseini"
-	PAL_George_Antinous_sec_ade:0 "George Antinous"
-	PAL_Awni_Abdul_Hadi_sec_npo:0 "Awni Abdul Hadi"
+PAL_avner_sec_pat:0 "Avner Less"
 
 	### Chief of Staff ###
 	PAL_Jaafra_Pasha_cos_rso:0 "Jaafra Pasha"
-	PAL_Faruk_Haydar_cos_sde:0 "Faruk Haydar"
-	PAL_Ali_Djemal_Pasha_cos_npo:0 "Ali Djemal Pasha"
 
 	### Chief of Army ###
 	PAL_Sharif_Nasir_al_Qagli_carm_rso:0 "Sharif Nasir al-Qagli"
-	PAL_Liwa_al_Mawawiyi_carm_sde:0 "Liwa al-Mawawiyi"
-	PAL_Aly_al_Muttalib_carm_npo:0 "Aly al-Muttalib"
 
 	### Chief of Navy ###
 	PAL_bagelswithshamir_cnav_rso:0 "Shlomo Shamir"

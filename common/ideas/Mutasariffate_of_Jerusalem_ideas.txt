@@ -167,6 +167,25 @@ ideas = {
 				MONTHLY_POPULATION = -0.50
 			}
 		}
+			pal_shamir_plan = {
+			picture = PAL_shamirplan
+			allowed = { always = no }
+            modifier = {
+				 amphibious_invasion = 0.15
+				 naval_doctrine_cost_factor = -0.1
+				 navy_max_range_factor = 0.1
+			}
+		}
+		pal_shamir_plantwo = {
+			picture = PAL_shamirplan
+			allowed = { always = no }
+            modifier = {
+				 amphibious_invasion = 0.15
+				 naval_doctrine_cost_factor = -0.1
+				 navy_max_range_factor = 0.1
+				 naval_coordination = 0.1
+			}
+		}
 		pal_without = {
 			picture = PAL_without
 			allowed = { always = no }

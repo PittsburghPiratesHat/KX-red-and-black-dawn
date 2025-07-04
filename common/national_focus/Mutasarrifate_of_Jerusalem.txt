@@ -1259,6 +1259,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			country_event = israel.49
 		}
 	}
 
@@ -1293,6 +1294,7 @@ focus_tree = {
 			set_country_flag = ZIO_economy
 			set_country_flag = ZIO_can_do_expansion
 			remove_ideas = 	pal_secterian
+			add_ideas = pal_replacement
 		}
 	}
 
@@ -2169,6 +2171,7 @@ has_country_flag = ZIO_napoleon
 
 		completion_reward = {
 			set_country_flag = ZIO_not_zionist_arab
+			add_ideas = pal_coexist
 		}
 	}
 
@@ -3438,6 +3441,7 @@ has_country_flag = ZIO_napoleon
 				uses = 2
 				category = cat_fleet_in_being
 			}
+			add_ideas = pal_shamir_plan
 		}
 	}
 
@@ -3467,6 +3471,11 @@ has_country_flag = ZIO_napoleon
 		available_if_capitulated = yes
 
 		completion_reward = {
+			navy_experience = 250
+			swap_ideas = {
+				remove_idea = pal_shamir_plan
+				add_idea = pal_shamir_plantwo
+			}
 		}
 	}
 
@@ -3496,6 +3505,12 @@ has_country_flag = ZIO_napoleon
 		available_if_capitulated = yes
 
 		completion_reward = {
+				add_tech_bonus = {
+				name = navy_bonus
+				bonus = 1
+				uses = 2
+				category = shbb_tech
+			}
 		}
 	}
 
@@ -3525,6 +3540,15 @@ has_country_flag = ZIO_napoleon
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = marines_bonus
+				bonus = 1
+				uses = 1
+				category = marine_tech
+			}
+			set_technology = {
+									marine_tech = 1
+								}
 		}
 	}
 
@@ -3554,6 +3578,24 @@ has_country_flag = ZIO_napoleon
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = navy_bonus
+				bonus = 1
+				uses = 2
+				category = cl_tech
+			}
+			add_tech_bonus = {
+				name = navy_bonus
+				bonus = 1
+				uses = 2
+				category = ca_tech
+			}
+			add_tech_bonus = {
+				name = navy_bonus
+				bonus = 1
+				uses = 2
+				category = shbb_tech
+			}
 		}
 	}
 
@@ -3620,6 +3662,12 @@ has_country_flag = ZIO_napoleon
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = navy_bonus
+				bonus = 1
+				uses = 2
+				category = dd_tech
+			}
 		}
 	}
 
@@ -3649,6 +3697,8 @@ has_country_flag = ZIO_napoleon
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_manpower = 50000
+			navy_experience = 100
 		}
 	}
 
@@ -3787,6 +3837,12 @@ has_country_flag = ZIO_napoleon
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = navy_bonus
+				bonus = 1
+				uses = 2
+				category = cl_tech
+			}
 		}
 	}
 
@@ -3816,6 +3872,7 @@ has_country_flag = ZIO_napoleon
 		available_if_capitulated = yes
 
 		completion_reward = {
+			
 		}
 	}
 

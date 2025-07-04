@@ -23,6 +23,10 @@ focus_tree = {
 		id = NEE_skinner
 		icon = GFX_goal_NEE_skinner
 		cost = 5
+		available = {
+			has_country_leader = { ruling_only = yes name = "B.F. Skinner" }
+			has_country_flag = NEE_skinner_saves
+		}
 		x = -5
 		y = 8
 		ai_will_do = {
@@ -50,7 +54,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		complete_tooltip = {}
 		completion_reward = {
-
+         add_ideas = NEE_sandmen
 		}
 	}
 
@@ -67,12 +71,19 @@ focus_tree = {
 			factor = 100
 		}
 		available_if_capitulated = yes
-		complete_tooltip = {}
 		completion_reward = {
-
+add_ideas = NEE_carrousel
+country_event = newengland.1033
+ hidden_effect = {
+            NEE = {
+                country_event = {
+                    id = newengland.1032
+                    days = 50
+                }                 
+        }
 		}
 	}
-
+	}
 	focus = {
 		id = NEE_coopt_stoddards_ideas
 		icon = GFX_goal_NEE_skinard
@@ -88,7 +99,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		complete_tooltip = {}
 		completion_reward = {
-
+         add_ideas = NEE_eugenics
 		}
 	}
 
@@ -107,7 +118,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		complete_tooltip = {}
 		completion_reward = {
-
+         add_ideas = NEE_centers
 		}
 	}
 
@@ -126,7 +137,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		complete_tooltip = {}
 		completion_reward = {
-
+         add_ideas = NEE_science
 		}
 	}
 
@@ -145,7 +156,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		complete_tooltip = {}
 		completion_reward = {
-
+         add_manpower = -50000
 		}
 	}
 
@@ -164,7 +175,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		complete_tooltip = {}
 		completion_reward = {
-
+        country_event = newengland.1034
 		}
 	}
 
@@ -183,7 +194,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		complete_tooltip = {}
 		completion_reward = {
-
+        add_ideas = NEE_behaviors
 		}
 	}
 
@@ -214,7 +225,15 @@ focus_tree = {
 		available_if_capitulated = yes
 		complete_tooltip = {}
 		completion_reward = {
-
+          every_state = { add_core_of = NEE }
+		  every_country = {
+				NEE = {
+		create_wargoal = {
+			type = annex_everything
+			target = PREV
+									 }
+							  }
+			}
 		}
 	}
 
@@ -264,7 +283,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		complete_tooltip = {}
 		completion_reward = {
-
+         add_ideas = NEE_state
 		}
 	}
 
@@ -283,7 +302,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		complete_tooltip = {}
 		completion_reward = {
-
+        	add_ideas = NEE_hellstrom_hive_idea
 		}
 	}
 
@@ -302,7 +321,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		complete_tooltip = {}
 		completion_reward = {
-
+        swap_ideas = {
+				remove_idea = NEE_hellstrom_hive_idea
+				add_idea = NEE_communities
+			}
 		}
 	}
 
@@ -321,7 +343,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		complete_tooltip = {}
 		completion_reward = {
-
+             swap_ideas = {
+				remove_idea = NEE_communities
+				add_idea = NEE_good
+			}
 		}
 	}
 

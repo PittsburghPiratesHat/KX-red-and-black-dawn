@@ -3291,6 +3291,14 @@ ZIO_main = {
 	color = rgb { 14 70 160 }
 	color_ui = rgb { 14 70 160 }
 }
+NEE_skinner1 = {
+	color = rgb { 14 70 160 }
+	color_ui = rgb { 14 70 160 }
+}
+NEE_skinner2 = {
+	color = rgb { 14 70 160 }
+	color_ui = rgb { 14 70 160 }
+}
 BBR_israel = {
 	color = rgb { 68 0 102 }
 	color_ui = rgb { 68 0 102 }

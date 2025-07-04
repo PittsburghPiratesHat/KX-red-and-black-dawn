@@ -463,6 +463,7 @@ country_event = {	#import
 	defense_skill = 2
 	planning_skill = 2
 	logistics_skill = 4
+	id = 123
 }
 create_corps_commander = {# dayan
 	name = "David Ben-Gurion"
@@ -477,6 +478,7 @@ create_corps_commander = {# dayan
 	defense_skill = 2
 	planning_skill = 2
 	logistics_skill = 4
+	id = 122
 }
 		create_field_marshal = {# dayan
 	name = "Avraham Stern"

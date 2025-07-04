@@ -33,6 +33,14 @@ NEE_national_populist:0 "New England"
 NEE_national_populist_ADJ:0 "New Englander"
 NEE_national_populist_DEF:0 "New England"
 
+NEE_skinner1:0 "Walden two"
+NEE_skinner1_ADJ:0 "New Englander"
+NEE_skinner1_DEF:0 "New England"
+
+NEE_skinner2:0 "Camazotz"
+NEE_skinner2_ADJ:0 "New Englander"
+NEE_skinner2_DEF:0 "New England"
+
 
 ### Custom Tooltips ###
 forts_built:0 "§gA series of level 3 forts will be built along the New Englander and Canadian eastern Coasts.§g"
@@ -74,6 +82,7 @@ age_of_reason:0 "The State is led by Harry Ault"
 NEE_prohibition_in_charge:0 "§MProhibitionists§! hold the presidency."
 NEE_quakers_in_charge:0 "§RQuakers§! hold the presidency."
 NEE_doesnt_exist:0 "The New England States remained with the Union"
+NEE_skinner_saves:0 "Skinner has saved New England"
 
 NEE_prohibition_opposition_tooltip:0 "§RThe Nation Will Fall into a Period of Withdrawal!§"
 NEE_prohibition_recovery_tooltip:0 "§GThe Nation Will Further Recover from Withdrawal!§"
@@ -142,8 +151,11 @@ NEE_paternal_autocrat_party_long:0 "United Empire Loyalists\n§gThe United Empir
 NEE_national_populist_party:0 "Providence Society"
 NEE_national_populist_party_long:0 "Providence Society\n§gDuring the Weltkrieg, untold thousands rushed to the relative safety, stability, and opportunity of America. As the war languished on, immigrants flooded New England, quickly and unexpectedly changing the face of the northeast. With these diverse, new interests came new problems: particularly, nativist resentment. These problems were only compounded by the economic recession that set in after the Kaiserreich began to isolate the United States of America. This discontent was championed by one of New England’s most famous personalities: the celebrity author, Howard Phillips Lovecraft. Lovecraft’s meteoric rise to fame in recent years is based on his tales of weird and diabolical fiction, seen by both fans and critics as giving voice to the xenophobia, economic insecurity, and reactionary instincts of New Englanders. Initially the darling of Boston Brahmins and New England’s Anglo-Saxon majority, Lovecraft’s work spread like wildfire across the country, turning him into an overnight sensation. The Shadow Over Innsmouth, one of Lovecraft's most famous novellas, deals obliquely with the threats of state conspiracy and invasion, as well as miscegenation and its monstrous consequences. Some of his most ardent followers swear that prophetic, astrological portents can be understood through comprehensive study of his work. To many, Lovecraft may just be another insane writer with less than moderate views, to others he is a prophet that can guide New England to safety. But whatever Lovecraft may be, he is still a shy, reclusive writer, unlikely to take any drastic action. The only ones in New England that wish to see him in power are the extreme Anglophiles. They view Lovecraft as a tool to ensure complete loyalty to Canada. For now, Lovecraft and his small circle of writers stick to Providence and continue on with their lives, only accompanied by small groups of fans and loyalists.§! "
 
-NEE_ancap_paternal_autocrat_party:0 "The Remnant"
-NEE_ancap_paternal_autocrat_party_long:0 "Radical Coalition (The Remnant)\n§gThe remnant is named for a loose grouping of activists whom self-identify as old-school radicals, with their intellectual leader being Albert Jay Nock. Often openly skeptical of democracy, the Remnant is nonetheless opposed to state intervention in individual lives except to protect base rights through the justice system. Supported by extremely prominent intellectuals such as H.L. Mencken, the Remnant's middle and upper class supporters have grown in reaction to the perceived failures of the government and their role in destabilizing America, opposing Canadian influence in New England and as a reaction against the growth of populism and socialism, with them having a small volunteer militia to protect their rights from its perceived various enemies. Nonetheless, the Remnant itself is still deeply divided on whether democracy should play in the Republic or if voters supporting interventionism and control is simply too dangerous to liberty.§!"
+NEE_windsor_paternal_autocrat_party:0 "House of Windsor"
+NEE_windsor_paternal_autocrat_party_long:0 "New England Branch\n§gAfter the seizure of New England by Canada, the region was put under the influence of British-Modeled systems. This has had the consequence of Canada attempting to enforce more monarchist systems on New England, perhaps to the point where New England could become a formal Monarchy with a Windsor on the Throne. §!"
+
+NEE_skinner_party:0 "Walden two"
+NEE_skinner_party_long:0 "Less a party and more a name of Skinner's utopia, Walden two is the collective name for Skinner and his small band of psychologists, scientists, doctors, and other intellectucals who folllow him."
 
 NEE_ancap_market_liberal_party:0 "The Remnant"
 NEE_ancap_market_liberal_party_long:0 "Radical Coalition (The Remnant)\n§gThe remnant is named for a loose grouping of activists whom self-identify as old-school radicals, with their intellectual leader being Albert Jay Nock. Often openly skeptical of democracy, the Remnant is nonetheless opposed to state intervention in individual lives except to protect base rights through the justice system. Supported by extremely prominent intellectuals such as H.L. Mencken, the Remnant's middle and upper class supporters have grown in reaction to the perceived failures of the government and their role in destabilizing America, opposing Canadian influence in New England and as a reaction against the growth of populism and socialism, with them having a small volunteer militia to protect their rights from its perceived various enemies. Nonetheless, the Remnant itself is still deeply divided on whether democracy should play in the Republic or if voters supporting interventionism and control is simply too dangerous to liberty.§!"
@@ -326,6 +338,28 @@ NEE_eusocialism_two:0 "The Young Jeffersonian Economic Plan"
 NEE_eusocialism_three:0 "The Young Jeffersonian Economic Plan"
 NEE_highway_act_idea:0 "National Interstate and Defense Highways Act"
 NEE_highway_act_idea_desc:0 "In the latest sweeping bill signed by President [NEE.GetLeader], the National Interstate and Defense Highway Act aims to improve and modernise our government infrastructure to be the greatest in the world. With an authorisation of nearly $25 billion to construct 41,000 miles of interstate highway, our ambitious work project will aim to connect the American nation greater than ever before."
+NEE_communities:0 "The communities"
+NEE_commuunities_desc:0 "Starting with Lovell's hives, we will adapt them into the communities, serene beautiful places where disorder becomes harmony."
+NEE_centers:0 "The Centers"
+NEE_centers_desc:0 "A series of centers are being opened across the nation meant to handle those who're unable to adapt to give them a last shot at rehabilitation."
+NEE_carrousel:0 "The rite of Carrousel"
+NEE_carrousel_desc:0 "The Rite of Carrousel will creatively get rid of undeserables."
+NEE_carrousel1:0 "The rite of Carrousel"
+NEE_carrousel1_desc:0 "The Rite of Carrousel will creatively get rid of undeserables."
+NEE_carrousel2:0 "The rite of Carrousel"
+NEE_carrousel2_desc:0 "The Rite of Carrousel will creatively get rid of undeserables."
+NEE_eugenics:0 "Skinnerist eugenics"
+NEE_eugenics_desc:0 "The eugenics of Stoddard will be stripped of their racist components and used to remove the true undeserables."
+NEE_behaviors:0 "Nationwide behavior modification programs"
+NEE_behaviors_desc:0 "A nationwide behavior modifcation program will be enacted."
+NEE_science:0 "State funding for science"
+NEE_science_desc:0 "Being a doctor and scientist, Skinner has decided to give state funding for science."
+NEE_sandmen:0 "The Sandmen"
+NEE_sandmen_desc:0 "The Sandmen are the state secret police who terminate undeserables."
+NEE_good:0 "The good life"
+NEE_good_desc:0 "Every citizen will live a good life."
+NEE_state:0 "State atheism"
+NEE_state_desc:0 "Religion is a disease that flies in the face of the total control we're trying to establish."
 
 ### Bri'ish ###
 NEE_martial_law_idea:0 "Martial Law"
@@ -3091,13 +3125,28 @@ newengland.103.b:0 "Request Canada's aid!"
 newengland.103.c:0 "This isn't a serious threat!"
 
 newengland.1030.t:0 "The Leftist Takeover!"
-newengland.1030.d:0 "In a surprising turn of events, the leftist strikers have overwhelmed government forces in New England and taken power! However, though the cause of revolution seemed simple enough as a unifying force for the rebels, the question of governance is much more divisive. There are two main camps among the New Englander leftists. One camp is led by Leonard Abbott and wishes to align itself with the CSA, espousing mainstream syndicalist values and believing their unification with the Combined Syndicates to be necessary for their victory in the war. The other camp, led by the populist eco-socialist Norman Wallace Lermond, espouses Bellamyist ideals along with an emphasis on nature and utopianism while being backed by utopian labor organizers like Cyrus Field Willard and Sylvester Baxter. Lermond does not share Abbott's enthusiasm for the industrially-focused anarcho-syndicalist cause in the Red Belt, instead believing New England should seek its own destiny, perhaps even eventually reclaiming the mantle of the United States for themselves. These two groups, unified until now, have come close to exchanging blows recently, and it seems only one group will be able to win out in the end..."
+newengland.1030.d:0 "In a surprising turn of events, the leftist strikers have overwhelmed government forces in New England and taken power! However, though the cause of revolution seemed simple enough as a unifying force for the rebels, the question of governance is much more divisive. There are two main camps among the New Englander leftists. One camp is led by Leonard Abbott and wishes to align itself with the CSA, espousing mainstream syndicalist values and believing their unification with the Combined Syndicates to be necessary for their victory in the war. The other camp, led by the populist eco-socialist Norman Wallace Lermond, espouses Bellamyist ideals along with an emphasis on nature and utopianism while being backed by utopian labor organizers like Cyrus Field Willard and Sylvester Baxter. Lermond does not share Abbott's enthusiasm for the industrially-focused anarcho-syndicalist cause in the Red Belt, instead believing New England should seek its own destiny, perhaps even eventually reclaiming the mantle of the United States for themselves. These two groups, unified until now, have come close to exchanging blows recently, and it seems only one group will be able to win out in the end. However, a 3rd contender and dark horse entered at the last minute, B.F. Skinner and his band of intellectuals, who've joined the fray. In the end, who came out on top..."
 newengland.1030.a:0 "Abbot's hardliners take over and rally with the CSA!"
 newengland.1030.b:0 "Lermond's moderates take power!"
+newengland.1030.c:0 "Skinner saves the day"
 
 newengland.1031.t:0 "New England Joins with the CSA!"
 newengland.1031.d:0 "Today, Leonard Abbott has announced the unification of New England with the Red Belt. This comes after Abbott's syndicalist takeover and quick realization and assertion that the two regions would have a better chance of fending off foes if they cooperated. As such, Abbott has agreed to join with the CSA, and we will continue this war as a united front!"
 newengland.1031.a:0 "For the Revolution!"
+
+newengland.1032.t:0 "Problems with the rite of Carrousel"
+newengland.1032.d:0 "The rite of Carrousel has gotten popular, too popular, so popular in fact we're running out of costumes, explosives, and people to sacrifice, we have several options going forward, the least popular would just be to end this altogether, there is also the option to limit it to once a year, or we can up the ante and starting using POWs, prisoners, and others for this."
+newengland.1032.a:0 "End these rituals"
+newengland.1032.b:0 "Once a year"
+newengland.1032.c:0 "Up the ante"
+
+newengland.1033.t:0 "The rite of Carrousel"
+newengland.1033.d:0 "A new ritual has cropped up, where people mainly those deemed unable to be rehabiliated and failed behavior modifcation programs are dressed in special white costumes, and exploded while citizens chant renew, renew, renew. Among our disatisifed, tired, and hedonistic population, this bizare entertainment has become the next big thing!"
+newengland.1033.a:0 "A last day"
+
+newengland.1034.t:0 "Purge of the Anglophiles"
+newengland.1034.d:0 "Today the military and police descended on the providence society and wiped them all out, lovecraft and his band of writers including August Derelth, Frank Long, and more were gunned down, in a death blow to both Anglophila and the wrong kind of New Englander nationalism, these cockroaches and their weird theories were a big problem that had to be dealt with."
+newengland.1034.a:0 "The end of the stooges"
 
 #Federalist Party Path#
 
