@@ -568,6 +568,7 @@ country_event = { # America is reunited
 				OR = {
 				has_cosmetic_tag = NEE_nordic_league_tag_national_populist
 				has_cosmetic_tag = NEE_nordic_yggdrasil
+				has_cosmetic_tag = NEE_skinner1
 				has_cosmetic_tag = NEE_radical_america_national_populist
 				has_cosmetic_tag = NEE_national_populist_ancap
 				has_cosmetic_tag = NEE_paternal_autocrat_ancap
@@ -9463,6 +9464,13 @@ country_event = { # a problem
 
 	option = { #juxtapose
 		name = newengland.1034.a
+		create_country_leader = {
+			name = "empty"
+			desc = ""
+			picture = ""
+			expire = "1.1.1"
+			ideology = national_populist_subtype
+		}
 	}
 }
 

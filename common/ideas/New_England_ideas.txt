@@ -99,7 +99,7 @@ ideas = {
 					weekly_manpower = -30
 					stability_factor = 0.03
 					totalist_drift = 0.02
-					recruitable_population_factor = -0.3
+					recruitable_population_factor = -0.03
 			}
 		}
 		NEE_carrousel2 = {
