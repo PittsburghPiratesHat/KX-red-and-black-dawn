@@ -3291,6 +3291,34 @@ ZIO_main = {
 	color = rgb { 14 70 160 }
 	color_ui = rgb { 14 70 160 }
 }
+ZIO_judeastern = {
+	color = rgb { 14 70 160 }
+	color_ui = rgb { 14 70 160 }
+}
+ZIO_sterncosmetic = {
+	color = rgb { 14 70 160 }
+	color_ui = rgb { 14 70 160 }
+}
+ZIO_tehomicosmetic = {
+	color = rgb { 14 70 160 }
+	color_ui = rgb { 14 70 160 }
+}
+ZIO_judeadayan = {
+	color = rgb { 14 70 160 }
+	color_ui = rgb { 14 70 160 }
+}
+ZIO_judeatehomi = {
+	color = rgb { 14 70 160 }
+	color_ui = rgb { 14 70 160 }
+}
+ZIO_napoleon = {
+	color = rgb { 14 70 160 }
+	color_ui = rgb { 14 70 160 }
+}
+ZIO_yellincosmetic = {
+	color = rgb { 14 70 160 }
+	color_ui = rgb { 14 70 160 }
+}
 NEE_skinner1 = {
 	color = rgb { 14 70 160 }
 	color_ui = rgb { 14 70 160 }

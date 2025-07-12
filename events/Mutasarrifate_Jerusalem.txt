@@ -16,10 +16,6 @@ country_event = {	#Introduction Event
 
 	option = {
 		name = pal.1.a
-		CAN = { set_country_flag = jerusalem_accord_signature }
-		GER = { set_country_flag = jerusalem_accord_signature }
-		AUS = { set_country_flag = jerusalem_accord_signature }
-		USA = { set_country_flag = jerusalem_accord_signature }
 	}
 }
 
@@ -179,6 +175,7 @@ country_event = {	#flagzionist
 					expire = "1965.1.1"
 					ideology = tot_left_zionism_subtype
 				}
+				set_cosmetic_tag = ZIO_sterncosmetic
 				set_politics = {
 				ruling_party = totalist
 			}
@@ -200,12 +197,13 @@ country_event = {	#flagzionist
 					expire = "1965.1.1"
 					ideology = right_zionism_group_subtype
 				}
+				set_cosmetic_tag = ZIO_tehomicosmetic
 				set_politics = {
 				ruling_party = national_populist 
 			}
 			remove_all_ministers = yes
 			add_ideas = PAL_tehomi_hog_npo
-			add_ideas = PAL_david_for_tot
+			add_ideas = PAL_landau_for_npo
 			add_ideas = PAL_jab_eco_tot
 			add_ideas =  PAL_raz_sec_npo
 	}
@@ -221,6 +219,7 @@ country_event = {	#flagzionist
 					expire = "1965.1.1"
 					ideology = radsoc_left_zionism_subtype
 				}
+				set_cosmetic_tag = ZIO_yellincosmetic
 				set_politics = {
 				ruling_party = radical_socialist
 			}
@@ -428,7 +427,8 @@ country_event = {	#fla
 
 	option = {
 		name = israel.8.b
-		set_country_flag = ZIO_napoleon
+		set_country_flag = ZIO_dayanisnapoleon
+		set_cosmetic_tag = ZIO_napoleon
 		create_country_leader = {
 					name = "Moshe I"
 					desc = ""

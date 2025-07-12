@@ -11235,6 +11235,7 @@
 	PAL_yit_for_rso:0 "Yitzhsak Shamir"
 	PAL_yadin_for_pat:0 "Yigal Yadin"
 		PAL_yes_for_rso:0 "Yisrael Yeshayahu"
+		PAL_landau_for_npo:0 "Haim Landau"
 	## Economy Minister
 		PAL_isser_eco_sco:0 "Isser Harrel"
 		PAL_jab_eco_tot:0 "Ze'ev Jabotinsky"

@@ -9,12 +9,52 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/PAL/without.png"
 	}
 	spriteType = {
+		name = "GFX_idea_pal_supporting"
+		texturefile = "gfx/interface/ideas/PAL/supporting.png"
+	}
+		spriteType = {
+		name = "GFX_idea_pal_krebs"
+		texturefile = "gfx/interface/ideas/PAL/krebs.png"
+	}
+	spriteType = {
+		name = "GFX_idea_pal_timgunn"
+		texturefile = "gfx/interface/ideas/PAL/timgunn.png"
+	}
+	spriteType = {
+		name = "GFX_idea_pal_ships"
+		texturefile = "gfx/interface/ideas/PAL/ships.png"
+	}
+	spriteType = {
+		name = "GFX_idea_pal_keep"
+		texturefile = "gfx/interface/ideas/PAL/keep.png"
+	}
+	spriteType = {
+		name = "GFX_idea_pal_donate"
+		texturefile = "gfx/interface/ideas/PAL/donate.png"
+	}
+	spriteType = {
 		name = "GFX_idea_pal_indoctrinating"
 		texturefile = "gfx/interface/ideas/PAL/indoctrinating.png"
 	}
 	spriteType = {
 		name = "GFX_idea_pal_one"
 		texturefile = "gfx/interface/ideas/PAL/one.png"
+	}
+	spriteType = {
+		name = "GFX_idea_pal_rejected"
+		texturefile = "gfx/interface/ideas/PAL/rejected.png"
+	}
+	spriteType = {
+		name = "GFX_idea_pal_stick"
+		texturefile = "gfx/interface/ideas/PAL/stick.png"
+	}
+	spriteType = {
+		name = "GFX_idea_pal_equal"
+		texturefile = "gfx/interface/ideas/PAL/equal.png"
+	}
+	spriteType = {
+		name = "GFX_idea_pal_dayanbust"
+		texturefile = "gfx/interface/ideas/PAL/dayanbust.png"
 	}
 	spriteType = {
 		name = "GFX_idea_pal_enforced"
@@ -73,6 +113,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/PAL/embraced.png"
 	}
 	spriteType = {
+		name = "GFX_idea_PAL_shamirplan"
+		texturefile = "gfx/interface/ideas/PAL/shamirplan.png"
+	}
+	spriteType = {
 		name = "GFX_idea_PAL_doriplan"
 		texturefile = "gfx/interface/ideas/PAL/doriplan.png"
 	}
@@ -117,10 +161,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/PAL/personality.png"
 	}
 	spriteType = {
-		name = "GFX_idea_PAL_sheikl"
-		texturefile = "gfx/interface/ideas/PAL/sheikl.png"
-	}
-	spriteType = {
 		name = "GFX_idea_PAL_tax"
 		texturefile = "gfx/interface/ideas/PAL/tax.png"
 	}
@@ -129,8 +169,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/PAL/fate.png"
 	}
 	spriteType = {
-		name = "GFX_idea_PAL_fate"
-		texturefile = "gfx/interface/ideas/PAL/fate.png"
+		name = "GFX_idea_PAL_sheikl"
+		texturefile = "gfx/interface/ideas/PAL/shekil.png"
 	}
 	spriteType = {
 		name = "GFX_idea_PAL_miracle"
@@ -141,20 +181,20 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/PAL/zioplan.png"
 	}
 	spriteType = {
-		name = "GFX_idea_PAL_zioplan"
-		texturefile = "gfx/interface/ideas/PAL/zioplan.png"
+		name = "GFX_idea_PAL_tourism"
+		texturefile = "gfx/interface/ideas/PAL/tourism.png"
 	}
 	spriteType = {
-		name = "GFX_idea_PAL_zioplan"
-		texturefile = "gfx/interface/ideas/PAL/zioplan.png"
+		name = "GFX_idea_PAL_noarabrecruitment"
+		texturefile = "gfx/interface/ideas/PAL/noarabrecruitment.png"
 	}
 	spriteType = {
-		name = "GFX_idea_PAL_zioplan"
-		texturefile = "gfx/interface/ideas/PAL/zioplan.png"
+		name = "GFX_idea_PAL_arabrecruitment"
+		texturefile = "gfx/interface/ideas/PAL/arabrecruitment.png"
 	}
 	spriteType = {
-		name = "GFX_idea_PAL_zioplan"
-		texturefile = "gfx/interface/ideas/PAL/zioplan.png"
+		name = "GFX_idea_PAL_science"
+		texturefile = "gfx/interface/ideas/PAL/science.png"
 	}
 	spriteType = {
 		name = "GFX_idea_PAL_zioplan"

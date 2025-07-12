@@ -42,7 +42,6 @@ ZIO_factions_tehomi = {
             RUS = {
                 exists = yes
                 is_faction_leader = yes
-				has_completed_focus = RUS_Seek_Allies
 				has_country_leader = {
 				ruling_only = yes
 				name = "Boris Savinkov"

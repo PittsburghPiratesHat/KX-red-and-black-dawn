@@ -314,6 +314,40 @@ ideas = {
 				totalist_drift = -0.02
 			}
 		}
+			pal_supportingdayan = {
+			picture = pal_supporting
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.07
+				MONTHLY_POPULATION = 0.30
+				paternal_autocrat_drift  0.03
+			}
+		}
+			pal_supportingallon = {
+			picture = pal_supporting
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.07
+				MONTHLY_POPULATION = 0.30
+				radical_socialist_drift = 0.03
+			}
+		}
+		pal_keep = {
+			picture = pal_keep
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.07
+				MONTHLY_POPULATION = 0.30
+			}
+		}
+		pal_donate = {
+			picture = pal_donate
+			allowed = { always = no }
+            modifier = {
+				research_speed_factor = 0.02
+				stability_factor = -0.02
+			}
+		}
 		pal_indoctrinating = {
 			picture = PAL_indoctrinating
 			allowed = { always = no }
@@ -323,7 +357,7 @@ ideas = {
 			}
 		}
 		pal_enforced = {
-			picture = PAL_enforced
+			picture = pal_enforced
 			allowed = { always = no }
             modifier = {
 				stability_factor = -0.03
@@ -333,7 +367,7 @@ ideas = {
 			}
 		}
 		pal_enforcedtwo = {
-			picture = PAL_enforced
+			picture = pal_enforced
 			allowed = { always = no }
             modifier = {
 				stability_factor = -0.01
@@ -628,6 +662,51 @@ ideas = {
 				radical_socialist_drift = 0.02
 			}
 		}
+		pal_rejected = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = pal_rejected
+			modifier = {
+				justify_war_goal_time = 0.25
+				social_conservative_drift = 0.05
+			}
+		}
+			pal_stick = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = pal_stick
+			modifier = {
+				army_core_defence_factor = 0.08
+				army_infantry_attack_factor = 0.05
+				planning_speed = 0.4
+				conscription_factor	= 0.02
+				paternal_autocrat_drift = 0.03
+			}
+		}
+			pal_dayanbust = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = pal_dayanbust
+			modifier = {
+				stability_factor = 0.07
+				paternal_autocrat_drift = 0.03
+				political_power_gain = 0.05
+			}
+		}
+		pal_equal = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = pal_equal
+			modifier = {
+					recruitable_population_factor = 0.08
+				command_power_gain_mult = 0.002
+				army_core_defence_factor = 0.07
+				justify_war_goal_time = -0.25
+				army_infantry_attack_factor = 0.05
+				planning_speed = 0.4
+				army_org_Factor = 0.003
+			}
+		}
 		pal_zioplan = {
 			allowed = { always = no }
 			removal_cost = -1
@@ -748,7 +827,7 @@ ideas = {
 			}
 		}
 		pal_science = {
-			picture = pal_science
+			picture = PAL_science
 			allowed = { always = no }
             modifier = {
 				MONTHLY_POPULATION = 0.10
@@ -770,7 +849,7 @@ ideas = {
 			}
 		}
 		pal_production = {
-			picture = pal_production
+			picture = PAL_production
             modifier = {
 				industrial_capacity_factory = 0.8
 				production_speed_buildings_factor = 0.8

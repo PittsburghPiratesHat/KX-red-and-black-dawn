@@ -768,6 +768,53 @@ country_event = {	#gordonramsay
 	}
 }
 
+country_event = {	#gordonramsay
+	id = israel.55
+	title = israel.55.t
+	desc = israel.55.d
+
+
+	#picture = 
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = israel.55.a
+				
+	}
+}
+
+country_event = {	#gordonramsay
+	id = israel.61
+	title = israel.61.t
+	desc = israel.61.d
+
+
+	#picture = 
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = israel.61.a
+		random_unit_leader = {
+				limit = { has_id = 921 }
+				set_nationality = PAL
+			}
+			hidden_effect = {
+            PAL = {
+                country_event = {
+                    id = israel.55
+                }
+	     	}
+	   }
+				
+	}
+}
+
 
 country_event = {	#gordonramsay
 	id = israel.57

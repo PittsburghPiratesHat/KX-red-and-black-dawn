@@ -36652,6 +36652,10 @@ spriteTypes = {
 		name = "GFX_idea_PAL_yadin_for_pat"
 		texturefile = "gfx/interface/ministers/PAL/pal_yadin.png"
 	}
+	spriteType = {
+		name = "GFX_idea_PAL_landau_for_npo"
+		texturefile = "gfx/interface/ministers/PAL/pal_landau.png"
+	}
 
 
 	# Economy Minister

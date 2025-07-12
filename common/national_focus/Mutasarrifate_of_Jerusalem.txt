@@ -503,6 +503,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = PAL_without
 		}
 	}
 
@@ -626,35 +627,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = ZIO_crackdown_on_anti_semitism_not_non_jews
-		icon = GFX_goal
-
-		cost = 5
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = ZIO_reject_militarization
-		}
-
-		mutually_exclusive = {
-		}
-
-		x = 18
-		y = 22
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
+			add_ideas = pal_rejected
 		}
 	}
 
@@ -702,7 +675,7 @@ focus_tree = {
 		}
 
 		prerequisite = {
-			focus = ZIO_crackdown_on_anti_semitism_not_non_jews
+			focus = ZIO_reject_militarization
 		}
 
 		mutually_exclusive = {
@@ -1235,6 +1208,48 @@ create_corps_commander = {# dayan
 		available_if_capitulated = yes
 
 		completion_reward = {
+			create_corps_commander = {# dayan
+	name = "Menachaim Begin"
+	desc = ""
+	portrait_path = "gfx/leaders/PAL/begin.png"
+	traits = {
+		infantry_officer
+		career_officer
+	}
+	skill = 1
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
+}
+create_corps_commander = {# dayan
+	name = "Haim Landau"
+	desc = ""
+	portrait_path = "gfx/leaders/PAL/landau.png"
+	traits = {
+		infantry_officer
+		career_officer
+	}
+	skill = 1
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
+}
+create_corps_commander = {# dayan
+	name = "David Raziel"
+	desc = ""
+	portrait_path = "gfx/leaders/PAL/razzie.png"
+	traits = {
+		infantry_officer
+		career_officer
+	}
+	skill = 1
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
+}
 		}
 	}
 
@@ -1354,7 +1369,7 @@ create_corps_commander = {# dayan
 	has_country_flag = ZIO_Stern
 	has_country_flag = ZIO_tehomi 
 	has_country_flag = ZIO_dayan
-has_country_flag = ZIO_napoleon
+has_country_flag = ZIO_dayanisnapoleon
 				}
 		}
 
@@ -1388,8 +1403,10 @@ has_country_flag = ZIO_napoleon
 
 		available = {
 			has_country_flag = ZIO_can_do_expansion
-			has_country_flag = ZIO_dayan
-			has_country_flag = ZIO_wiesenthal
+		OR = {
+	has_country_flag = ZIO_dayan
+has_country_flag = ZIO_wiesenthal
+				}
 		}
 
 		prerequisite = {
@@ -1583,9 +1600,11 @@ has_country_flag = ZIO_napoleon
 
 		available = {
 			has_country_flag = ZIO_can_do_expansion
-			has_country_flag = ZIO_allon
-			has_country_flag = ZIO_einstein  
-			has_country_flag = ZIO_yellin
+			OR = {
+	has_country_flag = ZIO_einstein
+has_country_flag = ZIO_allon
+has_country_flag = ZIO_yellin
+				}
 		}
 
 		prerequisite = {
@@ -1730,8 +1749,10 @@ has_country_flag = ZIO_napoleon
 
 		available = {
 			has_country_flag = ZIO_can_do_expansion
-			has_country_flag = ZIO_dayan
-			has_country_flag = ZIO_wiesenthal
+			OR = {
+	has_country_flag = ZIO_dayan
+has_country_flag = ZIO_wiesenthal
+				}
 		}
 
 		prerequisite = {
@@ -1951,7 +1972,7 @@ has_country_flag = ZIO_napoleon
 
 		completion_reward = {
 			create_wargoal = {
-			type = take_core_state
+			type = annex_everything
 			target = TUR
 			}
 			add_state_core = 455
@@ -2121,6 +2142,16 @@ has_country_flag = ZIO_napoleon
 			type = annex_everything
 			target = ETH
 			}
+				add_state_core = 271
+			add_state_core = 922
+			add_state_core = 919
+			add_state_core = 944
+				add_state_core = 924
+			add_state_core = 921
+			add_state_core = 920
+			add_state_core = 923
+			add_state_core = 961
+			add_state_core = 550
 		}
 	}
 
@@ -2131,6 +2162,9 @@ has_country_flag = ZIO_napoleon
 		cost = 5
 
 		available = {
+			NOT = {
+					has_completed_focus = ZIO_I_could_be_napoleon
+				}
 		}
 
 		prerequisite = {
@@ -2154,6 +2188,27 @@ has_country_flag = ZIO_napoleon
 		available_if_capitulated = yes
 
 		completion_reward = {
+			if = {
+						limit = {
+								has_country_leader = { ruling_only = yes name = "Avraham Stern" }
+						}
+						drop_cosmetic_tag = yes 
+						set_cosmetic_tag = ZIO_judeastern
+						}
+								if = {
+						limit = {
+								has_country_leader = { ruling_only = yes name = "Avraham Tehomi" }
+						}
+						drop_cosmetic_tag = yes 
+						set_cosmetic_tag = ZIO_judeatehomi
+						}
+						if = {
+						limit = {
+								has_country_leader = { ruling_only = yes name = "Moshe Dayan" }
+						}
+						drop_cosmetic_tag = yes 
+						set_cosmetic_tag = ZIO_judeadayan
+						}
 		}
 	}
 
@@ -2289,6 +2344,14 @@ add_manpower = -1500
 		available_if_capitulated = yes
 
 		completion_reward = {
+			 diplomatic_relation = {
+	           country = EGY
+	         relation = non_aggression_pact 
+			}
+			 diplomatic_relation = {
+	           country = TUR
+	         relation = non_aggression_pact 
+			}
 		}
 	}
 
@@ -4871,8 +4934,16 @@ add_manpower = -1500
 
 		completion_reward = {
 			set_country_flag = ZIO_dayan
-		}
+			 hidden_effect = {
+            CAN = {
+                country_event = {
+                    id = israel.61
+                    days = 20
+                }
+	     	}
+	   }
 	}
+}
 
 	focus = {
 		id = ZIO_tolerate_the_arabs
@@ -5039,7 +5110,7 @@ add_manpower = -1500
 		cost = 5
 
 		available = {	
-			has_country_flag = ZIO_napoleon
+			has_country_flag = ZIO_dayanisnapoleon
 		}
 
 		prerequisite = {
@@ -5120,6 +5191,7 @@ add_manpower = -1500
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = pal_dayanbust
 		}
 	}
 
@@ -5149,6 +5221,7 @@ add_manpower = -1500
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = pal_stick
 		}
 	}
 
@@ -5210,6 +5283,7 @@ add_manpower = -1500
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = pal_equal
 		}
 	}
 
@@ -5306,6 +5380,10 @@ add_manpower = -1500
 		available_if_capitulated = yes
 
 		completion_reward = {
+			 diplomatic_relation = {
+	           country = EGY
+	         relation = non_aggression_pact 
+			} 
 		}
 	}
 
@@ -5365,6 +5443,7 @@ add_manpower = -1500
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = pal_supportingdayan
 		}
 	}
 
@@ -5455,6 +5534,7 @@ add_manpower = -1500
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = pal_keep
 		}
 	}
 
@@ -5485,6 +5565,7 @@ add_manpower = -1500
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = pal_donate
 		}
 	}
 
@@ -5515,6 +5596,11 @@ add_manpower = -1500
 		available_if_capitulated = yes
 
 		completion_reward = {
+				create_wargoal = {
+			type = take_core_state
+			target = CYP
+			}
+			add_state_core = 183
 		}
 	}
 
@@ -5544,6 +5630,14 @@ add_manpower = -1500
 		available_if_capitulated = yes
 
 		completion_reward = {
+			create_wargoal = {
+			type = take_core_state
+			target = TUR
+			}
+			add_state_core = 455
+			add_state_core = 992
+			add_state_core = 554
+			add_state_core = 553
 		}
 	}
 
@@ -5666,6 +5760,20 @@ add_manpower = -1500
 		available_if_capitulated = yes
 
 		completion_reward = {
+			create_wargoal = {
+			type = take_core_state
+			target = SPR
+			}
+			create_wargoal = {
+			type = take_core_state
+			target = CNT
+			}
+			create_wargoal = {
+			type = take_core_state
+			target = CAF
+			}
+			add_state_core = 1313
+			add_state_core = 165
 		}
 	}
 
@@ -5695,6 +5803,40 @@ add_manpower = -1500
 		available_if_capitulated = yes
 
 		completion_reward = {
+			create_wargoal = {
+			type = take_core_state
+			target = CAF
+			}
+			add_state_core = 817
+			add_state_core = 984
+			add_state_core = 1334
+			add_state_core = 19
+			add_state_core = 31
+			add_state_core = 22
+			add_state_core = 21
+			add_state_core = 762
+			add_state_core = 763
+			add_state_core = 735
+			add_state_core = 32
+			add_state_core = 26
+			add_state_core = 23
+			add_state_core = 25
+			add_state_core = 20
+			add_state_core = 27
+			add_state_core = 33
+			add_state_core = 30
+			add_state_core = 14
+			add_state_core = 983
+			add_state_core = 18
+			add_state_core = 785
+			add_state_core = 15
+			add_state_core = 16
+			add_state_core = 24
+			add_state_core = 980
+			add_state_core = 28
+			add_state_core = 779
+			add_state_core = 17
+			add_state_core = 1
 		}
 	}
 }
