@@ -7022,6 +7022,238 @@ add_manpower = -1500
 		completion_reward = {
 		}
 	}
+	focus = {
+		id = ZIO_deciding_the_fate_of_zionism
+		icon = GFX_goal_PAL_empire
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_ben
+		}
+
+		mutually_exclusive = {
+			focus =  ZIO_
+		}
+
+		x = 78
+		y = 30
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ZIO_the_internationale_question
+		icon = GFX_goal_PAL_empire
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_deciding_the_fate_of_zionism
+		}
+
+		mutually_exclusive = {
+			focus =  ZIO_
+		}
+
+		x = 78
+		y = 31
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ZIO_decelerate_settler_colonialism
+		icon = GFX_goal_PAL_empire
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_the_internationale_question
+		}
+
+		mutually_exclusive = {
+			focus =  ZIO_
+		}
+
+		x = 78
+		y = 32
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ZIO_negotiate_with_palestinian_leaders
+		icon = GFX_goal_PAL_empire
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_decelerate_settler_colonialism
+		}
+
+		mutually_exclusive = {
+			focus =  ZIO_
+		}
+
+		x = 78
+		y = 33
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	 focus = {
+		id = ZIO_total_government_centralization
+		icon = GFX_goal_PAL_empire
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_pro_arab_socialists
+		}
+
+		mutually_exclusive = {
+			focus =  ZIO_
+		}
+
+		x = 86
+		y = 30
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	 focus = {
+		id = ZIO_cooexist_with_the_muslims_and_christians
+		icon = GFX_goal_PAL_empire
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_total_government_centralization
+		}
+
+		mutually_exclusive = {
+			focus =  ZIO_
+		}
+
+		x = 86
+		y = 31
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ZIO_purge_einstein
+		icon = GFX_goal_PAL_empire
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_cooexist_with_the_muslims_and_christians
+		}
+
+		mutually_exclusive = {
+			focus =  ZIO_
+		}
+
+		x = 86
+		y = 32
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ZIO_crush_the_remnants_of_the_zionist_paramilitaries
+		icon = GFX_goal_PAL_empire
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_purge_einstein
+		}
+
+		mutually_exclusive = {
+			focus =  ZIO_
+		}
+
+		x = 86
+		y = 33
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
 	 focus = {
 		id = ZIO_vilner
 		icon = GFX_goal_PAL_empire
