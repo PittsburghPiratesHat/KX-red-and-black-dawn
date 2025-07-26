@@ -6079,6 +6079,224 @@ add_manpower = -1500
 		}
 	}
 
+	focus = {
+		id = ZIO_yellinmor_embraces_canaanism
+		icon = GFX_goal_PAL_empire
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+		}
+
+		mutually_exclusive = {
+			focus =  ZIO_
+		}
+
+		x = 43
+		y = 29
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_burn_away_the_last_vestages_of_zionism
+		icon = GFX_goal_PAL_empire
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus =  ZIO_yellinmor_embraces_canaanism
+		}
+
+		mutually_exclusive = {
+			focus =  ZIO_
+		}
+
+		x = 43
+		y = 30
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_the_hebrew_race
+		icon = GFX_goal_PAL_empire
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus =  ZIO_yellinmor_embraces_canaanism
+		}
+
+		mutually_exclusive = {
+			focus =  ZIO_
+		}
+
+		x = 47
+		y = 30
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_spread_the_truth_of_our_ancient_origins
+		icon = GFX_goal_PAL_empire
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus =  ZIO_yellinmor_embraces_canaanism
+		}
+
+		mutually_exclusive = {
+			focus =  ZIO_
+		}
+
+		x = 39
+		y = 30
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_romanize_hebrew
+		icon = GFX_goal_PAL_empire
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus =  ZIO_spread_the_truth_of_our_ancient_origins
+		}
+		prerequisite = {
+			focus =  ZIO_burn_away_the_last_vestages_of_zionism
+		}
+
+		mutually_exclusive = {
+			focus =  ZIO_
+		}
+
+		x = 41
+		y = 31
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_the_council_of_hebrew_youth
+		icon = GFX_goal_PAL_empire
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus =  ZIO_the_hebrew_race
+		}
+		prerequisite = {
+			focus =  ZIO_burn_away_the_last_vestages_of_zionism
+		}
+
+		mutually_exclusive = {
+			focus =  ZIO_
+		}
+
+		x = 45
+		y = 31
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZIO_the_hebrew_flag_flies_over_the_lands_of_canaan
+		icon = GFX_goal_PAL_empire
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus =  ZIO_the_council_of_hebrew_youth
+		}
+		prerequisite = {
+			focus =  ZIO_romanize_hebrew
+		}
+
+		mutually_exclusive = {
+			focus =  ZIO_
+		}
+
+		x = 43
+		y = 32
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
 	 focus = {
 		id = ZIO_jabotinsky
 		icon = GFX_goal_PAL_empire
@@ -6834,6 +7052,122 @@ add_manpower = -1500
 		}
 	}
 	 focus = {
+		id = ZIO_inspiration_from_browder
+		icon = GFX_goal_PAL_empire
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_vilner
+		}
+
+		mutually_exclusive = {
+			focus =  ZIO_
+		}
+
+		x = 82
+		y = 30
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	 focus = {
+		id = ZIO_formalize_the_israeli_communist_party
+		icon = GFX_goal_PAL_empire
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_inspiration_from_browder
+		}
+
+		mutually_exclusive = {
+			focus =  ZIO_
+		}
+
+		x = 82
+		y = 31
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	 focus = {
+		id = ZIO_create_the_nakam
+		icon = GFX_goal_PAL_empire
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_formalize_the_israeli_communist_party
+		}
+
+		mutually_exclusive = {
+			focus =  ZIO_
+		}
+
+		x = 82
+		y = 32
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ZIO_uphold_the_rights_of_arabs
+		icon = GFX_goal_PAL_empire
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_create_the_nakam
+		}
+
+		mutually_exclusive = {
+			focus =  ZIO_
+		}
+
+		x = 82
+		y = 33
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	 focus = {
 		id = ZIO_ben
 		icon = GFX_goal_PAL_empire
 
@@ -6852,6 +7186,122 @@ add_manpower = -1500
 
 		x = 74
 		y = 29
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ZIO_secularize_israel
+		icon = GFX_goal_PAL_empire
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_ben
+		}
+
+		mutually_exclusive = {
+			focus =  ZIO_
+		}
+
+		x = 74
+		y = 30
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ZIO_seperate_the_haganah_from_sneh
+		icon = GFX_goal_PAL_empire
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_secularize_israel
+		}
+
+		mutually_exclusive = {
+			focus =  ZIO_
+		}
+
+		x = 74
+		y = 31
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ZIO_lenins_hand_has_touched_israel
+		icon = GFX_goal_PAL_empire
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_seperate_the_haganah_from_sneh
+		}
+
+		mutually_exclusive = {
+			focus =  ZIO_
+		}
+
+		x = 74
+		y = 32
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ZIO_cautious_pro_arab_socialism
+		icon = GFX_goal_PAL_empire
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_lenins_hand_has_touched_israel
+		}
+
+		mutually_exclusive = {
+			focus =  ZIO_
+		}
+
+		x = 74
+		y = 33
 
 		ai_will_do = {
 			factor = 4
