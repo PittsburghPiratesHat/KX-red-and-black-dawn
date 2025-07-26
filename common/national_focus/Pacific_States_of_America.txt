@@ -4399,6 +4399,129 @@ focus_tree = {
 	}
 
 	focus = {# The Final Struggle
+		id = CAL_prophet
+		icon = GFX_CAL_a_new_era
+		cost = 5.0
+		prerequisite = {
+			focus = CAL_choosing_our_new_savior
+		}
+			available = {
+			has_country_leader = { ruling_only = yes name = "Mark Prophet" } 
+		}
+		relative_position_id = CAL_spiritualists_in_control
+		x = -26
+		y = 11
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {# The Final Struggle
+		id = CAL_church_universial_and_tripumphant
+		icon = GFX_CAL_a_new_era
+		cost = 5.0
+		prerequisite = {
+			focus = CAL_honor_americanism
+		}
+		prerequisite = {
+			focus = CAL_reverse_the_decay
+		}
+			available = {
+			has_country_leader = { ruling_only = yes name = "Mark Prophet" } 
+		}
+		relative_position_id = CAL_spiritualists_in_control
+		x = -26
+		y = 14
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {# The Final Struggle
+		id = CAL_the_laws_of_the_church
+		icon = GFX_CAL_a_new_era
+		cost = 5.0
+		prerequisite = {
+			focus = CAL_prophet
+		}
+			available = {
+			has_country_leader = { ruling_only = yes name = "Mark Prophet" } 
+		}
+		relative_position_id = CAL_spiritualists_in_control
+		x = -24
+		y = 12
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {# The Final Struggle
+		id = CAL_reverse_the_decay
+		icon = GFX_CAL_a_new_era
+		cost = 5.0
+		prerequisite = {
+			focus = CAL_prophet
+		}
+			available = {
+			has_country_leader = { ruling_only = yes name = "Mark Prophet" } 
+		}
+		relative_position_id = CAL_spiritualists_in_control
+		x = -24
+		y = 13
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {# The Final Struggle
+		id = CAL_venerate_the_ascended_masters
+		icon = GFX_CAL_a_new_era
+		cost = 5.0
+		prerequisite = {
+			focus = CAL_prophet
+		}
+			available = {
+			has_country_leader = { ruling_only = yes name = "Mark Prophet" } 
+		}
+		relative_position_id = CAL_spiritualists_in_control
+		x = -28
+		y = 12
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {# The Final Struggle
+		id = CAL_honor_americanism
+		icon = GFX_CAL_a_new_era
+		cost = 5.0
+		prerequisite = {
+			focus = CAL_venerate_the_ascended_masters
+		}
+			available = {
+			has_country_leader = { ruling_only = yes name = "Mark Prophet" } 
+		}
+		relative_position_id = CAL_spiritualists_in_control
+		x = -28
+		y = 13
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {# The Final Struggle
 		id = CAL_MacFadden
 		icon = GFX_CAL_a_new_era
 		cost = 5.0
@@ -5006,6 +5129,130 @@ focus_tree = {
 		relative_position_id = CAL_spiritualists_in_control
 		x = 12
 		y = 14
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {# The Final Struggle
+		id = CAL_Bill
+		icon = GFX_CAL_a_new_era
+		cost = 5.0
+		prerequisite = {
+			focus = CAL_choosing_our_new_savior
+		}
+			available = {
+			has_country_leader = { ruling_only = yes name = "Bill Wilson" } 
+		}
+		relative_position_id = CAL_spiritualists_in_control
+		x = 26
+		y = 11
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {# The Final Struggle
+		id = CAL_friends_of_bill_w
+		icon = GFX_CAL_a_new_era
+		cost = 5.0
+		prerequisite = {
+			focus = CAL_Bill
+		}
+			available = {
+			has_country_leader = { ruling_only = yes name = "Bill Wilson" } 
+		}
+		relative_position_id = CAL_spiritualists_in_control
+		x = 28
+		y = 12
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {# The Final Struggle
+		id = CAL_drug_legalization
+		icon = GFX_CAL_a_new_era
+		cost = 5.0
+		prerequisite = {
+			focus = CAL_friends_of_bill_w
+		}
+			available = {
+			has_country_leader = { ruling_only = yes name = "Bill Wilson" } 
+		}
+		relative_position_id = CAL_spiritualists_in_control
+		x = 28
+		y = 13
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {# The Final Struggle
+		id = CAL_Bill_w_state
+		icon = GFX_CAL_a_new_era
+		cost = 5.0
+		prerequisite = {
+			focus = CAL_drug_legalization
+		}
+		prerequisite = {
+			focus = CAL_nationwide_12_step_programs
+		}
+			available = {
+			has_country_leader = { ruling_only = yes name = "Bill Wilson" } 
+		}
+		relative_position_id = CAL_spiritualists_in_control
+		x = 26
+		y = 14
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+		}
+	}
+
+
+	focus = {# The Final Struggle
+		id = CAL_ban_alcohol
+		icon = GFX_CAL_a_new_era
+		cost = 5.0
+		prerequisite = {
+			focus = CAL_Bill
+		}
+			available = {
+			has_country_leader = { ruling_only = yes name = "Bill Wilson" } 
+		}
+		relative_position_id = CAL_spiritualists_in_control
+		x = 24
+		y = 12
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {# The Final Struggle
+		id = CAL_nationwide_12_step_programs
+		icon = GFX_CAL_a_new_era
+		cost = 5.0
+		prerequisite = {
+			focus = CAL_ban_alcohol
+		}
+			available = {
+			has_country_leader = { ruling_only = yes name = "Bill Wilson" } 
+		}
+		relative_position_id = CAL_spiritualists_in_control
+		x = 24
+		y = 13
 		ai_will_do = {
 			factor = 50
 		}
