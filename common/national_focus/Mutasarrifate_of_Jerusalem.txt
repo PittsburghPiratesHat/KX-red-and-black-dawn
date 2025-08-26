@@ -5899,6 +5899,34 @@ add_manpower = -1500
 		completion_reward = {
 		}
 	}
+	focus = {
+		id = ZIO_from_the_idf_to_the_israeli_red_army
+		icon = GFX_goal_PAL_empire
+
+		cost = 5
+
+		available = {	
+		}
+
+		prerequisite = {
+			focus = ZIO_socialism_congress
+		}
+
+		mutually_exclusive = {
+		}
+
+		x = 70
+		y = 30
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
 	  focus = {
 		id = ZIO_anti_arab_socialists
 		icon = GFX_goal_PAL_empire
