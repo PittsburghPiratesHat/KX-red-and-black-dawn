@@ -5909,14 +5909,14 @@ add_manpower = -1500
 		}
 
 		prerequisite = {
-			focus = ZIO_socialism_congress
+			focus = ZIO_socialist_congress
 		}
 
 		mutually_exclusive = {
 		}
 
 		x = 70
-		y = 30
+		y = 29
 
 		ai_will_do = {
 			factor = 4
@@ -6109,11 +6109,12 @@ add_manpower = -1500
 
 	focus = {
 		id = ZIO_yellinmor_embraces_canaanism
-		icon = GFX_goal_PAL_empire
+		icon = GFX_goal_PAL_embrace
 
 		cost = 5
 
-		available = {	
+		available = {
+			has_country_flag = ZIO_yellincanaan
 		}
 
 		prerequisite = {
@@ -6138,7 +6139,7 @@ add_manpower = -1500
 
 	focus = {
 		id = ZIO_burn_away_the_last_vestages_of_zionism
-		icon = GFX_goal_PAL_empire
+		icon = GFX_goal_PAL_burn
 
 		cost = 5
 
@@ -6168,7 +6169,7 @@ add_manpower = -1500
 
 	focus = {
 		id = ZIO_the_hebrew_race
-		icon = GFX_goal_PAL_empire
+		icon = GFX_goal_PAL_race
 
 		cost = 5
 
@@ -6198,7 +6199,7 @@ add_manpower = -1500
 
 	focus = {
 		id = ZIO_spread_the_truth_of_our_ancient_origins
-		icon = GFX_goal_PAL_empire
+		icon = GFX_goal_PAL_spread
 
 		cost = 5
 
@@ -6228,7 +6229,7 @@ add_manpower = -1500
 
 	focus = {
 		id = ZIO_romanize_hebrew
-		icon = GFX_goal_PAL_empire
+		icon = GFX_goal_PAL_romanize
 
 		cost = 5
 
@@ -6261,7 +6262,7 @@ add_manpower = -1500
 
 	focus = {
 		id = ZIO_the_council_of_hebrew_youth
-		icon = GFX_goal_PAL_empire
+		icon = GFX_goal_PAL_youth
 
 		cost = 5
 
@@ -6294,7 +6295,7 @@ add_manpower = -1500
 
 	focus = {
 		id = ZIO_the_hebrew_flag_flies_over_the_lands_of_canaan
-		icon = GFX_goal_PAL_empire
+		icon = GFX_goal_PAL_flag
 
 		cost = 5
 

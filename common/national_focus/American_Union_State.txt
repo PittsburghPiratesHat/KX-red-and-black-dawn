@@ -24,6 +24,7 @@ focus_tree = {
 		icon = GFX_goal_USA_president_long
 		cost = 5
 		available = {
+			has_country_flag = pelly_went_cray_cray
 		}
 		bypass = {
 		}

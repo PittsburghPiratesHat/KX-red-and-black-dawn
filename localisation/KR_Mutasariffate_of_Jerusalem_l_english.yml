@@ -230,6 +230,7 @@ PAL_jewish:0 "Jewish bandits"
 PAL_paramilitaries: "Paramilitaries"
 ZIO_factions_tehomi:0 "Tehomi faction choice"
 ZIO_guide:0 "Israel guide"
+ZIO_factions:0 "Stern faction choice"
 
 ### Events
 pal.1.t:0 "The Mutasarrifate of Jerusalem in 1936"

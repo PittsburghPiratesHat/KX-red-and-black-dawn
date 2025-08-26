@@ -308,6 +308,34 @@ SpriteTypes = {
 		texturefile = "gfx/interface/goals/PAL_greater.png"
 	}
 	SpriteType = {
+		name = "GFX_goal_PAL_burn"
+		texturefile = "gfx/interface/goals/PAL_burn.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_embrace"
+		texturefile = "gfx/interface/goals/PAL_embrace.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_spread"
+		texturefile = "gfx/interface/goals/PAL_spread.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_race"
+		texturefile = "gfx/interface/goals/PAL_race.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_youth"
+		texturefile = "gfx/interface/goals/PAL_youth.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_flag"
+		texturefile = "gfx/interface/goals/PAL_flag.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_romanize"
+		texturefile = "gfx/interface/goals/PAL_romanize.png"
+	}
+	SpriteType = {
 		name = "GFX_goal_PAL_britishacess"
 		texturefile = "gfx/interface/goals/PAL_britishacess.png"
 	}
