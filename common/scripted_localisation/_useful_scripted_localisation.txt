@@ -337,8 +337,39 @@ defined_text = {
 		}
 		localization_key = right_zionism_group_subtype
 	}
+		text = {
+		trigger = {
+			has_country_leader_ideology = cuat_subtype
+		}
+		localization_key = cuat_subtype
+	}
+		text = {
+		trigger = {
+			has_country_leader_ideology = thelema_subtype
+		}
+		localization_key = thelema_subtype
+	}
+		text = {
+		trigger = {
+			has_country_leader_ideology = cosmos_subtype
+		}
+		localization_key = cosmos_subtype
+	}
+
+	text = {
+		trigger = {
+			has_country_leader_ideology = natpoppellyism_subtype
+		}
+		localization_key = natpoppellyism_subtype
+	}
 	
 		text = {
+		trigger = {
+			has_country_leader_ideology = skinnerism_subtype
+		}
+		localization_key = skinnerism_subtype
+	}
+	text = {
 		trigger = {
 			has_country_leader_ideology = skinnerism_subtype
 		}

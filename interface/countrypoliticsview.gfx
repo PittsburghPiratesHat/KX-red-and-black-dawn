@@ -570,6 +570,22 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/subideologies/skinnerism.png"
 	}
 	spriteType = {
+		name = "GFX_ideology_cuat_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/cuat.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_cosmos_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/cosmos.png"
+	}
+		spriteType = {
+		name = "GFX_ideology_natpoppellyism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/pelly_natpop.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_thelema_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/thelema_natpop.png"
+	}
+	spriteType = {
 		name = "GFX_ideology_national_marxism_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/national_marxism.png"
 	}

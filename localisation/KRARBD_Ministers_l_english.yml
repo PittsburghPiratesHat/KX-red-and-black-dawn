@@ -2205,6 +2205,12 @@
      CAL_William_Randolph_Hearst_Sr_hog_pau:0 "William Randolph Hearst"
      CAL_Edward_Longstreet_Bodin_hog_npo:0 "Edward Longstreet Bodin"
      CAL_l_ron_hubbard_hog_npo:0 "L. Ron Hubbard"
+		CAL_yoga_hog_npo:0 "Paramahansa Yogananda"
+CAL_powers_hog_tot:0 "Robert Powers"
+		CAL_berg_hog_tot:0 "David Berg"
+		CAL_Jack_Parsons_hog_npo:0 "Jack Parsons"
+		CAL_prophet_hog_npo:0 "Mark Prophet"
+		CAL_bill_hog_npo:0 "Bill W"
 
 	### Person of Influence ###
 	## Foreign Minister

@@ -1136,6 +1136,10 @@ ideologies = {
 			nacismo_subtype = {can_be_randomly_selected = no} #Nacismo
 			lapuanliike_subtype = {can_be_randomly_selected = no} #Lapuanliike
 			right_zionism_group_subtype = {can_be_randomly_selected = no} #right zionism
+			cuat_subtype = {can_be_randomly_selected = no} #cuat
+			cosmos_subtype = {can_be_randomly_selected = no} #cosmos
+			thelema_subtype = {can_be_randomly_selected = no} #thelema
+			natpoppellyism_subtype = {can_be_randomly_selected = no} #natpoppellyism
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_NATIONAL_POPULIST_1"

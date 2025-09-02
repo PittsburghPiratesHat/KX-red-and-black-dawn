@@ -42440,6 +42440,96 @@ ideas = {
 			}
 			cancel_if_invalid = no
 		}
+		CAL_yoga_hog_npo = {
+			allowed = { original_tag = CAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			traits = {
+				head_of_government
+				national_populist
+				hog_spiritual_leader
+			}
+			cancel_if_invalid = no
+		}
+		CAL_powers_hog_tot = {
+			allowed = { original_tag = CAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			traits = {
+				head_of_government
+				totalist
+				hog_spiritual_leader
+			}
+			cancel_if_invalid = no
+		}
+		CAL_berg_hog_tot = {
+			allowed = { original_tag = CAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			traits = {
+				head_of_government
+				totalist
+				hog_spiritual_leader
+			}
+			cancel_if_invalid = no
+		}
+		CAL_Jack_Parsons_hog_npo = {
+			allowed = { original_tag = CAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			traits = {
+				head_of_government
+				national_populist
+				hog_spiritual_leader
+			}
+			cancel_if_invalid = no
+		}
+		CAL_prophet_hog_npo = {
+			allowed = { original_tag = CAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			traits = {
+				head_of_government
+				national_populist
+				hog_spiritual_leader
+			}
+			cancel_if_invalid = no
+		}
+			CAL_bill_hog_npo = {
+			allowed = { original_tag = CAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			traits = {
+				head_of_government
+				national_populist
+				hog_spiritual_leader
+			}
+			cancel_if_invalid = no
+		}
 	}
 
 	person_of_influence = { ### Foreign Minister ###

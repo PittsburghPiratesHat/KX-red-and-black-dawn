@@ -888,6 +888,18 @@ create_corps_commander = {# dayan
 	logistics_skill = 4
 }
 create_corps_commander = {# dayan
+	name = "Avner Less"
+	desc = ""
+	portrait_path = "gfx/leaders/PAL/less.png"
+	traits = {
+	}
+	skill = 1
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
+}
+create_corps_commander = {# dayan
 	name = "Joseph Trumpledor"
 	desc = ""
 	portrait_path = "gfx/leaders/PAL/trump.png"

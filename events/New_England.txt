@@ -9473,6 +9473,24 @@ country_event = { # a problem
 		}
 	}
 }
+country_event = { # a problem
+	id = newengland.1035
+	immediate = {log = "[GetDateText]: [Root.GetName]: event newengland.1031"}
+	title = newengland.1035.t
+	desc = newengland.1035.d
+	
+	#picture =
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #juxtapose
+		name = newengland.1035.a
+		add_popularity = { ideology = totalist popularity = 0.10 }
+		add_stability = 0.10
+	}
+}
 
 country_event = { # Canada gains power
 	id = newengland.104

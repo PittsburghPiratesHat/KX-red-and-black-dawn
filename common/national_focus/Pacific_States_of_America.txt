@@ -4291,6 +4291,14 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAL_restore_elections"
 			add_stability = 0.06
 			add_political_power = 50
+			  hidden_effect = {
+            CAL = {
+                country_event = {
+                    id = pacificstates.359
+                    days = 50
+                }    
+            }                
+        }
 		}
 	}
 
@@ -4665,7 +4673,7 @@ focus_tree = {
 	}
 
 	focus = {# The Final Struggle
-		id = CAL_purge_the_scientologists
+		id = CAL_sideline_the_scientologists
 		icon = GFX_CAL_a_new_era
 		cost = 5.0
 		prerequisite = {
@@ -4689,7 +4697,7 @@ focus_tree = {
 		icon = GFX_CAL_a_new_era
 		cost = 5.0
 		prerequisite = {
-			focus = CAL_parsons
+			focus = CAL_sideline_the_scientologists
 		}
 			available = {
 			has_country_leader = { ruling_only = yes name = "Jack Parsons" } 
