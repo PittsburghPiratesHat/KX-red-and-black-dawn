@@ -42,7 +42,11 @@ TEX_christian_party_long:0 "Christian Party\n§gThe CP has largely absorbed cons
 
 TEX_national_populist_catholic_party:0 "Holy American League"
 TEX_national_populist_catholic_party_long:0 "The Holy American League\n§gOriginally the Papal Militia sent by His Holiness to aid the Union State in the civil war, under the leadership of Philip Carroll the Militia has changed dramatically. Coined the Holy American League after the war, there is little the League does NOT do. Everything from building homes for the poor to training Catholics in the art of self defense. With the success of the New Gunpowder Plot, governing can be added to that list. Since coming power, the League has begun to implement Integralism throughout America. If the League can succeed in it's crusade to bring Political Catholicism to one of the most protestant nations on earth is a question that only God or time will be able to tell.§!"
-                          
+
+TEX_national_populist_pelley_party:0 "The Silver Legion"
+TEX_national_populist_pelley_party_long:0 "The Silver Legion\n§gThe Silver Legions§!"
+
+                                                    
 TEX_national_populist_deadphill_catholic_party:0 "Holy American League-Hardliner Faction"
 TEX_national_populist_deadphill_catholic_party_long:0 "Holy American League-Hardliner Faction\n§gTo their opponents, the Hardliner faction of the Holy American League are paranoid Inquisitors with a thirst for blood. To the Hardliners themselves, they are vessels of God and the Holy Mother who carry out their work in protecting the Empire from sin and heresy. With the death of the Archregent, it is an open secret that they seek to consolidate power and cast out their rival factions, lest the Empire fall once more head first into the rotting pit of Masonic Liberalism. To them, the Empire has already strayed too far from Christ into the dangerous realm of secularism, and it is their mission to reaffirm the Empire as the tool of the Church to bring salvation from fiery Gehenna to all souls, even if that means taking a life. Indeed, their leader, Father Leonard Feeney, is an ambitious and devoted man, only time will tell what lengths the Hardliners would be willing to go to save the Empire.§!"
                          
@@ -270,7 +274,6 @@ TEX_military_industrial_complex_idea3:0 "Military Industrial Complex"
 TEX_military_industrial_complex_idea4:0 "Military Industrial Complex"
 TEX_military_industrial_complex_idea5:0 "Military Industrial Complex"
 
-pelly_went_cray_cray:0 "Pelly saw the glory"
 
 TEX_political_chaos_idea:0 "Political Chaos"
 TEX_political_chaos_idea_desc:0 "In the aftermath of Huey Long's demise, the country has been thrown into chaos. Several of his most trusted lieutenants and confidants are now vying for power in the post-Huey government, and until someone is able to fully consolidate power and stabilize the new government, we will suffer."
@@ -690,6 +693,7 @@ TEX_kill_totalism:0 "§YWe will gain wargoals on all independent §!§RTotalist�
 TEX_reconcile_fully_done:0 "We've reconciled with all other parties."
 TEX_kill_majors:0 "§YWe will gain wargoals on all independent §!§GMajor§!§Y nations in the Americas.§!"
 TEX_kill_traitors:0 "§YWe will gain wargoals on all independent nations in the Americas that §!§Rrejected§!§Y our friendship!§!"
+pelly_went_cray_cray:0 "Pelley's eyes saw the glory"
 
 ### Decisions ###
 TEX_name_flag_picker:0 "A Name and A Flag for the Nation"
@@ -1639,6 +1643,38 @@ TEX_city_of_sin:0 "KC, the City of Sin, the City of Jazz"
 ### Pelly went cray cray focuses ###
 TEX_mine_eyes_have_seen_the_glory:0 "Mine eyes have seen the glory"
 TEX_mine_eyes_have_seen_the_glory_desc:0 "During his coma Pelly saw the glory of the coming of the lord and that he has been endowed with a new mission to save the United States from the decay that not only caused the civil war but reached it's insidous fingers into the corrupt democratic government established by huey long."
+TEX_the_fate_of_the_klan:0 "The fate of the Klan"
+TEX_the_fate_of_the_klan_desc:0 "Whilist Pelley is completely demented and has taken the country in a far more racist direction, he still refuses to endorse the most radical of radical ideas of the Klan such as complete state terrorism and chattl slavery. On top of the Klan simply being uncontrollable, Pelley has a choice to make reconcile the young klan or not but eitherway the old klan is going."
+TEX_turn_the_silver_legion_into_real_legions:0 "Turn the silver legion into real legions"
+TEX_turn_the_silver_legion_into_real_legions_desc:0 "During the civil war, the silver legion which formally was a social club had no choice but to become a real paramilitary. Now, however it must become a true military force a real legion modeled after the legions of Darnard and Romania that have plenty of bite to their bark this way they can be feared and respected by the populace."
+TEX_throw_the_jew_down_the_well:0 "Throw the Jew down the well"
+TEX_throw_the_jew_down_the_well_desc:0 "In my country there is problem and that problem is transport, throw transport down the well. Throw the Jew down the well so my country can be free, so my country can be free."
+TEX_cremate_communism:0 "Cremate Communism"
+TEX_cremate_communism_desc:0 "Commuinism is a disease, a blight and so is syndicalism. Pelley has no issue with things that help the good god fearing white people of america like healthcare and education but he does have a problem with communism and syndicalism which are entierely hostile to christian and american teachings and therefore must be hurled into the fire."
+TEX_radicalize_the_silver_rangers:0 "Radicalize the silver rangers"
+TEX_radicalize_the_silver_rangers_desc:0 "What good would an ultranationalist theocratic dictatorship be without a secret police? WIth the Klan either purged or kept on a very tight leash, we must look to ourselves. We will radicalize the silver rangers into a new secret police and bodyguard unit that will ensure citizens abide by the laws and the grandmaster Pelley can never be the victim of an assassination attempt again."
+TEX_one_crazy_night:0 "One crazy night"
+TEX_one_crazy_night_desc:0 "Pelley has made enemies, too many on top of too many skeptics. It's time for an especially dark and crazy night to deal with the problem, a night you could say is one with very long knives."
+TEX_galvanize_american_nationalism:0 "Galvanize American nationalism"
+TEX_galvanize_american_nationalism_desc:0 "American Nationalism sadly took a massive hit during the civil war and now since America is under the dictatorship of William Dudley Pelley. It is time to galvanize American nationalism as hard as we can playing on the church and Christianity and the resilence of our nation in the face of so many who desired to destroy it."
+TEX_pellynomics:0 "Pelleynomics"
+TEX_pellynomics_desc:0 "Pelley has instituted his own new economic system that he has called Pelleynomics. A right syndicalist - corporatist fusion, where the needs of the labor class including the wards is cared for by the state while officially corporations in particularly loyal ones like the Fordists are help run the government and are forced to help ensure everyone adheres to the national values and is cared for, Pelleynomics will lead us to a great new era economically."
+TEX_rework_the_reservation_system:0 "Rework the reservation system"
+TEX_rework_the_reservation_system_desc:0 "The reservation system is essentially voluntary segregation for Native Americans as it is now, to ensure segregation stays in place and no one gets any ideas about msicgenation, Pelley is instituting a rework of the reservations. Non White Americans black people in particular will be herded into their own special reservations where like the native americans will be granted their own special self governeing autonomous status albiet under our control and supervison. They will continue to work regular jobs and be cared for by the state with the ward system but they'll be forced to only cohabitate with their own."
+TEX_the_fate_of_spiritualism:0 "The fate of Spiritualism"
+TEX_the_fate_of_spiritualism_desc:0 "Pelley has always been very attached to Spiritualism, even now with Christanity being the official state religion of the United States and he certainly cannot purge them. Pelley does have one choice to make, whilist he has already agreed to pay lip service to the movement by appointing one of their least radical and most docile members of the movement Bill W to the military. Pelley can chose to mix Spiritualism with Christanity allowing both to exist or can simply sideline the movement which is certainly the more palatble option for his hardliner allies like Gerald Smith, Wesely Switt, and Oskar Pfaus."
+TEX_finalizing_our_ideology:0 "Finalizing our ideology"
+TEX_finalizing_our_ideology_desc:0 "Our ideology is still not fully clear. Pelley has a choice to make now he can fully give into his love of Spiritualism, he can embrace legionarism, he can go all in on british israelism, or he can simply stay with pelley's views that are his own. What choice should he make for a clear ideology."
+TEX_crush_the_catholics:0 "Crush the catholics"
+TEX_crush_the_catholics_desc:0 "Catholicism is totally hostile to American Nationalism and American Christian values, it encourages subservence to a foreign authority that has no oversight to ensure poisonous ideologies are not filling our nation's heads. It is simple, the catholics and their 5th column must be eradicated."
+TEX_make_christianity_the_state_religion:0 "Make Christanity the state religion"
+TEX_make_christianity_the_state_religion_desc:0 "We must make Protestant Christanity the national state religion, the one true faith that is the opposite of the communism and catholocism and judaism and other evils that wish to assail our beautiful nation. Obviously Spiritualism will be tolerated albeit under a Christian umbrella that isn't Catholicism, a blind eye will be turned mostly to it."
+TEX_family_programs:0 "Family programs"
+TEX_family_programs_desc:0 "We must enact major family programs at once, both to ensure the survival of white Americans and because we lost so many young men to the civil war. Child bearing quotas will be enacted, women will be restricted from higher education and the workforce, and matchmaking will be mandated by the state, divorce ended. Citizens will be incentivized to pump out as many children as psychically possible with polygamy even potentially being on the table to replace losses of this war."
+TEX_pelly_the_american_grandmaster:0 "Pelley the American grandmaster"
+TEX_pelly_the_american_grandmaster_desc:0 "Pelley is the grandmaster of America, emperor of the white race, controller of the American legions, and the supreme leader of all of America, his statues and pictures are everywhere, his speeches recited by children, his picture in every home, and his name placed next to almighty God himself during prayers. America is Pelley and Pelley is America and he is her grandmaster."
+TEX_to_isolate_or_not_to_isolate_that_is_the_question:0 "To isolate or not to isolate that is the question"
+TEX_to_isolate_or_not_to_isolate_that_is_the_question_desc:0 "With Pelley's power secure we have a major choice to make, to isolate or not to isolate. On one hand, it would be nice to pursue our American dream to ourselves, on the other hand creating an American Empire showing off true American exceptionallism spanning this whole continent would be nice, but some radicals suggest going even further and rebuilding the old American colonial empire perhaps even taking over the whole anglosphere, what shall we do."
 
 ### internal conflict stuff ###
 
@@ -2177,6 +2213,21 @@ unionstate.59033.t:0 "An Assassin Strikes at Pelley!"
 unionstate.59033.d:0 "While giving a speech in the Capital today, President William Dudley Pelley was fired at by a radical leftist maniac who tried killing the Chief with a revolver. The Crowd quickly was sent into a frenzy, and Silver Legion police quickly attempted to apprehend the assassin as Pelley fell to the ground."
 unionstate.59033.a:0 "The would-be assassin is apprehended and Pelley is unharmed!"
 unionstate.59033.b:0 "The wound is fatal and Pelley bleeds out on the floor."
+unionstate.59033.c:0 "The wound is non fatal but Pelley falls into a coma."
+
+unionstate.30013.t:0 "Pelley's coma"
+unionstate.30013.d:0 "Pelley has been in a coma for over two weeks with the silver council, military, and his closest allies running the nation in the meantime. Pelley remains alive but stable. Suddenly however a monitor started beeping and beeping loudly, which one was it?"
+unionstate.30013.a:0 "Pelley slips away peacefully"
+unionstate.30013.b:0 "Pelley wakes up"
+
+unionstate.30014.t:0 "Mine eyes have seen the glory"
+unionstate.30014.d:0 "Today after having woken up from his coma, Pelley gave a speech to an assembled crowd of silver legionaries, civilians, and supporters. He claimed that while in his coma, he had a prophetic vision. His eyes saw the glory of the lord. The lord spared his life and gave him a new mission to have America from itself. The crowd cheered as Pelley stepped off the stage."
+unionstate.30014.a:0 "A new era dawns"
+
+unionstate.30015.t:0 "Fate of the Klan"
+unionstate.30015.d:0 "Despite taking the nation in a far more racist direction and having serious brain damage, Pelley still refuses to be anywhere near as racist as most of the Klan. The old Klan will be purged by the silver rangers but the question of the less radical young klan is a different story. Pelley's plan for the blacks of America is to enact full scale segregation and a lighter version of slavery via the ward system. But not full blwon chattl slavery, state terror, and persecution. The young klan has agreed to endorse this and remain subservent to silver legion. Pelley has a choice to make get rid of the rest of the klan or bring the young klan on board."
+unionstate.30015.a:0 "Purge the young klan too"
+unionstate.30015.b:0 "Reconile the young Klan"
 
 unionstate.59034.t:0 "The Death of the Chief"
 unionstate.59034.d:0 "With Pelley’s death, several influential Christian Party members have announced their bid for party leadership. In the moderate camp is the former Chief’s Vice President, Willard Worth Kemp. Kemp supports keeping the course of the former chief’s reforms while steering clear of the more radical elements of the Silver Legion. Among the radical fringe of the Legion lies Henry D. Allen, who supports an overhaul of the former president’s more controversial policies such as the Ward System and Jewish segregation. Another set of contenders for commander-in-chief is either the former aide to Huey Long, Gerald L.K. Smith, who supports co-opting the Christian Party with his own ideals of a ‘Christian Nationalist Crusade’, or Joe McWilliams, a disciple of Father Coughlin and an ally of the Silver Legion who leads the ‘Christian Front’ in the American northeast. Lastly are the dark horse candidates who stand as the heirs of Pelley’s esoteric schools of thought and spiritualisms, being Guy Ballard who desires to co-lead Pelley’s America with his wife Edna Anne. After much deliberation, the Silver Legion and the Christian Party leadership have decided that..."

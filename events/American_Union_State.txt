@@ -6406,6 +6406,15 @@ country_event = { #Assasin Strikes at Pelley!
 			}
 		}
 	}
+	option = { #Pelley is shot
+	name = unionstate.59033.c
+	add_political_power = -50
+	add_stability = -0.10
+	country_event = {
+		id = unionstate.30013
+		days = 15
+	}
+	}
 }
 
 country_event = { #Pelley takes an L
@@ -13251,3 +13260,128 @@ country_event = { #Antivenom Propaganda
 		add_popularity = { ideology = syndicalist popularity = -0.02 }
 	}
 }
+
+country_event = { #pelley cray ray
+	id = unionstate.30013
+	title = unionstate.30013.t
+	desc = unionstate.30013.d
+	###picture = 
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #
+		name = unionstate.30013.a
+		set_country_flag = TEX_pelley_dead
+	add_political_power = -50
+	add_stability = -0.10
+	country_event = {
+		id = unionstate.59034
+		days = 15
+	}
+	hidden_effect = {
+	create_country_leader = {
+		name = "Silver Legion Council"
+		desc = ""
+		picture = "gfx/leaders/TEX/Portrait_TEX_Silver_Legion_Council.png"
+		expire = "1.1.1"
+		ideology = pelleyism_subtype
+		}
+	create_country_leader = {
+		name = "Silver Legion Council"
+		desc = ""
+		picture = "gfx/leaders/TEX/Portrait_TEX_Silver_Legion_Council.png"
+		expire = "1.1.1"
+		ideology = authdem_pelleyism_subtype
+			}
+		}
+	}
+	option = { #
+		name = unionstate.30013.b
+		country_event = {
+		id = unionstate.30014
+	}
+	}
+}
+country_event = { #pelley cray ray
+	id = unionstate.30014
+	title = unionstate.30014.t
+	desc = unionstate.30014.d
+	###picture = 
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #
+		name = unionstate.30014.a
+		set_country_flag = pelly_went_cray_cray
+	add_political_power = -50
+	add_stability = -0.10
+	create_country_leader = {
+		name = "William Dudley Pelley"
+		desc = ""
+		picture = "gfx/leaders/TEX/Portrait_TEX_William_Dudley_Pelley_Pipe.png"
+		expire = "1.1.1"
+		ideology = natpoppellyism_subtype
+		}
+		if = {	
+			limit = { has_country_leader = { name = "William Dudley Pelley" ruling_only = yes } }
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/TEX/Portrait_TEX_William_Dudley_Pelley_Pipe.png"
+			}
+		}
+		create_corps_commander = {# dayan
+	name = "Bill W"
+	desc = ""
+	portrait_path = "gfx/leaders/CAL/AA.png"
+	traits = {
+		 trait_engineer
+ fortress_buster
+	}
+	skill = 1
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
+}
+create_corps_commander = {# dayan
+	name = "Oskar Pfaus"
+	desc = ""
+	portrait_path = "gfx/leaders/TEX/Pfaus.png"
+	traits = {
+		 infantry_leader
+	}
+	skill = 1
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
+}
+create_corps_commander = {# dayan
+	name = "Wesley Swift"
+	desc = ""
+	portrait_path = "gfx/leaders/TEX/Wesley.png"
+	traits = {
+	}
+	skill = 1
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
+}
+	set_politics = {
+					ruling_party = national_populist
+					elections_allowed = no
+				}
+			set_party_name = {
+			ideology = national_populist
+			name = TEX_national_populist_pelley_party
+			long_name = TEX_national_populist_pelley_party_long
+		}
+			remove_all_ministers = yes
+		add_ideas = TEX_pelley_hog_npo
+		add_ideas = TEX_Wesley_A_Swift_for_npo
+		add_ideas = TEX_Gerald_L_K_Smith_eco_npo
+		add_ideas = TEX_pfaus_sec_npo
+		}
+	}

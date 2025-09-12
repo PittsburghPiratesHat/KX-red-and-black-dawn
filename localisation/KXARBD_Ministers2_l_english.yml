@@ -11225,6 +11225,7 @@
 					PAL_allon_hog_rso:0 "Yigal Allon"
 						PAL_simon_hog_sco:0 "Simon Weisenthal"
 						pal_enstein_hog_sde:0 "Albert Einstein"
+						PAL_yellin_hog_tot:0 "Nathan Yellin-mor"
 
 	### Person of Influence ###
 	## Foreign Minister
@@ -11233,6 +11234,7 @@
 	PAL_yes_for_rso:0 "Yisrael Yeshayahu"
 	PAL_david_for_tot:0 "David Stern"
 	PAL_yit_for_rso:0 "Yitzhsak Shamir"
+	PAL_yit_for_tot:0 "Yitzhsak Shamir"
 	PAL_yadin_for_pat:0 "Yigal Yadin"
 		PAL_yes_for_rso:0 "Yisrael Yeshayahu"
 		PAL_landau_for_npo:0 "Haim Landau"
@@ -11240,11 +11242,13 @@
 		PAL_isser_eco_sco:0 "Isser Harrel"
 		PAL_jab_eco_tot:0 "Ze'ev Jabotinsky"
 		PAL_ugly_eco_rso:0 "Yitzhsak Berman"
+		PAL_danzinger_eco_tot:0 "Yitzhsak Danziger"
 		PAL_carmel_eco_pat:0 "Moshe Carmel"
 		PAL_begin_eco_tot:0 "Menachaim Begin"
 	## Security Minister
 PAL_avner_sec_pat:0 "Avner Less"
 PAL_allon_sec_rso:0 "Yigal Allon"
+PAL_greenberg_sec_tot:0 "Uri Zvi Greenberg"
 PAL_gil_sec_tot:0 "Eliyahu Giladi"
 PAL_raz_sec_npo:0 "David Raziel"
 PAL_munich_sec_sde:0 "Golda Meir"

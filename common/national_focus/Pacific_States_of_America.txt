@@ -4408,7 +4408,7 @@ focus_tree = {
 
 	focus = {# The Final Struggle
 		id = CAL_prophet
-		icon = GFX_CAL_a_new_era
+		icon = GFX_goal_CAL_mark
 		cost = 5.0
 		prerequisite = {
 			focus = CAL_choosing_our_new_savior
@@ -4428,7 +4428,7 @@ focus_tree = {
 
 	focus = {# The Final Struggle
 		id = CAL_church_universial_and_tripumphant
-		icon = GFX_CAL_a_new_era
+		icon = GFX_goal_CAL_church
 		cost = 5.0
 		prerequisite = {
 			focus = CAL_honor_americanism
@@ -4451,7 +4451,7 @@ focus_tree = {
 
 	focus = {# The Final Struggle
 		id = CAL_the_laws_of_the_church
-		icon = GFX_CAL_a_new_era
+		icon = GFX_goal_CAL_laws
 		cost = 5.0
 		prerequisite = {
 			focus = CAL_prophet
@@ -4471,7 +4471,7 @@ focus_tree = {
 
 	focus = {# The Final Struggle
 		id = CAL_reverse_the_decay
-		icon = GFX_CAL_a_new_era
+		icon = GFX_goal_CAL_reverse
 		cost = 5.0
 		prerequisite = {
 			focus = CAL_prophet
@@ -4491,7 +4491,7 @@ focus_tree = {
 
 	focus = {# The Final Struggle
 		id = CAL_venerate_the_ascended_masters
-		icon = GFX_CAL_a_new_era
+		icon = GFX_goal_CAL_ascended
 		cost = 5.0
 		prerequisite = {
 			focus = CAL_prophet
@@ -4511,7 +4511,7 @@ focus_tree = {
 
 	focus = {# The Final Struggle
 		id = CAL_honor_americanism
-		icon = GFX_CAL_a_new_era
+		icon = GFX_goal_CAL_honor
 		cost = 5.0
 		prerequisite = {
 			focus = CAL_venerate_the_ascended_masters
@@ -4531,7 +4531,7 @@ focus_tree = {
 
 	focus = {# The Final Struggle
 		id = CAL_MacFadden
-		icon = GFX_CAL_a_new_era
+		icon = GFX_goal_CAL_fadden
 		cost = 5.0
 		prerequisite = {
 			focus = CAL_choosing_our_new_savior
@@ -4551,7 +4551,7 @@ focus_tree = {
 
 	focus = {# The Final Struggle
 		id = CAL_fitness_is_for_all
-		icon = GFX_CAL_a_new_era
+		icon = GFX_goal_CAL_fitness
 		cost = 5.0
 		prerequisite = {
 			focus = CAL_MacFadden
@@ -4571,7 +4571,7 @@ focus_tree = {
 
 	focus = {# The Final Struggle
 		id = CAL_destroy_unhealthy
-		icon = GFX_CAL_a_new_era
+		icon = GFX_goal_CAL_unhealthy
 		cost = 5.0
 		prerequisite = {
 			focus = CAL_fitness_is_for_all
@@ -4591,7 +4591,7 @@ focus_tree = {
 
 	focus = {# The Final Struggle
 		id = CAL_MacFadden_publications
-		icon = GFX_CAL_a_new_era
+		icon = GFX_goal_CAL_publications
 		cost = 5.0
 		prerequisite = {
 			focus = CAL_MacFadden
@@ -4611,7 +4611,7 @@ focus_tree = {
 
 	focus = {# The Final Struggle
 		id = CAL_new_medicine
-		icon = GFX_CAL_a_new_era
+		icon = GFX_goal_CAL_medicine
 		cost = 5.0
 		prerequisite = {
 			focus = CAL_MacFadden_publications
@@ -4631,7 +4631,7 @@ focus_tree = {
 
 	focus = {# The Final Struggle
 		id = CAL_the_cosmotarianist_state
-		icon = GFX_CAL_a_new_era
+		icon = GFX_goal_CAL_cosmostate
 		cost = 5.0
 		prerequisite = {
 			focus = CAL_destroy_unhealthy

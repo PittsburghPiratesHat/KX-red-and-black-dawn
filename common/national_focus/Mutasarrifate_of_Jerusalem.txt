@@ -2386,8 +2386,16 @@ add_manpower = -1500
 			set_country_flag = ZIO_economy
 			set_country_flag = ZIO_can_do_expansion
 			remove_ideas = 	pal_secterian
-		}
+		 hidden_effect = {
+            PAL = {
+                country_event = {
+                    id = israel.62
+                    days = 10
+            }                
+        }
 	}
+		}
+	}		
 
 	focus = {
 		id = ZIO_speak_hebrew
@@ -6164,6 +6172,8 @@ add_manpower = -1500
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_popularity = { ideology = national_populist popularity = -0.30 }
+			add_manpower = -5000
 		}
 	}
 
@@ -6194,6 +6204,7 @@ add_manpower = -1500
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = pal_race
 		}
 	}
 
@@ -6224,6 +6235,7 @@ add_manpower = -1500
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = pal_ancient
 		}
 	}
 
@@ -6234,6 +6246,7 @@ add_manpower = -1500
 		cost = 5
 
 		available = {	
+			has_ideas = pal_hebrew
 		}
 
 		prerequisite = {
@@ -6257,6 +6270,10 @@ add_manpower = -1500
 		available_if_capitulated = yes
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = pal_hebrew
+				add_idea = pal_romanize
+			}
 		}
 	}
 
@@ -6290,6 +6307,7 @@ add_manpower = -1500
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = pal_council
 		}
 	}
 
@@ -6323,8 +6341,25 @@ add_manpower = -1500
 		available_if_capitulated = yes
 
 		completion_reward = {
+			create_wargoal = {
+			type = take_core_state
+			target = TUR
+			}
+					add_state_core = 992
+			add_state_core = 753
+			add_state_core = 445
+			add_state_core = 554
+			add_state_core = 553
+			 hidden_effect = {
+            PAL = {
+                country_event = {
+                    id = israel.10
+                    days = 5
+                }     
+            }                
 		}
 	}
+	}	
 
 	 focus = {
 		id = ZIO_jabotinsky

@@ -1,5 +1,121 @@
 SpriteTypes = {
 	SpriteType = {
+		name = "GFX_goal_CAL_fadden"
+		texturefile = "gfx/interface/goals/CAL_fadden.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_unhealthy"
+		texturefile = "gfx/interface/goals/CAL_unhealthy.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_cosmostate"
+		texturefile = "gfx/interface/goals/CAL_cosmostate.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_fitness"
+		texturefile = "gfx/interface/goals/CAL_fitness.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_medicine"
+		texturefile = "gfx/interface/goals/CAL_medicine.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_publications"
+		texturefile = "gfx/interface/goals/CAL_publications.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_mark"
+		texturefile = "gfx/interface/goals/CAL_mark.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_ascended"
+		texturefile = "gfx/interface/goals/CAL_ascended.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_church"
+		texturefile = "gfx/interface/goals/CAL_church.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_honor"
+		texturefile = "gfx/interface/goals/CAL_honor.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_reverse"
+		texturefile = "gfx/interface/goals/CAL_reverse.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_laws"
+		texturefile = "gfx/interface/goals/CAL_laws.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_TEX_cc"
+		texturefile = "gfx/interface/goals/TEX_cc.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_TEX_christanity"
+		texturefile = "gfx/interface/goals/TEX_christanity.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_TEX_cray"
+		texturefile = "gfx/interface/goals/TEX_cray.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_TEX_well"
+		texturefile = "gfx/interface/goals/TEX_well.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_TEX_finalize"
+		texturefile = "gfx/interface/goals/TEX_finalize.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_TEX_grandmaster"
+		texturefile = "gfx/interface/goals/TEX_grandmaster.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_TEX_expand"
+		texturefile = "gfx/interface/goals/TEX_expand.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_TEX_night"
+		texturefile = "gfx/interface/goals/TEX_night.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_TEX_fate"
+		texturefile = "gfx/interface/goals/TEX_fate.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_TEX_cremate"
+		texturefile = "gfx/interface/goals/TEX_cremate.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_TEX_family"
+		texturefile = "gfx/interface/goals/TEX_family.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_TEX_galvanize"
+		texturefile = "gfx/interface/goals/TEX_galvanize.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_TEX_klan"
+		texturefile = "gfx/interface/goals/TEX_klan.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_TEX_legions"
+		texturefile = "gfx/interface/goals/TEX_legions.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_TEX_pelleynomics"
+		texturefile = "gfx/interface/goals/TEX_pelleynomics.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_TEX_rangers"
+		texturefile = "gfx/interface/goals/TEX_rangers.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_TEX_reservation"
+		texturefile = "gfx/interface/goals/TEX_reservation.png"
+	}
+	SpriteType = {
 		name = "GFX_goal_NEE_sandmen"
 		texturefile = "gfx/interface/goals/NEE_sandmen.png"
 	}

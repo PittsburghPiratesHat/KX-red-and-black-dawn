@@ -5,6 +5,22 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/PAL/tankusplan.png"
 	}
 	spriteType = {
+		name = "GFX_idea_PAL_council"
+		texturefile = "gfx/interface/ideas/PAL/council.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_race"
+		texturefile = "gfx/interface/ideas/PAL/race.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_romanize"
+		texturefile = "gfx/interface/ideas/PAL/romanize.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_ancient"
+		texturefile = "gfx/interface/ideas/PAL/ancient.png"
+	}
+	spriteType = {
 		name = "GFX_idea_PAL_without"
 		texturefile = "gfx/interface/ideas/PAL/without.png"
 	}

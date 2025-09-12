@@ -30,6 +30,9 @@ ZIO_national_populist_party_tehomi_long:0 "Irgun"
 ZIO_radical_socialist_party_yellin-mor:0 "moderate zionists"
 ZIO_radical_socialist_party_yellin-mor_long:0 "moderate zionists"
 
+ZIO_canaan_party_yellin-mor:0 "Canaanite movement"
+ZIO_canaan_party_yellin-mor_long:0 "Canaanite movement"
+
 ### Flags ###
 ZIO_Stern:0 "The Stern Gang Came Out On Top"
 ZIO_can_do_expansion:0 "We Can Now Expand"
@@ -49,6 +52,7 @@ ZIO_military:0 "can focus on the military"
 ZIO_economy:0 "can focus on the economy"
 ZIO_radical:0 "radical congress won"
 ZIO_democrats:0 "democrat congress won"
+ZIO_yellincanaan:0 "Yellin-mor embraced Canaanism"
 
 ### Cosmetic Tags ###
 ZIO_sterncosmetic:0 "israel"
@@ -61,14 +65,14 @@ ZIO_napoleon:0 "israel-French empire"
 ZIO_napoleon_ADJ:0 "israeli"
 ZIO_napoleon_DEF:0 "israel-french empire"
 ZIO_tehomicosmetic_:0 "israel"
-ZIO_tehomicosmetic__ADJ:0 "Israeli"
-ZIO_tehomicosmetic__DEF:0 "israel"
+ZIO_tehomicosmetic_ADJ:0 "Israeli"
+ZIO_tehomicosmetic_DEF:0 "israel"
 ZIO_alloncosmetic_:0 "israel"
-ZIO_alloncosmetic__ADJ:0 "israeli"
-ZIO_alloncosmetic__DEF:0 "israel"
-ZIO_yellincosmetic_:0 "israel"
-ZIO_yellincosmetic__ADJ:0 "israeli"
-ZIO_yellincosmetic__DEF:0 "israel"
+ZIO_alloncosmetic_ADJ:0 "israeli"
+ZIO_alloncosmetic_DEF:0 "israel"
+ZIO_yellincosmetic:0 "israel"
+ZIO_yellincosmetic_ADJ:0 "israeli"
+ZIO_yellincosmetic_DEF:0 "israel"
 ZIO_einstein:0 "israel"
 ZIO_einstein_ADJ:0 "israeli"
 ZIO_einstein_DEF:0 "israel"
@@ -91,6 +95,10 @@ ZIO_judeadayan_DEF:0 "Judea"
 ZIO_judeatehomi:0 "Judea"
 ZIO_judeatehomi_ADJ:0 "Judean"
 ZIO_judeatehomi_DEF:0 "Judea"
+
+ZIO_canaanflag:0 "Canaan"
+ZIO_canaanflag_ADJ:0 "Canaanite"
+ZIO_canaanflag_DEF:0 "Canaan"
 
 ### Traits
 
@@ -288,8 +296,13 @@ israel.60.d:0 "."
 israel.60.a:0 "The table is flipped"
 
 israel.61.t:0 "Orde Wingate leaves for Israel"
-israel.61.d:0 "Following both the founding of the state of Israel and the acension to power of Orde's best friend from the weltkrieg's middle east front Moshe Dayan to it's premenant leader, Orde Wingate has bid farewell to Canada and is moving to Israel to join their general staff."
+israel.61.d:0 "Following both the founding of the state of Israel and the acension to power of Orde's best foreign friend Moshe Dayan to it's premenant leader, Orde Wingate has bid farewell to Canada and is moving to Israel to join their general staff."
 israel.61.a:0 "Farewell Orde"
+
+israel.62.t:0 "Yellin-Mor and the Canaanite movement"
+israel.62.d:0 "Nathan Yellin-Mor has long been a supporter and member of the Canaanite movement, a small but influental movement. It's influence despite it's small size comes from the fact that some of Israel's most prominent artists, intellectuals, and scholars are it's members. With Yellin-Mor's power over Israel being without question, he has considered letting one of his most radical ideas come to pass, bringing the Canaanite movement to the forefront of Israel politics and having them become the ruling party. He of course would remain the leader but Israel would be taken in a very different direction. However he can chose to reject this small movement he is barely a part of and throw it back into the garbage bin of history."
+israel.62.a:0 "Canaan rises from the dead"
+israel.62.b:0 "Forget this delusional garbage"
 
 
 

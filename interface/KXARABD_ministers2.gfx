@@ -36610,6 +36610,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ministers/PAL/PAL_yellin.png"
 	}
 	spriteType = {
+		name = "GFX_idea_PAL_yellin_hog_tot"
+		texturefile = "gfx/interface/ministers/PAL/PAL_yellin.png"
+	}
+	spriteType = {
 		name = "GFX_idea_PAL_allon_hog_rso"
 		texturefile = "gfx/interface/ministers/PAL/PAL_allon.png"
 	}
@@ -36649,6 +36653,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ministers/PAL/pal_yit.png"
 	}
 	spriteType = {
+		name = "GFX_idea_PAL_yit_for_tot"
+		texturefile = "gfx/interface/ministers/PAL/pal_yit.png"
+	}
+	spriteType = {
 		name = "GFX_idea_PAL_yadin_for_pat"
 		texturefile = "gfx/interface/ministers/PAL/pal_yadin.png"
 	}
@@ -36672,6 +36680,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ministers/PAL/pal_ugly.png"
 	}
 	spriteType = {
+		name = "GFX_idea_PAL_danzinger_eco_tot"
+		texturefile = "gfx/interface/ministers/PAL/pal_danzinger.png"
+	}
+	spriteType = {
 		name = "GFX_idea_PAL_carmel_eco_pat"
 		texturefile = "gfx/interface/ministers/PAL/pal_carmel.png"
 	}
@@ -36688,6 +36700,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_PAL_allon_sec_rso"
 		texturefile = "gfx/interface/ministers/PAL/PAL_allon.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_greenberg_sec_tot"
+		texturefile = "gfx/interface/ministers/PAL/PAL_greenberg.png"
 	}
 	spriteType = {
 		name = "GFX_idea_PAL_gil_sec_tot"

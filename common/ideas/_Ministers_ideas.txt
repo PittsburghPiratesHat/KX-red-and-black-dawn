@@ -166505,7 +166505,82 @@ head_of_government = { ### Head of Government ###
 		}
 
 	}
-
+################################################################################################################################################################################################
+  ### TEX
+  ################################################################################################################################################################################################
+head_of_government = { ### Head of Government ###
+		TEX_pelley_hog_npo = {
+			allowed = { original_tag = TEX }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				national_populist
+				hog_christian_nationalist
+			}
+		}
+}	
+person_of_influence = { ### Person of Influence ###
+		## Foreign Minister ##
+		TEX_Wesley_A_Swift_for_npo = {
+			allowed = { original_tag = TEX }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			visible = {
+				 has_country_flag = pelly_went_cray_cray 
+			}
+			traits = {
+				foreign_minister
+				national_populist
+				for_iron_fisted_brute
+			}
+			cancel_if_invalid = no
+		}
+		## Economy Minister ##
+		TEX_Gerald_L_K_Smith_eco_npo = {
+			allowed = { original_tag = TEX }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Gerald_L_K_Smith_dead }
+			}
+			traits = {
+				economy_minister
+				national_populist
+				eco_military_entrepreneur
+			}
+			cancel_if_invalid = no
+		}
+		## Security Minister ##
+		TEX_pfaus_sec_npo = {
+			allowed = { original_tag = TEX }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			traits = {
+				security_minister
+				national_populist
+				sec_paramilitary_leader
+			}
+			cancel_if_invalid = no
+		}
+}	
   ################################################################################################################################################################################################
   ### PAL
   ################################################################################################################################################################################################
@@ -166598,6 +166673,21 @@ head_of_government = { ### Head of Government ###
 			traits = {
 				head_of_government
 				radical_socialist
+				hog_reformist_socialist
+			}
+		}
+		PAL_yellin_hog_tot = {
+			allowed = { original_tag = PAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				totalist
 				hog_reformist_socialist
 			}
 		}
@@ -166696,6 +166786,21 @@ head_of_government = { ### Head of Government ###
 				for_iron_fisted_brute
 			}
 		}
+		PAL_yit_for_tot = {
+			allowed = { original_tag = PAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				totalist
+				for_iron_fisted_brute
+			}
+		}
 		PAL_yadin_for_pat = {
 			allowed = { original_tag = PAL }
 			available = {
@@ -166775,6 +166880,21 @@ head_of_government = { ### Head of Government ###
 				sec_public_works_administrator
 			}
 		}
+		PAL_danzinger_eco_tot = {
+			allowed = { original_tag = PAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				totalist
+				eco_patriotic_socialist
+			}
+		}
 			PAL_carmel_eco_pat = {
 			allowed = { original_tag = PAL }
 			available = {
@@ -166824,6 +166944,21 @@ head_of_government = { ### Head of Government ###
 				security_minister
 				paternal_autocrat
 				sec_crime_fighter
+			}
+		}
+		PAL_greenberg_sec_tot = {
+			allowed = { original_tag = PAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				totalist
+				sec_folk_researcher
 			}
 		}
 		PAL_allon_sec_rso = {

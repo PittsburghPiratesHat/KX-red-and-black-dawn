@@ -94,6 +94,7 @@ ideologies = {
 				national_marxism_subtype = {can_be_randomly_selected = no} #National Marxism
 			tot_left_zionism_subtype = {can_be_randomly_selected = no} #Left Zionism
 			skinnerism_subtype = {can_be_randomly_selected = no} #skinnerism
+			canaanism_subtype = {can_be_randomly_selected = no} #canaanism
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_TOTALIST_1"

@@ -11990,6 +11990,27 @@ country_event = {# Bodin Dead page 2
 		country_event = pacificstates.359
 	}
 }
+country_event = {# Suicide Squad
+	id = pacificstates.368
+	title = pacificstates.368.t
+	desc = pacificstates.368.d
+	
+	###picture =###
+
+	is_triggered_only = yes
+
+	option = {# Great!
+		name = pacificstates.368.a
+	}
+	option = {# Great!
+		name = pacificstates.368.b
+		set_country_leader_ideology = wandervogel_subtype
+	}
+	option = {# Great!
+		name = pacificstates.368.c
+		set_country_leader_ideology = spiritualism_subtype
+	}
+}
 country_event = {# Getting Healthy
 	id = pacificstates.3591
 	immediate = {log = "[GetDateText]: [Root.GetName]: event pacificstates.3591"}

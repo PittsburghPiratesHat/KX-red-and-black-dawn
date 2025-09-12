@@ -160,6 +160,7 @@ country_event = {	#flagzionist
 			long_name = ZIO_radical_socialist_party_yellin-mor_long
 		}
 		set_country_flag = ZIO_yellin
+		set_cosmetic_tag = ZIO_yellincosmetic
 		create_country_leader = {
 					name = "Nathan Yellin-Mor"
 					desc = ""
@@ -170,6 +171,11 @@ country_event = {	#flagzionist
 				set_politics = {
 				ruling_party = radical_socialist
 			}
+			remove_all_ministers = yes
+			add_ideas = PAL_yellin_hog_rso
+			add_ideas = PAL_yit_for_rso
+			add_ideas = PAL_ugly_eco_rso
+			add_ideas =  PAL_allon_sec_rso
 	}
 }
 
@@ -846,6 +852,48 @@ country_event = {	#gordonramsay
 						count = 2
 					}
 				}
+	}
+}
+
+country_event = {	#gordonramsay
+	id = israel.62
+	title = israel.62.t
+	desc = israel.62.d
+
+
+	#picture = 
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = israel.62.a
+		set_party_name = {
+			ideology = totalist
+			name = ZIO_canaan_party_yellin-mor
+			long_name = ZIO_canaan_party_yellin-mor
+		}
+		set_country_flag = ZIO_yellincanaan
+		create_country_leader = {
+					name = "Nathan Yellin-Mor"
+					desc = ""
+					picture = "gfx/leaders/PAL/Yellin-mor.png"
+					expire = "1965.1.1"
+					ideology = canaanism_subtype
+				}
+				set_politics = {
+				ruling_party = totalist
+			}
+			set_cosmetic_tag = ZIO_canaanflag
+			remove_all_ministers = yes
+			add_ideas = PAL_yellin_hog_tot
+			add_ideas = PAL_yit_for_tot
+			add_ideas = PAL_danzinger_eco_tot
+			add_ideas =  PAL_greenberg_sec_tot
+	}
+	option = {
+		name = israel.62.b
 	}
 }
 

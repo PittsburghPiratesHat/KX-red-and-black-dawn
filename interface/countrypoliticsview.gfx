@@ -570,6 +570,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/subideologies/skinnerism.png"
 	}
 	spriteType = {
+		name = "GFX_ideology_canaanism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/canaan.png"
+	}
+	spriteType = {
 		name = "GFX_ideology_cuat_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/cuat.png"
 	}

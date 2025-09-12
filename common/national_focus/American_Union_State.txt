@@ -21,7 +21,7 @@ focus_tree = {
 
 	focus = {# New Washington
 		id = TEX_mine_eyes_have_seen_the_glory
-		icon = GFX_goal_USA_president_long
+		icon = GFX_goal_TEX_cray
 		cost = 5
 		available = {
 			has_country_flag = pelly_went_cray_cray
@@ -37,7 +37,7 @@ focus_tree = {
 
 	focus = {# To the Victor
 		id = TEX_turn_the_silver_legion_into_real_legions
-		icon = GFX_goal_TEX_to_the_victor
+		icon = GFX_goal_TEX_legions
 		cost = 5
 		prerequisite = {
 			focus = TEX_mine_eyes_have_seen_the_glory
@@ -57,7 +57,7 @@ focus_tree = {
 
 	focus = {# To the Victor
 		id = TEX_the_fate_of_the_klan
-		icon = GFX_goal_TEX_to_the_victor
+		icon = GFX_goal_TEX_klan
 		cost = 5
 		prerequisite = {
 			focus = TEX_mine_eyes_have_seen_the_glory
@@ -77,7 +77,7 @@ focus_tree = {
 
 	focus = {# To the Victor
 		id = TEX_throw_the_jew_down_the_well
-		icon = GFX_goal_TEX_to_the_victor
+		icon = GFX_goal_TEX_well
 		cost = 5
 		prerequisite = {
 			focus = TEX_the_fate_of_the_klan
@@ -100,7 +100,7 @@ focus_tree = {
 
 	focus = {# To the Victor
 		id = TEX_pellynomics
-		icon = GFX_goal_TEX_to_the_victor
+		icon = GFX_goal_TEX_pelleynomics
 		cost = 5
 		prerequisite = {
 			focus = TEX_throw_the_jew_down_the_well
@@ -120,7 +120,7 @@ focus_tree = {
 
 	focus = {# To the Victor
 		id = TEX_crush_the_catholics
-		icon = GFX_goal_TEX_to_the_victor
+		icon = GFX_goal_TEX_cc
 		cost = 5
 		prerequisite = {
 			focus = TEX_throw_the_jew_down_the_well
@@ -140,7 +140,7 @@ focus_tree = {
 
 	focus = {# To the Victor
 		id = TEX_cremate_communism
-		icon = GFX_goal_TEX_to_the_victor
+		icon = GFX_goal_TEX_cremate
 		cost = 5
 		prerequisite = {
 			focus = TEX_throw_the_jew_down_the_well
@@ -160,7 +160,7 @@ focus_tree = {
 
 	focus = {# To the Victor
 		id = TEX_radicalize_the_silver_rangers
-		icon = GFX_goal_TEX_to_the_victor
+		icon = GFX_goal_TEX_rangers
 		cost = 5
 		prerequisite = {
 			focus = TEX_cremate_communism
@@ -180,7 +180,7 @@ focus_tree = {
 
 	focus = {# To the Victor
 		id = TEX_rework_the_reservation_system
-		icon = GFX_goal_TEX_to_the_victor
+		icon = GFX_goal_TEX_reservation
 		cost = 5
 		prerequisite = {
 			focus = TEX_pellynomics
@@ -200,7 +200,7 @@ focus_tree = {
 
 	focus = {# To the Victor
 		id = TEX_make_christianity_the_state_religion
-		icon = GFX_goal_TEX_to_the_victor
+		icon = GFX_goal_TEX_christanity
 		cost = 5
 		prerequisite = {
 			focus = TEX_crush_the_catholics
@@ -220,7 +220,7 @@ focus_tree = {
 
 	focus = {# To the Victor
 		id = TEX_finalizing_our_ideology
-		icon = GFX_goal_TEX_to_the_victor
+		icon = GFX_goal_TEX_finalize
 		cost = 5
 		prerequisite = {
 			focus = TEX_make_christianity_the_state_religion
@@ -246,7 +246,7 @@ focus_tree = {
 
 	focus = {# To the Victor
 		id = TEX_one_crazy_night
-		icon = GFX_goal_TEX_to_the_victor
+		icon = GFX_goal_TEX_night
 		cost = 5
 		prerequisite = {
 			focus = TEX_make_christianity_the_state_religion
@@ -272,7 +272,7 @@ focus_tree = {
 
 	focus = {# To the Victor
 		id = TEX_the_fate_of_spiritualism
-		icon = GFX_goal_TEX_to_the_victor
+		icon = GFX_goal_TEX_fate
 		cost = 5
 		prerequisite = {
 			focus = TEX_make_christianity_the_state_religion
@@ -298,7 +298,7 @@ focus_tree = {
 
 	focus = {# To the Victor
 		id = TEX_galvanize_american_nationalism
-		icon = GFX_goal_TEX_to_the_victor
+		icon = GFX_goal_TEX_galvanize
 		cost = 5
 		prerequisite = {
 			focus = TEX_make_christianity_the_state_religion
@@ -324,7 +324,7 @@ focus_tree = {
 
 	focus = {# To the Victor
 		id = TEX_family_programs
-		icon = GFX_goal_TEX_to_the_victor
+		icon = GFX_goal_TEX_family
 		cost = 5
 		prerequisite = {
 			focus = TEX_make_christianity_the_state_religion
@@ -350,7 +350,7 @@ focus_tree = {
 
 	focus = {# To the Victor
 		id = TEX_pelly_the_american_grandmaster
-		icon = GFX_goal_TEX_to_the_victor
+		icon = GFX_goal_TEX_grandmaster
 		cost = 5
 		prerequisite = {
 			focus = TEX_finalizing_our_ideology
@@ -370,7 +370,7 @@ focus_tree = {
 
 	focus = {# To the Victor
 		id = TEX_to_isolate_or_not_to_isolate_that_is_the_question
-		icon = GFX_goal_TEX_to_the_victor
+		icon = GFX_goal_TEX_expand
 		cost = 5
 		prerequisite = {
 			focus = TEX_pelly_the_american_grandmaster

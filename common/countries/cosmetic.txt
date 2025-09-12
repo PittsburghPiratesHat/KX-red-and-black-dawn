@@ -3291,6 +3291,10 @@ ZIO_main = {
 	color = rgb { 14 70 160 }
 	color_ui = rgb { 14 70 160 }
 }
+ZIO_canaanflag = {
+	color = rgb { 14 70 160 }
+	color_ui = rgb { 14 70 160 }
+}
 ZIO_judeastern = {
 	color = rgb { 14 70 160 }
 	color_ui = rgb { 14 70 160 }
