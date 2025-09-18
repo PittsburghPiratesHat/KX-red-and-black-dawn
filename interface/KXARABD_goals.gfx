@@ -1,5 +1,29 @@
 SpriteTypes = {
 	SpriteType = {
+		name = "GFX_goal_CAL_hubbard"
+		texturefile = "gfx/interface/goals/CAL_hubbard.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_anglo"
+		texturefile = "gfx/interface/goals/CAL_anglo.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_racial"
+		texturefile = "gfx/interface/goals/CAL_racial.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_rpf"
+		texturefile = "gfx/interface/goals/CAL_rpf.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_scientology"
+		texturefile = "gfx/interface/goals/CAL_scientology.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_seaorg"
+		texturefile = "gfx/interface/goals/CAL_seaorg.png"
+	}
+	SpriteType = {
 		name = "GFX_goal_CAL_fadden"
 		texturefile = "gfx/interface/goals/CAL_fadden.png"
 	}

@@ -4777,7 +4777,7 @@ focus_tree = {
 
 		focus = {# The Final Struggle
 		id = CAL_hubbard
-		icon = GFX_CAL_a_new_era
+		icon = GFX_goal_CAL_hubbard
 		cost = 5.0
 		prerequisite = {
 			focus = CAL_choosing_our_new_savior
@@ -4797,7 +4797,7 @@ focus_tree = {
 
 	focus = {# The Final Struggle
 		id = CAL_reverse_anglophile_persecution
-		icon = GFX_CAL_a_new_era
+		icon = GFX_goal_CAL_anglo
 		cost = 5.0
 		prerequisite = {
 			focus = CAL_hubbard
@@ -4817,7 +4817,7 @@ focus_tree = {
 
 	focus = {# The Final Struggle
 		id = CAL_tighten_racial_laws
-		icon = GFX_CAL_a_new_era
+		icon = GFX_goal_CAL_racial
 		cost = 5.0
 		prerequisite = {
 			focus = CAL_reverse_anglophile_persecution
@@ -4837,7 +4837,7 @@ focus_tree = {
 
 	focus = {# The Final Struggle
 		id = CAL_sea_org
-		icon = GFX_CAL_a_new_era
+		icon = GFX_goal_CAL_seaorg
 		cost = 5.0
 		prerequisite = {
 			focus = CAL_hubbard
@@ -4857,7 +4857,7 @@ focus_tree = {
 
 	focus = {# The Final Struggle
 		id = CAL_rpf
-		icon = GFX_CAL_a_new_era
+		icon = GFX_goal_CAL_rpf
 		cost = 5.0
 		prerequisite = {
 			focus = CAL_sea_org
@@ -4877,7 +4877,7 @@ focus_tree = {
 
 	focus = {# The Final Struggle
 		id = CAL_the_scientology_state
-		icon = GFX_CAL_a_new_era
+		icon = GFX_goal_CAL_scientology
 		cost = 5.0
 		prerequisite = {
 			focus = CAL_rpf
