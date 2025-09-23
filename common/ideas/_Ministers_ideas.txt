@@ -13484,8 +13484,10 @@ ideas = {
 		}
 		RUS_Lavr_G_Kornilov_carm_pau = {
 			allowed = { 
-				original_tag = RUS
-				original_tag = RVA
+				OR = {
+					original_tag = RUS
+					original_tag = RVA
+				}
 			}
 			available = {
 				custom_trigger_tooltip = {
@@ -13573,7 +13575,7 @@ ideas = {
 			cancel_if_invalid = yes
 		}
 		RUS_Dmitri_N_Verderevsky_cnav_sde = {
-			allowed = { is_russian_tag = yes }
+			allowed = { original_tag = RUS }
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = military_staff_available
@@ -13582,7 +13584,6 @@ ideas = {
 			}
 			visible = {
 				NOT = { has_country_flag = Dmitri_N_Verderevsky_dead }
-				has_unit_leader = 17891
 			}
 			on_add = {
 				log = "[GetDateText]: [Root.GetName]: add idea RUS_Dmitri_N_Verderevsky_cnav_sde"
@@ -13594,7 +13595,7 @@ ideas = {
 			cancel_if_invalid = yes
 		}
 		RUS_Arseny_Golovko_cnav_sde = {
-			allowed = { is_russian_tag = yes }
+			allowed = { original_tag = RUS }
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = military_staff_available
@@ -13603,7 +13604,6 @@ ideas = {
 			}
 			visible = {
 				NOT = { has_country_flag = Arseny_Golovko_dead }
-				has_unit_leader = 497
 			}
 			on_add = {
 				log = "[GetDateText]: [Root.GetName]: add idea RUS_Arseny_Golovko_cnav_sde"
@@ -13664,7 +13664,6 @@ ideas = {
 			}
 			visible = {
 				NOT = { has_country_flag = Mikhail_Kedrov_dead }
-				has_unit_leader = 17692
 			}
 			on_add = {
 				log = "[GetDateText]: [Root.GetName]: add idea RUS_Mikhail_Kedrov_cnav_pau"
@@ -42440,7 +42439,7 @@ ideas = {
 			}
 			cancel_if_invalid = no
 		}
-		CAL_yoga_hog_npo = {
+	CAL_yoga_hog_npo = {
 			allowed = { original_tag = CAL }
 			available = {
 				custom_trigger_tooltip = {
@@ -51370,23 +51369,6 @@ ideas = {
 			}
 			cancel_if_invalid = yes
 		}
-
-		CAR_Juan_Vigon_Suerodiaz_cair_pau = {
-			allowed = { original_tag = CAR }
-			available = { }
-			visible = {
-				NOT = { has_country_flag = Juan_Vigon_Suerodiaz_dead }
-			}
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea CAR_Juan_Vigon_Suerodiaz_cair_pau"
-			}
-			traits = {
-				chief_of_air_force
-				cair_battlefield_support_doctrine
-			}
-			cancel_if_invalid = yes
-		}
-
 	}
 
   ################################################################################################################################################################################################
@@ -61409,23 +61391,7 @@ ideas = {
 			}
 			cancel_if_invalid = yes
 		}
-
-		CNT_Miguel_Maura_Gamazo_cnav_mli = {
-			allowed = { original_tag = CNT }
-			available = { }
-			visible = {
-				NOT = { has_country_flag = Miguel_Maura_Gamazo_dead }
-			}
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea CNT_Miguel_Maura_Gamazo_cnav_mli"
-			}
-			traits = {
-				chief_of_navy
-				cnav_decisive_battle_doctrine
-			}
-			cancel_if_invalid = yes
-		}
-
+		
 		CNT_Miguel_Maura_Gamazo_cnav_sco = {
 			allowed = { original_tag = CNT }
 			available = { }
@@ -61572,23 +61538,6 @@ ideas = {
 			}
 			cancel_if_invalid = yes
 		}
-
-		CNT_Juan_Vigon_Suerodiaz_cair_pau = {
-			allowed = { original_tag = CNT }
-			available = { }
-			visible = {
-				NOT = { has_country_flag = Juan_Vigon_Suerodiaz_dead }
-			}
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea CNT_Juan_Vigon_Suerodiaz_cair_pau"
-			}
-			traits = {
-				chief_of_air_force
-				cair_battlefield_support_doctrine
-			}
-			cancel_if_invalid = yes
-		}
-
 	}
 
   ################################################################################################################################################################################################
@@ -154357,7 +154306,7 @@ ideas = {
 	}
 
 	person_of_influence = { ### Foreign Minister ###
-	NEE_watson_for_tot = {
+		NEE_watson_for_tot = {
 			allowed = { original_tag = NEE }
 			available = {
 				custom_trigger_tooltip = {
@@ -154703,7 +154652,6 @@ ideas = {
 	
 		
 	### Economy Minister ###
-
 	NEE_keller_eco_tot = {
 			allowed = { original_tag = NEE }
 			available = {
@@ -166505,7 +166453,8 @@ head_of_government = { ### Head of Government ###
 		}
 
 	}
-################################################################################################################################################################################################
+
+ ################################################################################################################################################################################################
   ### TEX
   ################################################################################################################################################################################################
 head_of_government = { ### Head of Government ###
@@ -186997,7 +186946,7 @@ person_of_influence = { ### Person of Influence ###
 			}
 		}
 
-		SFR_Jan_Hendrik_Hofmeyr_hog_sli = {
+		SFR_Edgar_Harry_Brookes_hog_sli = {
 			allowed = { original_tag = SFR }
 			available = {
 				custom_trigger_tooltip = {
@@ -187007,7 +186956,7 @@ person_of_influence = { ### Person of Influence ###
 			}
 			cancel_if_invalid = no
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea SFR_Jan_Hendrik_Hofmeyr_hog_sli"
+				log = "[GetDateText]: [Root.GetName]: add idea SFR_Edgar_Harry_Brookes_hog_sli"
 			}
 			traits = {
 				head_of_government
@@ -196745,25 +196694,6 @@ person_of_influence = { ### Person of Influence ###
 			}
 		}
 
-		SPR_Jose_Giral_Pereira_hog_sde = {
-			allowed = { original_tag = SPR }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = head_of_gov_available
-					always = no
-				}
-			}
-			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea SPR_Jose_Giral_Pereira_hog_sde"
-			}
-			traits = {
-				head_of_government
-				social_democrat
-				hog_naive_optimist
-			}
-		}
-
 		SPR_Diego_Martinez_Barrio_hog_sli = {
 			allowed = { original_tag = SPR }
 			available = {
@@ -199228,22 +199158,6 @@ person_of_influence = { ### Person of Influence ###
 			cancel_if_invalid = yes
 		}
 
-		SPR_Miguel_Maura_Gamazo_cnav_mli = {
-			allowed = { original_tag = SPR }
-			available = { }
-			visible = {
-				NOT = { has_country_flag = Miguel_Maura_Gamazo_dead }
-			}
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea SPR_Miguel_Maura_Gamazo_cnav_mli"
-			}
-			traits = {
-				chief_of_navy
-				cnav_decisive_battle_doctrine
-			}
-			cancel_if_invalid = yes
-		}
-
 		SPR_Miguel_Maura_Gamazo_cnav_sco = {
 			allowed = { original_tag = SPR }
 			available = { }
@@ -199390,23 +199304,6 @@ person_of_influence = { ### Person of Influence ###
 			}
 			cancel_if_invalid = yes
 		}
-
-		SPR_Juan_Vigon_Suerodiaz_cair_pau = {
-			allowed = { original_tag = SPR }
-			available = { }
-			visible = {
-				NOT = { has_country_flag = Juan_Vigon_Suerodiaz_dead }
-			}
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea SPR_Juan_Vigon_Suerodiaz_cair_pau"
-			}
-			traits = {
-				chief_of_air_force
-				cair_battlefield_support_doctrine
-			}
-			cancel_if_invalid = yes
-		}
-
 	}
 
   ################################################################################################################################################################################################
@@ -218593,7 +218490,7 @@ person_of_influence = { ### Person of Influence ###
 			}
 			traits = {
 				head_of_government
-				paternal_autocrat
+				national_populist
 				hog_the_vozhd
 			}
 		}
