@@ -1,4 +1,28 @@
 SpriteTypes = {
+		SpriteType = {
+		name = "GFX_goal_CAL_yoganada"
+		texturefile = "gfx/interface/goals/CAL_yoganada.png"
+	}
+		SpriteType = {
+		name = "GFX_goal_CAL_yoga"
+		texturefile = "gfx/interface/goals/CAL_yoga.png"
+	}
+		SpriteType = {
+		name = "GFX_goal_CAL_reconcile"
+		texturefile = "gfx/interface/goals/CAL_reconcile.png"
+	}
+		SpriteType = {
+		name = "GFX_goal_CAL_end"
+		texturefile = "gfx/interface/goals/CAL_end.png"
+	}
+		SpriteType = {
+		name = "GFX_goal_CAL_spread"
+		texturefile = "gfx/interface/goals/CAL_spread.png"
+	}
+		SpriteType = {
+		name = "GFX_goal_CAL_state"
+		texturefile = "gfx/interface/goals/CAL_state.png"
+	}
 	SpriteType = {
 		name = "GFX_goal_CAL_hubbard"
 		texturefile = "gfx/interface/goals/CAL_hubbard.png"

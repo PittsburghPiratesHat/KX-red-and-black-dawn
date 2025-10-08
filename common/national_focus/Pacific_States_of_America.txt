@@ -5023,7 +5023,7 @@ focus_tree = {
 
 	focus = {# The Final Struggle
 		id = CAL_yogananda
-		icon = GFX_CAL_a_new_era
+		icon = GFX_goal_CAL_yoganada
 		cost = 5.0
 		prerequisite = {
 			focus = CAL_choosing_our_new_savior
@@ -5043,7 +5043,7 @@ focus_tree = {
 
 	focus = {# The Final Struggle
 		id = CAL_reconcile_with_the_japanese
-		icon = GFX_CAL_a_new_era
+		icon = GFX_goal_CAL_reconcile
 		cost = 5.0
 		prerequisite = {
 			focus = CAL_yogananda
@@ -5063,7 +5063,7 @@ focus_tree = {
 
 	focus = {# The Final Struggle
 		id = CAL_end_discrimination_against_asian_americans
-		icon = GFX_CAL_a_new_era
+		icon = GFX_goal_CAL_end
 		cost = 5.0
 		prerequisite = {
 			focus = CAL_reconcile_with_the_japanese
@@ -5078,12 +5078,13 @@ focus_tree = {
 			factor = 50
 		}
 		completion_reward = {
+			country_event = pacificstates.4012
 		}
 	}
 
 	focus = {# The Final Struggle
 		id = CAL_mandatory_yoga
-		icon = GFX_CAL_a_new_era
+		icon = GFX_goal_CAL_yoga
 		cost = 5.0
 		prerequisite = {
 			focus = CAL_yogananda
@@ -5103,7 +5104,7 @@ focus_tree = {
 
 	focus = {# The Final Struggle
 		id = CAL_spread_the_teachings
-		icon = GFX_CAL_a_new_era
+		icon = GFX_goal_CAL_spread
 		cost = 5.0
 		prerequisite = {
 			focus = CAL_mandatory_yoga
@@ -5123,7 +5124,7 @@ focus_tree = {
 
 	focus = {# The Final Struggle
 		id = CAL_the_yoga_state
-		icon = GFX_CAL_a_new_era
+		icon = GFX_goal_CAL_state
 		cost = 5.0
 		prerequisite = {
 			focus = CAL_end_discrimination_against_asian_americans
