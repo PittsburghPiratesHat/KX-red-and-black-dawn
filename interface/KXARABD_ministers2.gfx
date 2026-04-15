@@ -36625,6 +36625,18 @@ spriteTypes = {
 		name = "GFX_idea_PAL_simon_hog_sco"
 		texturefile = "gfx/interface/ministers/PAL/PAL_simon.png"
 	}
+	spriteType = {
+		name = "GFX_idea_PAL_gil_hog_tot"
+		texturefile = "gfx/interface/ministers/PAL/PAL_gil.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_david_hog_tot"
+		texturefile = "gfx/interface/ministers/PAL/pal_david.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_begin_hog_tot"
+		texturefile = "gfx/interface/ministers/PAL/pal_begin.png"
+	}
 
 	### Person of Influence
 	# Foreign Minister

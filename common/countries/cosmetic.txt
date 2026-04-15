@@ -3287,6 +3287,26 @@ BAY_DOLBUS_GERMANY = {
 	color = rgb { 76 152 152 }
 	color_ui = rgb { 76 152 152 }
 }
+YEM_canaanpuppet = {
+	color = rgb { 14 70 160 }
+	color_ui = rgb { 14 70 160 }
+}
+IRQ_canaanpuppet = {
+	color = rgb { 14 70 160 }
+	color_ui = rgb { 14 70 160 }
+}
+JBS_canaanpuppet = {
+	color = rgb { 14 70 160 }
+	color_ui = rgb { 14 70 160 }
+}
+SUD_canaanpuppet = {
+	color = rgb { 14 70 160 }
+	color_ui = rgb { 14 70 160 }
+}
+EGY_canaanpuppet = {
+	color = rgb { 14 70 160 }
+	color_ui = rgb { 14 70 160 }
+}
 ZIO_main = {
 	color = rgb { 14 70 160 }
 	color_ui = rgb { 14 70 160 }

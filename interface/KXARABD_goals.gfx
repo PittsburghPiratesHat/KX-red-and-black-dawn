@@ -1,5 +1,101 @@
 SpriteTypes = {
 		SpriteType = {
+		name = "GFX_goal_CAL_bill"
+		texturefile = "gfx/interface/goals/CAL_bill.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_booze"
+		texturefile = "gfx/interface/goals/CAL_booze.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_billstate"
+		texturefile = "gfx/interface/goals/CAL_billstate.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_step"
+		texturefile = "gfx/interface/goals/CAL_step.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_friends"
+		texturefile = "gfx/interface/goals/CAL_friends.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_legalize"
+		texturefile = "gfx/interface/goals/CAL_legalize.png"
+	}
+		SpriteType = {
+		name = "GFX_goal_CAL_powers"
+		texturefile = "gfx/interface/goals/CAL_powers.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_bahai"
+		texturefile = "gfx/interface/goals/CAL_bahai.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_root"
+		texturefile = "gfx/interface/goals/CAL_root.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_reversing"
+		texturefile = "gfx/interface/goals/CAL_reversing.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_convert"
+		texturefile = "gfx/interface/goals/CAL_convert.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_fix"
+		texturefile = "gfx/interface/goals/CAL_fix.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_berg"
+		texturefile = "gfx/interface/goals/CAL_berg.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_saturn"
+		texturefile = "gfx/interface/goals/CAL_saturn.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_mix"
+		texturefile = "gfx/interface/goals/CAL_mix.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_pardon"
+		texturefile = "gfx/interface/goals/CAL_pardon.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_parsons"
+		texturefile = "gfx/interface/goals/CAL_parsons.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_evils"
+		texturefile = "gfx/interface/goals/CAL_evils.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_stance"
+		texturefile = "gfx/interface/goals/CAL_stance.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_remove"
+		texturefile = "gfx/interface/goals/CAL_remove.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_sideline"
+		texturefile = "gfx/interface/goals/CAL_sideline.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_tackle"
+		texturefile = "gfx/interface/goals/CAL_tackle.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_thelema"
+		texturefile = "gfx/interface/goals/CAL_thelema.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAL_fundamentalist"
+		texturefile = "gfx/interface/goals/CAL_fundamentalist.png"
+	}
+		SpriteType = {
 		name = "GFX_goal_CAL_yoganada"
 		texturefile = "gfx/interface/goals/CAL_yoganada.png"
 	}
@@ -222,6 +318,102 @@ SpriteTypes = {
 		SpriteType = {
 		name = "GFX_goal_NEE_science"
 		texturefile = "gfx/interface/goals/NEE_science.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_crime"
+		texturefile = "gfx/interface/goals/PAL_crime.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_lenin"
+		texturefile = "gfx/interface/goals/PAL_lenin.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_haganah"
+		texturefile = "gfx/interface/goals/PAL_haganah.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_13"
+		texturefile = "gfx/interface/goals/PAL_13.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_populism"
+		texturefile = "gfx/interface/goals/PAL_populism.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_fixed"
+		texturefile = "gfx/interface/goals/PAL_fixed.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_decelerate"
+		texturefile = "gfx/interface/goals/PAL_decelerate.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_international"
+		texturefile = "gfx/interface/goals/PAL_international.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_secularize"
+		texturefile = "gfx/interface/goals/PAL_secularize.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_negotiate"
+		texturefile = "gfx/interface/goals/PAL_negotiate.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_cautious"
+		texturefile = "gfx/interface/goals/PAL_cautious.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_browder"
+		texturefile = "gfx/interface/goals/PAL_browder.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_communism"
+		texturefile = "gfx/interface/goals/PAL_communism.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_uphold"
+		texturefile = "gfx/interface/goals/PAL_uphold.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_decide"
+		texturefile = "gfx/interface/goals/PAL_decide.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_nakam"
+		texturefile = "gfx/interface/goals/PAL_nakam.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_purge"
+		texturefile = "gfx/interface/goals/PAL_purge.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_central"
+		texturefile = "gfx/interface/goals/PAL_central.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_with"
+		texturefile = "gfx/interface/goals/PAL_with.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_crush"
+		texturefile = "gfx/interface/goals/PAL_crush.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_proarab"
+		texturefile = "gfx/interface/goals/PAL_proarab.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_abe"
+		texturefile = "gfx/interface/goals/PAL_abe.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_ben"
+		texturefile = "gfx/interface/goals/PAL_ben.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PAL_vilner"
+		texturefile = "gfx/interface/goals/PAL_vilner.png"
 	}
 	SpriteType = {
 		name = "GFX_goal_PAL_nonapoleon"
