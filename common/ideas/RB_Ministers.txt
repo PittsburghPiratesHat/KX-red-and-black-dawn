@@ -1,0 +1,2422 @@
+ideas = {
+	################################################################################################################################################################################################
+  ### TEX
+  ################################################################################################################################################################################################
+head_of_government = { ### Head of Government ###
+        TEX_pelley_hog_npo = {
+            allowed = { original_tag = TEX }
+            available = {
+                custom_trigger_tooltip = {
+                    tooltip = head_of_gov_available
+                    always = no
+                }
+            }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                national_populist
+                hog_christian_nationalist
+            }
+        }
+}    
+person_of_influence = { ### Person of Influence ###
+        ## Foreign Minister ##
+        TEX_Wesley_A_Swift_for_npo = {
+            allowed = { original_tag = TEX }
+            available = {
+                custom_trigger_tooltip = {
+                    tooltip = head_of_gov_available
+                    always = no
+                }
+            }
+            visible = {
+                 has_country_flag = pelly_went_cray_cray 
+            }
+            traits = {
+                foreign_minister
+                national_populist
+                for_iron_fisted_brute
+            }
+            cancel_if_invalid = no
+        }
+        ## Economy Minister ##
+        TEX_Gerald_L_K_Smith_eco_npo = {
+            allowed = { original_tag = TEX }
+            available = {
+                custom_trigger_tooltip = {
+                    tooltip = head_of_gov_available
+                    always = no
+                }
+            }
+            visible = {
+                NOT = { has_country_flag = Gerald_L_K_Smith_dead }
+            }
+            traits = {
+                economy_minister
+                national_populist
+                eco_military_entrepreneur
+            }
+            cancel_if_invalid = no
+        }
+        ## Security Minister ##
+        TEX_pfaus_sec_npo = {
+            allowed = { original_tag = TEX }
+            available = {
+                custom_trigger_tooltip = {
+                    tooltip = head_of_gov_available
+                    always = no
+                }
+            }
+            traits = {
+                security_minister
+                national_populist
+                sec_paramilitary_leader
+            }
+            cancel_if_invalid = no
+        }
+}
+################################################################################################################################################################################################
+  ### NEE
+  ################################################################################################################################################################################################
+
+	head_of_government = { ### Head of Government ###
+	NEE_skinner_hog_tot = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				totalist
+				hog_influential_intellectual
+			}
+		}
+		NEE_Clarence_Pickett_hog_rso = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Clarence_Pickett_hog_rso" 
+			}
+			traits = {
+				head_of_government
+				radical_socialist
+				hog_ambitious_union_boss
+			}
+		}
+		NEE_George_Aiken_hog_sde = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = George_Aiken_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_George_Aiken_hog_sde"
+			}
+			traits = {
+				head_of_government
+				social_democrat
+				hog_anti_establishment_maverick
+			}
+			cancel_if_invalid = no
+		}
+		NEE_Frances_Perkins_hog_sde = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Frances_Perkins_hog_sde" 
+			}
+			traits = {
+				head_of_government
+				social_democrat
+				hog_social_security_champion
+			}
+		}
+		NEE_Ernest_W_Gibson_hog_sde = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Ernest_W_Gibson_hog_sde" 
+			}
+			traits = {
+				head_of_government
+				social_democrat
+				hog_naive_optimist
+			}
+		}
+		NEE_Charles_Poletti_hog_sli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Charles_Poletti_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Charles_Poletti_hog_sli"
+			}
+			traits = {
+				head_of_government
+				social_liberal
+				hog_silent_workhorse
+			}
+			cancel_if_invalid = no
+		}
+
+		NEE_Dennis_J_Roberts_hog_sli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Dennis_J_Roberts_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Dennis_J_Roberts_hog_sli"
+			}
+			traits = {
+				head_of_government
+				social_liberal
+				hog_pragmatic_statesman
+			}
+			cancel_if_invalid = no
+		}
+
+		NEE_Herbert_H_Lehman_hog_sli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Herbert_H_Lehman_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Herbert_H_Lehman_hog_sli"
+			}
+			traits = {
+				head_of_government
+				social_liberal
+				hog_political_protege
+			}
+			cancel_if_invalid = no
+		}
+		
+		NEE_Charles_F_Hurley_hog_sli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Charles_F_Hurley_hog_sli" 
+			}
+			traits = {
+				head_of_government
+				social_liberal
+				hog_political_protege
+			}
+		}
+
+		NEE_John_Gilbert_Winant_hog_sli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = John_Gilbert_Winant_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_John_Gilbert_Winant_hog_sli"
+			}
+			traits = {
+				head_of_government
+				social_liberal
+				hog_liberal_interventionist
+			}
+			cancel_if_invalid = no
+		}
+
+		NEE_Maurice_J_Tobin_hog_sli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Maurice_J_Tobin_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Maurice_J_Tobin_hog_sli"
+			}
+			traits = {
+				head_of_government
+				social_liberal
+				hog_ambitious_union_boss
+			}
+			cancel_if_invalid = no
+		}
+
+		NEE_Paul_A_Dever_hog_sli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Paul_A_Dever_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Paul_A_Dever_hog_sli"
+			}
+			traits = {
+				head_of_government
+				social_liberal
+				hog_happy_amateur
+			}
+			cancel_if_invalid = no
+		}
+		
+		NEE_Chester_B_Bowles_hog_sli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Chester_B_Bowles_hog_sli" 
+			}
+			traits = {
+				head_of_government
+				social_liberal
+				hog_silent_workhorse
+			}
+		}
+
+		NEE_William_Averell_Harriman_hog_sli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = William_Averell_Harriman_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_William_Averell_Harriman_hog_sli"
+			}
+			traits = {
+				head_of_government
+				social_liberal
+				hog_gentleman_politician
+			}
+			cancel_if_invalid = no
+		}
+		
+		NEE_Thomas_Dewey_hog_sli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Thomas_Dewey_hog_sli" 
+			}
+			traits = {
+				head_of_government
+				social_liberal
+				hog_silent_workhorse
+			}
+		}
+		NEE_Peter_G_Gerry_hog_sli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Peter_G_Gerry_hog_sli" 
+			}
+			traits = {
+				head_of_government
+				social_liberal
+				hog_political_protege
+			}
+		}
+
+		NEE_Henry_C_Lodge_Jr_hog_mli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Henry_C_Lodge_Jr_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Henry_C_Lodge_Jr_hog_mli"
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_reformist_soldier
+			}
+			cancel_if_invalid = no
+		}
+
+		NEE_Nelson_Rockefeller_hog_mli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Nelson_Rockefeller_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Nelson_Rockefeller_hog_mli"
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_corporate_suit
+			}
+			cancel_if_invalid = no
+		}
+
+		NEE_Percival_P_Baxter_hog_mli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Percival_P_Baxter_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Percival_P_Baxter_hog_mli"
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_pragmatic_statesman
+			}
+			cancel_if_invalid = no
+		}
+
+		NEE_Robert_F_Bradford_hog_mli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Robert_F_Bradford_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Robert_F_Bradford_hog_mli"
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_backroom_backstabber
+			}
+			cancel_if_invalid = no
+		}
+		
+		NEE_Prescott_Bush_hog_mli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Prescott_Bush_hog_mli" 
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_smiling_oilman
+			}
+		}
+		
+		NEE_Hiram_Bingham_III_hog_mli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Hiram_Bingham_III_hog_mli" 
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_old_general
+			}
+		}
+		
+		NEE_Lewis_O_Barrows_hog_mli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Lewis_O_Barrows_hog_mli" 
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_local_tyrant
+			}
+		}
+		
+		NEE_Raymond_Baldwin_hog_mli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Raymond_Baldwin_hog_mli" 
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_corporate_suit
+			}
+		}
+		
+		NEE_Fred_Trump_hog_mli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Fred_Trump_hog_mli" 
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_corporate_suit
+			}
+		}
+		NEE_John_Coolidge_hog_mli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_John_Coolidge_hog_mli" 
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_corporate_suit
+			}
+		}
+		
+		NEE_Christian_Herter_hog_mli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Christian_Herter_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Christian_Herter_hog_mli"
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_happy_amateur
+			}
+			cancel_if_invalid = no
+		}
+		
+		NEE_Sherman_Adams_hog_mli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Sherman_Adams_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Sherman_Adams_hog_mli"
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_happy_amateur
+			}
+			cancel_if_invalid = no
+		}
+
+		NEE_Joseph_William_Martin_Jr_hog_mli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Joseph_William_Martin_Jr_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Joseph_William_Martin_Jr_hog_mli"
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_flamboyant_tough_guy
+			}
+			cancel_if_invalid = no
+		}
+		
+		NEE_Hamilton_Fish_III_hog_mli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Hamilton_Fish_III_hog_mli" 
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_pragmatic_statesman
+			}
+		}
+
+		NEE_Warren_Austin_hog_mli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Warren_Austin_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Warren_Austin_hog_mli"
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_political_protege
+			}
+			cancel_if_invalid = no
+		}
+
+		NEE_Joseph_Kennedy_Sr_hog_sco = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Joseph_Kennedy_Sr_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Joseph_Kennedy_Sr_hog_sco"
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_corporate_suit
+			}
+			cancel_if_invalid = no
+		}
+
+		NEE_Thomas_C_Hart_hog_sco = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Thomas_C_Hart_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Thomas_C_Hart_hog_sco"
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_old_admiral
+			}
+			cancel_if_invalid = no
+		}
+		
+		NEE_John_L_Sullivan_hog_sco = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = John_L_Sullivan_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_John_L_Sullivan_hog_sco"
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_silent_workhorse
+			}
+			cancel_if_invalid = no
+		}
+		
+		NEE_James_Michael_Curley_hog_sco = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_James_Michael_Curley_hog_sco" 
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_backroom_backstabber
+			}
+		}
+		NEE_Al_Smith_hog_sco = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Al_Smith_hog_sco" 
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_spiritual_leader
+			}
+		}
+		NEE_Wilbur_Lucius_Cross_hog_sco = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Wilbur_Lucius_Cross_hog_sco" 
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_pragmatic_statesman
+			}
+		}
+		NEE_Styles_Bridges_hog_sco = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Styles_Bridges_hog_sco" 
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_local_tyrant
+			}
+		}
+		
+		NEE_Albert_Jay_Nock_hog_pau = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Albert_Jay_Nock_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Albert_Jay_Nock_hog_pau"
+			}
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_flamboyant_tough_guy
+			}
+			cancel_if_invalid = no
+		}
+		
+		NEE_Urban_Broughton_hog_pau = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Urban_Broughton_hog_pau"
+			}
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_baron_fairhaven
+			}
+			cancel_if_invalid = no
+		}
+		
+		NEE_Ralph_Adams_Cram_hog_pau = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Ralph_Adams_Cram_hog_pau" 
+			}
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_influential_intellectual
+			}
+		}
+		
+		NEE_Irenee_du_Pont_hog_npo = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Irenee_du_Pont_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Irenee_du_Pont_hog_npo"
+			}
+			traits = {
+				head_of_government
+				national_populist
+				hog_corporate_suit
+			}
+			cancel_if_invalid = no
+		}
+		
+		NEE_Henry_H_Goddard_hog_npo = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Henry_H_Goddard_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Henry_H_Goddard_hog_npo"
+			}
+			traits = {
+				head_of_government
+				national_populist
+				hog_silent_workhorse
+			}
+			cancel_if_invalid = no
+		}
+
+	}
+
+	person_of_influence = { ### Foreign Minister ###
+		NEE_watson_for_tot = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			traits = {
+				foreign_minister
+				totalist
+				for_biased_intellectual
+			}
+			cancel_if_invalid = no
+		}
+		NEE_Frederick_Hale_for_sde = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Frederick_Hale_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Frederick_Hale_for_sde"
+			}
+			traits = {
+				foreign_minister
+				social_democrat
+				for_ideological_crusader
+			}
+			cancel_if_invalid = no
+		}
+
+		NEE_Herbert_Claiborne_Pell_Jr_for_sde = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Herbert_Claiborne_Pell_Jr_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Herbert_Claiborne_Pell_Jr_for_sde"
+			}
+			traits = {
+				foreign_minister
+				social_democrat
+				for_the_cloak_n_dagger_schemer
+			}
+			cancel_if_invalid = no
+		}
+
+		NEE_George_Higgins_Moses_for_sli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = George_Higgins_Moses_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_George_Higgins_Moses_for_sli"
+			}
+			traits = {
+				foreign_minister
+				social_liberal
+				for_biased_intellectual
+			}
+			cancel_if_invalid = no
+		}
+
+		NEE_Peter_Hoyt_Dominick_for_sli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Peter_Hoyt_Dominick_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Peter_Hoyt_Dominick_for_sli"
+			}
+			traits = {
+				foreign_minister
+				social_liberal
+				for_general_staffer
+			}
+			cancel_if_invalid = no
+		}
+		
+		NEE_Frank_Kellogg_for_sli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Frank_Kellogg_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Frank_Kellogg_for_sli"
+			}
+			traits = {
+				foreign_minister
+				social_liberal
+				for_ideological_crusader
+			}
+			cancel_if_invalid = no
+		}
+
+		NEE_John_Hay_Whitney_for_mli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = John_Hay_Whitney_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_John_Hay_Whitney_for_mli"
+			}
+			traits = {
+				foreign_minister
+				market_liberal
+				for_the_cloak_n_dagger_schemer
+			}
+			cancel_if_invalid = no
+		}
+
+		NEE_Robert_Helyer_Thayer_for_mli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Robert_Helyer_Thayer_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Robert_Helyer_Thayer_for_mli"
+			}
+			traits = {
+				foreign_minister
+				market_liberal
+				for_apologetic_clerk
+			}
+			cancel_if_invalid = no
+		}
+		
+		NEE_Joseph_Patrick_Kennedy_Jr_for_sco = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Joseph_Patrick_Kennedy_Jr_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Joseph_Patrick_Kennedy_Jr_for_sco"
+			}
+			traits = {
+				foreign_minister
+				social_conservative
+				for_biased_intellectual
+			}
+			cancel_if_invalid = no
+		}
+
+		NEE_Dean_Gooderham_Acheson_for_sco = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Dean_Gooderham_Acheson_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Dean_Gooderham_Acheson_for_sco"
+			}
+			traits = {
+				foreign_minister
+				social_conservative
+				for_ideological_crusader
+			}
+			cancel_if_invalid = no
+		}
+
+		NEE_James_Aloysius_'Jim'_Farley_for_sco = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = James_Aloysius_'Jim'_Farley_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_James_Aloysius_'Jim'_Farley_for_sco"
+			}
+			traits = {
+				foreign_minister
+				social_conservative
+				for_great_compromiser
+			}
+			cancel_if_invalid = no
+		}
+
+	NEE_Henry_Styles_Bridges_for_sli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Henry_Styles_Bridges_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Henry_Styles_Bridges_for_sli"
+			}
+			traits = {
+				foreign_minister
+				authoritarian_democrat
+				for_iron_fisted_brute
+			}
+			cancel_if_invalid = no
+		}
+		
+		NEE_Frank_Hale_for_pau = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Frank_Hale_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Frank_Hale_for_pau"
+			}
+			traits = {
+				foreign_minister
+				paternal_autocrat
+				for_general_staffer
+			}
+			cancel_if_invalid = no
+		}
+		
+	NEE_H_L_Mencken_for_npo = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = H_L_Mencken_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_H_L_Mencken_for_npo"
+			}
+			traits = {
+				foreign_minister
+				paternal_autocrat
+				for_biased_intellectual
+			}
+			cancel_if_invalid = no
+		}
+	NEE_Alexander_Lincoln_for_npo = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Alexander_Lincoln_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Alexander_Lincoln_for_npo"
+			}
+			traits = {
+				foreign_minister
+				national_populist
+				for_iron_fisted_brute
+			}
+			cancel_if_invalid = no
+		}
+		
+		NEE_Charles_Benedict_Davenport_for_npo = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Charles_Benedict_Davenport_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Charles_Benedict_Davenport_for_npo"
+			}
+			traits = {
+				foreign_minister
+				national_populist
+				for_ideological_crusader
+			}
+			cancel_if_invalid = no
+		}
+	
+		
+	### Economy Minister ###
+	
+		NEE_Scott_Nearing_eco_sde = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Scott_Nearing_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Scott_Nearing_eco_sde"
+			}
+			traits = {
+				economy_minister
+				social_democrat
+				eco_keynesian_economy
+			}
+			cancel_if_invalid = no
+		}
+			NEE_keller_eco_tot = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			traits = {
+				economy_minister
+				totalist
+				for_biased_intellectual
+			}
+			cancel_if_invalid = no
+		}
+		
+		NEE_Charles_Russell_Clason_eco_sli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Charles_Russell_Clason_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Charles_Russell_Clason_eco_sli"
+			}
+			traits = {
+				economy_minister
+				social_liberal
+				eco_military_entrepreneur
+			}
+			cancel_if_invalid = no
+		}
+
+		NEE_Donald_L_Harlow_eco_sli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Donald_L_Harlow_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Donald_L_Harlow_eco_sli"
+			}
+			traits = {
+				economy_minister
+				social_liberal
+				eco_air_superiority_proponent
+			}
+			cancel_if_invalid = no
+		}
+
+		NEE_Frederick_George_Payne_eco_sli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Frederick_George_Payne_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Frederick_George_Payne_eco_sli"
+			}
+			traits = {
+				economy_minister
+				social_liberal
+				eco_balanced_budget_economy
+			}
+			cancel_if_invalid = no
+		}
+
+		NEE_Ralph_Edward_Flanders_eco_sli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Ralph_Edward_Flanders_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Ralph_Edward_Flanders_eco_sli"
+			}
+			traits = {
+				economy_minister
+				social_liberal
+				eco_industrial_chemist
+			}
+			cancel_if_invalid = no
+		}
+
+		NEE_Harry_Gabriel_Hamlet_eco_mli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Harry_Gabriel_Hamlet_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Harry_Gabriel_Hamlet_eco_mli"
+			}
+			traits = {
+				economy_minister
+				market_liberal
+				eco_battle_fleet_proponent
+			}
+			cancel_if_invalid = no
+		}
+
+		NEE_Leslie_Richard_Groves_Jr_eco_mli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Leslie_Richard_Groves_Jr_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Leslie_Richard_Groves_Jr_eco_mli"
+			}
+			traits = {
+				economy_minister
+				market_liberal
+				eco_construction_magnate
+			}
+			cancel_if_invalid = no
+		}
+		
+		NEE_Joseph_Kennedy_Sr_eco_sco = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Joseph_Kennedy_Sr_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Joseph_Kennedy_Sr_eco_sco"
+			}
+			traits = {
+				economy_minister
+				social_conservative
+				eco_resource_industrialist
+			}
+			cancel_if_invalid = no
+		}
+
+		NEE_Edward_Carleton_Moran_Jr_eco_sco = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Edward_Carleton_Moran_Jr_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Edward_Carleton_Moran_Jr_eco_sco"
+			}
+			traits = {
+				economy_minister
+				social_conservative
+				eco_mixed_economy
+			}
+			cancel_if_invalid = no
+		}
+
+		NEE_Hugh_Joseph_Gaffey_eco_sco = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Hugh_Joseph_Gaffey_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Hugh_Joseph_Gaffey_eco_sco"
+			}
+			traits = {
+				economy_minister
+				social_conservative
+				eco_infantry_proponent
+			}
+			cancel_if_invalid = no
+		}
+
+		NEE_William_Stuart_Symington_Jr_eco_sco = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = William_Stuart_Symington_Jr_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_William_Stuart_Symington_Jr_eco_sco"
+			}
+			traits = {
+				economy_minister
+				social_conservative
+				eco_industrialiser
+			}
+			cancel_if_invalid = no
+		}
+		
+		NEE_Leonard_Read_eco_pau = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Leonard_Read_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Leonard_Read_eco_pau"
+			}
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_laissez_faire_capitalist
+			}
+			cancel_if_invalid = no
+		}
+		
+		NEE_Viscount_Astor_eco_pau = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Viscount_Astor_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Viscount_Astor_eco_pau"
+			}
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_mixed_economy
+			}
+			cancel_if_invalid = no
+		}
+		NEE_Robert_Shaw_II_eco_pau = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Viscount_Astor_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Robert_Shaw_II_eco_pau"
+			}
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_balanced_budget_economy
+			}
+			cancel_if_invalid = no
+		}
+		
+		NEE_Arthur_Atwater_Kent_eco_npo = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Arthur_Atwater_Kent_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Arthur_Atwater_Kent_eco_npo"
+			}
+			traits = {
+				economy_minister
+				national_populist
+				eco_industrialiser
+			}
+			cancel_if_invalid = no
+		}
+		
+		NEE_Harry_H_Laughlin_eco_npo = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				
+				NOT = { has_country_flag = Harry_H_Laughlin_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Harry_H_Laughlin_eco_npo"
+			}
+			traits = {
+				economy_minister
+				national_populist
+				eco_theoretical_scientist
+			}
+			cancel_if_invalid = no
+		}
+
+
+	### Security Minister ###
+		 NEE_park_sec_tot = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			traits = {
+				security_minister
+				totalist
+				sec_education_reformer
+			}
+			cancel_if_invalid = no
+		}
+        NEE_Alfred_Baker_Louis_sec_rso = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Alfred_Baker_Louis_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Alfred_Baker_Louis_sec_rso"
+			}
+			traits = {
+				security_minister
+				radical_socialist
+				sec_reformed_justice
+			}
+			cancel_if_invalid = no
+		}
+
+		NEE_Edith_Nourse_Rogers_sec_sde = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Edith_Nourse_Rogers_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Edith_Nourse_Rogers_sec_sde"
+			}
+			traits = {
+				security_minister
+				social_democrat
+				sec_efficient_sociopath
+			}
+			cancel_if_invalid = no
+		}
+
+		NEE_Ruth_Baker_Pratt_sec_sli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Ruth_Baker_Pratt_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Ruth_Baker_Pratt_sec_sli"
+			}
+			traits = {
+				security_minister
+				social_liberal
+				sec_silent_lawyer
+			}
+			cancel_if_invalid = no
+		}
+
+		NEE_Wallace_Humphrey_White_Jr_sec_sli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Wallace_Humphrey_White_Jr_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Wallace_Humphrey_White_Jr_sec_sli"
+			}
+			traits = {
+				security_minister
+				social_liberal
+				sec_silent_lawyer
+			}
+			cancel_if_invalid = no
+		}
+
+		NEE_Carl_Elias_Milliken_sec_mli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Carl_Elias_Milliken_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Carl_Elias_Milliken_sec_mli"
+			}
+			traits = {
+				security_minister
+				market_liberal
+				sec_media_magnate
+			}
+			cancel_if_invalid = no
+		}
+
+		NEE_Pierrepont_Burt_Noyes_sec_mli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Pierrepont_Burt_Noyes_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Pierrepont_Burt_Noyes_sec_mli"
+			}
+			traits = {
+				security_minister
+				market_liberal
+				sec_man_of_the_people
+			}
+			cancel_if_invalid = no
+		}
+
+		NEE_Warren_Fales_Draper_sec_mli = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Warren_Fales_Draper_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Warren_Fales_Draper_sec_mli"
+			}
+			traits = {
+				security_minister
+				market_liberal
+				sec_health_and_safety
+			}
+			cancel_if_invalid = no
+		}
+
+		NEE_James_Andrew_Shanley_sec_sco = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = James_Andrew_Shanley_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_James_Andrew_Shanley_sec_sco"
+			}
+			traits = {
+				security_minister
+				social_conservative
+				sec_silent_lawyer
+			}
+			cancel_if_invalid = no
+		}
+
+		NEE_Wilbur_Lucius_Cross_sec_sco = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Wilbur_Lucius_Cross_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Wilbur_Lucius_Cross_sec_sco"
+			}
+			traits = {
+				security_minister
+				social_conservative
+				sec_crooked_kleptocrat
+			}
+			cancel_if_invalid = no
+		}
+		
+		NEE_William_Thaw_sec_pau = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = William_Thaw_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_William_Thaw_sec_pau"
+			}
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_man_of_the_people
+			}
+			cancel_if_invalid = no
+		}
+		
+		NEE_Lewis_Mumford_sec_pau = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Pierre_S_du_Pont_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Lewis_Mumford_sec_pau"
+			}
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_man_of_the_people
+			}
+			cancel_if_invalid = no
+		}
+		
+		NEE_Pierre_S_du_Pont_sec_npo = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Pierre_S_du_Pont_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Pierre_S_du_Pont_sec_npo"
+			}
+			traits = {
+				security_minister
+				national_populist
+				sec_media_magnate
+			}
+			cancel_if_invalid = no
+		}
+		
+		NEE_John_Bell_sec_npo = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = John_Bell_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_John_Bell_sec_npo"
+			}
+			traits = {
+				security_minister
+				national_populist
+				sec_efficient_sociopath
+			}
+			cancel_if_invalid = no
+		}
+		
+		NEE_Madison_Grant_sec_npo = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Madison_Grant_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Madison_Grant_sec_npo"
+			}
+			traits = {
+				security_minister
+				national_populist
+				sec_prince_of_terror
+			}
+			cancel_if_invalid = no
+		}
+	}
+
+	chief_of_staff = { ### Chief of Staff ###
+		NEE_Ulysses_S_Grant_III_cos = {
+			allowed = { original_tag = NEE }
+			visible = {
+				NOT = { has_country_flag = NEE_Ulysses_S_Grant_III_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Ulysses_S_Grant_III_cos" 
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_defence
+			}
+			cancel_if_invalid = yes
+		}
+		
+		NEE_John_J_Pershing_cos = {
+			allowed = { original_tag = NEE }
+			visible = {
+				NOT = { has_country_flag = NEE_John_J_Pershing_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_John_J_Pershing_cos" 
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_mass_combat
+			}
+			cancel_if_invalid = yes
+		}
+		
+		NEE_William_Joseph_Wild_Bill_Donovan_cos = {
+			allowed = { original_tag = NEE }
+			visible = {
+				NOT = { has_country_flag = NEE_William_Joseph_Wild_Bill_Donovan_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_William_Joseph_Wild_Bill_Donovan_cos" 
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_commando_operations
+			}
+			cancel_if_invalid = yes
+		}
+		
+		NEE_Adna_R_Chaffee_cos = {
+			allowed = { original_tag = NEE }
+			visible = {
+				NOT = { has_country_flag = NEE_Adna_R_Chaffee_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Adna_R_Chaffee_cos" 
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_psychology
+			}
+			cancel_if_invalid = yes
+		}
+		
+		NEE_Ernest_N_Harmon_cos = {
+			allowed = { original_tag = NEE }
+			visible = {
+				NOT = { has_country_flag = NEE_Ernest_N_Harmon_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Ernest_N_Harmon_cos" 
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_mass_combat
+			}
+			cancel_if_invalid = yes
+		}
+
+		NEE_James_Guthrie_Harbord_cos = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = military_staff_available
+					NOT = { has_country_flag = James_Guthrie_Harbord_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = James_Guthrie_Harbord_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_James_Guthrie_Harbord_cos"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_defence
+			}
+			cancel_if_invalid = yes
+		}
+
+	}
+
+	chief_of_army = { ### Chief of Army ###
+		NEE_George_Wesley_Griner_Jr_carm = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = military_staff_available
+					NOT = { has_country_flag = George_Wesley_Griner_Jr_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = George_Wesley_Griner_Jr_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_George_Wesley_Griner_Jr_carm"
+			}
+			traits = {
+				chief_of_army
+				carm_doctrine_of_autonomy
+			}
+			cancel_if_invalid = yes
+		}
+
+		NEE_Leslie_Richard_Groves_Jr_carm = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = military_staff_available
+					NOT = { has_country_flag = Leslie_Richard_Groves_Jr_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Leslie_Richard_Groves_Jr_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Leslie_Richard_Groves_Jr_carm"
+			}
+			traits = {
+				chief_of_army
+				carm_decisive_battle_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		NEE_Mark_W_Clark_carm = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = military_staff_available
+					NOT = { has_country_flag = Mark_W_Clark_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Mark_W_Clark_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Mark_W_Clark_carm"
+			}
+			traits = {
+				chief_of_army
+				carm_elastic_defence_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+		
+		NEE_Ulysses_S_Grant_III_carm = {
+			allowed = { original_tag = NEE }
+			visible = {
+				NOT = { has_country_flag = NEE_Ulysses_S_Grant_III_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Ulysses_S_Grant_III_carm" 
+			}
+			traits = {
+				chief_of_army
+				carm_elastic_defence_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+		
+		NEE_Peyton_C_March_carm = {
+			allowed = { original_tag = NEE }
+			visible = {
+				NOT = { has_country_flag = NEE_Peyton_C_March_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Peyton_C_March_carm" 
+			}
+			traits = {
+				chief_of_army
+				carm_decisive_battle_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+		
+		NEE_Merritt_A_Edson_carm = {
+			allowed = { original_tag = NEE }
+			visible = {
+				NOT = { has_country_flag = NEE_Merritt_A_Edson_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Merritt_A_Edson_carm" 
+			}
+			traits = {
+				chief_of_army
+				carm_commando_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+		
+		NEE_Hiram_Bingham_III_carm = {
+			allowed = { original_tag = NEE }
+			visible = {
+				NOT = { has_country_flag = NEE_Hiram_Bingham_III_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Hiram_Bingham_III_carm" 
+			}
+			traits = {
+				chief_of_army
+				carm_static_defence_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+		
+		NEE_Willard_G_Wyman_carm = {
+			allowed = { original_tag = NEE }
+			visible = {
+				NOT = { has_country_flag = NEE_Willard_G_Wyman_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Willard_G_Wyman_carm" 
+			}
+			traits = {
+				chief_of_army
+				carm_decisive_battle_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+		
+		NEE_Lemuel_C_Shepherd_Jr_carm = {
+			allowed = { original_tag = NEE }
+			visible = {
+				NOT = { has_country_flag = NEE_Lemuel_C_Shepherd_Jr_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Lemuel_C_Shepherd_Jr_carm" 
+			}
+			traits = {
+				chief_of_army
+				carm_guns_and_butter_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+	}
+
+	chief_of_navy = { ### Chief of Navy ###
+		NEE_Harry_Gabriel_Hamlet_cnav = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = military_staff_available
+					NOT = { has_country_flag = Harry_Gabriel_Hamlet_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Harry_Gabriel_Hamlet_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Harry_Gabriel_Hamlet_cnav"
+			}
+			traits = {
+				chief_of_navy
+				cnav_power_projection_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		NEE_Harold_Rainsford_Stark_cnav = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = military_staff_available
+					NOT = { has_country_flag = Harold_Rainsford_Stark_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Harold_Rainsford_Stark_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Harold_Rainsford_Stark_cnav"
+			}
+			traits = {
+				chief_of_navy
+				cnav_power_projection_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		NEE_Mary_Sears_cnav = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = military_staff_available
+					NOT = { has_country_flag = Mary_Sears_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Mary_Sears_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Mary_Sears_cnav"
+			}
+			traits = {
+				chief_of_navy
+				cnav_base_control_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		NEE_William_Veazie_Pratt_cnav = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = military_staff_available
+					NOT = { has_country_flag = William_Veazie_Pratt_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = William_Veazie_Pratt_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_William_Veazie_Pratt_cnav"
+			}
+			traits = {
+				chief_of_navy
+				cnav_decisive_battle_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		NEE_William_Vincent_Astor_cnav = {
+			allowed = { original_tag = NEE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = military_staff_available
+					NOT = { has_country_flag = William_Vincent_Astor_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = William_Vincent_Astor_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_William_Vincent_Astor_cnav"
+			}
+			traits = {
+				chief_of_navy
+				cnav_base_control_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+	}
+
+	chief_of_air_force = { ### Chief of Air Force ###
+		NEE_Hiram_Bingham_III_cair = {
+			allowed = { original_tag = NEE }
+			visible = {
+				NOT = { has_country_flag = NEE_Hiram_Bingham_III_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Hiram_Bingham_III_cair" 
+			}
+			traits = {
+				chief_of_air_force
+				cair_battlefield_support_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+		
+		NEE_Peyton_C_March_cair = {
+			allowed = { original_tag = NEE }
+			visible = {
+				NOT = { has_country_flag = NEE_Peyton_C_March_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Peyton_C_March_cair" 
+			}
+			traits = {
+				chief_of_air_force
+				cair_vertical_envelopment_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+		
+		NEE_Harriet_Quimby_cair = {
+			allowed = { original_tag = NEE }
+			visible = {
+				NOT = { has_country_flag = NEE_Harriet_Quimby_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Harriet_Quimby_cair" 
+			}
+			traits = {
+				chief_of_air_force
+				cair_battlefield_support_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+		
+		NEE_Pierpont_M_Hamilton_cair = {
+			allowed = { original_tag = NEE }
+			visible = {
+				NOT = { has_country_flag = NEE_Pierpont_M_Hamilton_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea NEE_Pierpont_M_Hamilton_cair" 
+			}
+			traits = {
+				chief_of_air_force
+				cair_vertical_envelopment_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+	}
+
+}
